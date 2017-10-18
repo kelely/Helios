@@ -1,21 +1,31 @@
+version: 1.0.0.{build}-{branch}
+
 configuration:
   - Debug 
   - Release
-version: 1.0.0.{build}-{branch}
+
 image: Visual Studio 2017
+
 pull_requests:
   do_not_increment_build_number: true
+
 branches:
   only:
   - /develop/
   - /master/
+
 skip_tags: true
+
 assembly_info:
   patch: true
   file: '**\AssemblyInfo.*'
   assembly_version: '{version}'
   assembly_file_version: '{version}'
   assembly_informational_version: '{version}'
+
 build:
   project: Helios.sln
   verbosity: minimal
+
+before_build:
+- cmd: nuget restore Helios.sln
