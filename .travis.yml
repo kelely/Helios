@@ -56,6 +56,10 @@ language: csharp
 dist: trusty
 dotnet: 2.0.0
 mono: none
+os:
+ - linux
+ - osx
+
 solution: Helios.sln
 
 before_install:
