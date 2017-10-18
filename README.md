@@ -2,9 +2,9 @@
 Helios is a blablabla...
 
 ## Continuous Integration
-| Name          | Operation System | develop-branch  | master-branch | develop-tests | master-tests |
-|---------------|------------------|-----------------|---------------|-------|--------|
-| AppVeyor      |  Windows         | [![Build status][appveyor-build-develop]](https://ci.appveyor.com/project/kelely/helios-ec7co/branch/develop)      | [![Build status][appveyor-build-master]](https://ci.appveyor.com/project/kelely/helios-ec7co/branch/master) |[![AppVeyor tests branch][appveyor-tests-develop]](https://ci.appveyor.com/project/kelely/helios-ec7co/branch/develop) |[![AppVeyor tests branch][appveyor-tests-master]](https://ci.appveyor.com/project/kelely/helios-ec7co/branch/master) |
+| Name          | Operation System | develop-branch  | master-branch |
+|---------------|------------------|-----------------|---------------|
+| AppVeyor      |  Windows         | [![Build status][appveyor-build-develop]](https://ci.appveyor.com/project/kelely/helios-ec7co/branch/develop)   [![AppVeyor tests branch][appveyor-tests-develop]](https://ci.appveyor.com/project/kelely/helios-ec7co/branch/develop)      | [![Build status][appveyor-build-master]](https://ci.appveyor.com/project/kelely/helios-ec7co/branch/master)   [![AppVeyor tests branch][appveyor-tests-master]](https://ci.appveyor.com/project/kelely/helios-ec7co/branch/master) |
 | Travis CI      |  Linux & Mac         | [![Travis branch][travis-build-develop]](https://travis-ci.org/kelely/Helios)      | [![Travis branch][travis-build-master]](https://travis-ci.org/kelely/Helios) |
 
 
