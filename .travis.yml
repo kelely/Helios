@@ -66,4 +66,4 @@ install:
 
 script:
  - dotnet build
- - dotnet test
+ - dotnet test Helios.Orders/Helios.Orders.Tests/Helios.Orders.Tests.csproj
