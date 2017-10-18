@@ -1,5 +1,8 @@
 version: 1.0.0.{build}-{branch}
-
+image: Visual Studio 2017
+configuration:
+ - Debug 
+ - Release
 pull_requests:
   # Do not increment build number for pull requests
   do_not_increment_build_number: true
