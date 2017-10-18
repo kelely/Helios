@@ -22,11 +22,25 @@ var buildNumber =
 // A directory path to an Artifacts directory.
 var artifactsDirectory = Directory("./Artifacts");
  
+IList<string> GetCoreFrameworks(string csprojFilePath)
+{
+    return XDocument
+        .Load(csprojFilePath)
+        .Descendants("TargetFrameworks")
+        .First()
+        .Value
+        .Split(';')
+        .Where(x => Regex.IsMatch(x, @"net[^\d]"))
+        .ToList();
+}
+
 // Deletes the contents of the Artifacts folder if it should contain anything from a previous build.
 Task("Clean")
     .Does(() =>
     {
         CleanDirectory(artifactsDirectory);
+        DeleteDirectories(GetDirectories("**/bin"), true);
+        DeleteDirectories(GetDirectories("**/obj"), true);
     });
  
 // Run dotnet restore to restore all package references.
@@ -42,15 +56,32 @@ Task("Restore")
     .IsDependentOn("Restore")
     .Does(() =>
     {
-        var projects = GetFiles("./**/*.csproj");
-        foreach(var project in projects)
+        foreach(var project in GetFiles("./**/*.csproj"))
         {
+            Information(project.ToString());
+            var settings = new DotNetCoreBuildSettings()
+            {
+                Configuration = configuration
+            };
+
+            if (!IsRunningOnWindows())
+            {
+                var frameworks = GetCoreFrameworks(project.ToString());
+                if (frameworks.Count == 0)
+                {
+                    Information("Skipping .NET Framework only project " + project.ToString());
+                    continue;
+                }
+                else
+                {
+                    Information("Skipping .NET Framework, building " + frameworks.First());
+                    settings.Framework = frameworks.First();
+                }
+            }
+
             DotNetCoreBuild(
                 project.GetDirectory().FullPath,
-                new DotNetCoreBuildSettings()
-                {
-                    Configuration = configuration
-                });
+                settings);
         }
     });
  
@@ -60,19 +91,33 @@ Task("Test")
     .IsDependentOn("Build")
     .Does(() =>
     {
-        var projects = GetFiles("./**/*.Tests.csproj");
-        foreach(var project in projects)
+        foreach(var project in GetFiles("./**/*.Tests.csproj"))
         {
-            DotNetCoreTest(
-                project.GetDirectory().FullPath,
-                new DotNetCoreTestSettings()
+            Information(project.ToString());
+
+            var outputFilePath = MakeAbsolute(artifactsDirectory.Path)
+                .CombineWithFilePath(project.GetFilenameWithoutExtension());
+            var arguments = new ProcessArgumentBuilder()
+                .AppendSwitch("-configuration", configuration)
+                .AppendSwitchQuoted("-xml", outputFilePath.AppendExtension(".xml").ToString())
+                .AppendSwitchQuoted("-html", outputFilePath.AppendExtension(".html").ToString());
+            
+            if (!IsRunningOnWindows())
+            {
+                var frameworks = GetCoreFrameworks(project.ToString());
+                if (frameworks.Count == 0)
                 {
-                    ArgumentCustomization = args => args
-                        .Append("-xml")
-                        .Append(artifactsDirectory.Path.CombineWithFilePath(project.GetFilenameWithoutExtension()).FullPath + ".xml"),
-                    Configuration = configuration,
-                    NoBuild = true
-                });
+                    Information("Skipping .NET Framework only project " + project.ToString());
+                    continue;
+                }
+                else
+                {
+                    Information("Skipping .NET Framework, building " + frameworks.First());
+                    arguments.AppendSwitch("-framework", frameworks.First());
+                }
+            }
+
+            DotNetCoreTool(project, "xunit", arguments);
         }
     });
  
