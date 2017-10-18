@@ -31,4 +31,4 @@ before_build:
  - cmd: nuget restore Helios.sln
 
 test_script:
- - dotnet test Helios.Orders/Helios.Orders.Tests/Helios.Orders.Tests.csproj --test-adapter-path:. --logger:Appveyor
+ - dotnet test Helios.sln
