@@ -28,7 +28,7 @@ namespace Helios.Orders.Tests
         [Theory(DisplayName = "多参数单元测试示例")]
         [InlineData(1, 2, 2)]
         [InlineData(78, 34, 2652)]
-        [InlineData(78, 34, 100)]
+        //[InlineData(78, 34, 100)]
         public void Test2(int a, int b, int result)
         {
             Assert.Equal(result, a * b);
