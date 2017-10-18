@@ -7,7 +7,7 @@
 // ARGUMENTS
 //////////////////////////////////////////////////////////////////////
 
-var projectName = "Abp";
+var projectName = "Helios";
 var solution = "./" + projectName + ".sln";
 
 var target = Argument("target", "Default");
