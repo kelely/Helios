@@ -1,125 +1,106 @@
-#tool "nuget:?package=xunit.runner.console&version=2.3.0-beta5-build3769"
-
-#addin "nuget:?package=NuGet.Core"
-#addin "nuget:?package=Cake.ExtendedNuGet"
-
-//////////////////////////////////////////////////////////////////////
-// ARGUMENTS
-//////////////////////////////////////////////////////////////////////
-
-var projectName = "Helios";
-var solution = "./" + projectName + ".sln";
-
-var target = Argument("target", "Default");
-var configuration = Argument("configuration", "Release");
-var toolpath = Argument("toolpath", @"tools");
-var branch = Argument("branch", EnvironmentVariable("APPVEYOR_REPO_BRANCH"));
-var nugetApiKey = EnvironmentVariable("nugetApiKey");
-var isRelease = EnvironmentVariable("APPVEYOR_REPO_TAG") == "true";
-
-var testProjects = new List<Tuple<string, string[]>>
-                {
-                    new Tuple<string, string[]>("Helios.Tests", new[] {"netcoreapp2.0" }),
-                };
-                      
-
-var nupkgPath = "nupkg";
-var nupkgRegex = $"**/{projectName}*.nupkg";
-var nugetPath = toolpath + "/nuget.exe";
-var nugetQueryUrl = "https://www.nuget.org/api/v2/";
-var nugetPushUrl = "https://www.nuget.org/api/v2/package";
-var NUGET_PUSH_SETTINGS = new NuGetPushSettings
-                          {
-                              ToolPath = File(nugetPath),
-                              Source = nugetPushUrl,
-                              ApiKey = nugetApiKey
-                          };
-
-//////////////////////////////////////////////////////////////////////
-// TASKS
-//////////////////////////////////////////////////////////////////////
-
+// Target - The task you want to start. Runs the Default task if not specified.
+var target = Argument("Target", "Default");
+// Configuration - The build configuration (Debug/Release) to use.
+// 1. If command line parameter parameter passed, use that.
+// 2. Otherwise if an Environment variable exists, use that.
+var configuration = 
+    HasArgument("Configuration") ? Argument("Configuration") :
+    EnvironmentVariable("Configuration") != null ? EnvironmentVariable("Configuration") : "Release";
+// The build number to use in the version number of the built NuGet packages.
+// There are multiple ways this value can be passed, this is a common pattern.
+// 1. If command line parameter parameter passed, use that.
+// 2. Otherwise if running on AppVeyor, get it's build number.
+// 3. Otherwise if running on Travis CI, get it's build number.
+// 4. Otherwise if an Environment variable exists, use that.
+// 5. Otherwise default the build number to 0.
+var buildNumber =
+    HasArgument("BuildNumber") ? Argument<int>("BuildNumber") :
+    AppVeyor.IsRunningOnAppVeyor ? AppVeyor.Environment.Build.Number :
+    TravisCI.IsRunningOnTravisCI ? TravisCI.Environment.Build.BuildNumber :
+    EnvironmentVariable("BuildNumber") != null ? int.Parse(EnvironmentVariable("BuildNumber")) : 0;
+ 
+// A directory path to an Artifacts directory.
+var artifactsDirectory = Directory("./Artifacts");
+ 
+// Deletes the contents of the Artifacts folder if it should contain anything from a previous build.
 Task("Clean")
     .Does(() =>
     {
-        Information("Current Branch is:" + EnvironmentVariable("APPVEYOR_REPO_BRANCH"));
-        Information($"IsRelease: {isRelease}");
-        CleanDirectories("./src/**/bin");
-        CleanDirectories("./src/**/obj");
-        CleanDirectories("./test/**/bin");
-        CleanDirectories("./test/**/obj");
-        CleanDirectory(nupkgPath);
+        CleanDirectory(artifactsDirectory);
     });
-
-Task("Restore-NuGet-Packages")
+ 
+// Run dotnet restore to restore all package references.
+Task("Restore")
     .IsDependentOn("Clean")
     .Does(() =>
     {
-        DotNetCoreRestore(solution);
+        DotNetCoreRestore();
     });
-
-Task("Build")
-    .IsDependentOn("Restore-NuGet-Packages")
+ 
+// Find all csproj projects and build them using the build configuration specified as an argument.
+ Task("Build")
+    .IsDependentOn("Restore")
     .Does(() =>
     {
-        MSBuild(solution, new MSBuildSettings(){Configuration = configuration}
-                                               .WithProperty("SourceLinkCreate","true"));
+        var projects = GetFiles("./**/*.csproj");
+        foreach(var project in projects)
+        {
+            DotNetCoreBuild(
+                project.GetDirectory().FullPath,
+                new DotNetCoreBuildSettings()
+                {
+                    Configuration = configuration
+                });
+        }
     });
-
-Task("Run-Unit-Tests")
+ 
+// Look under a 'Tests' folder and run dotnet test against all of those projects.
+// Then drop the XML test results file in the Artifacts folder at the root.
+Task("Test")
     .IsDependentOn("Build")
     .Does(() =>
     {
-        foreach (Tuple<string, string[]> testProject in testProjects)
+        var projects = GetFiles("./Tests/**/*.csproj");
+        foreach(var project in projects)
         {
-            foreach (string targetFramework in testProject.Item2)
-            {
-                Information($"Test execution started for target frameowork: {targetFramework}...");
-                var testProj = GetFiles($"./test/**/*{testProject.Item1}.csproj").First();
-                DotNetCoreTest(testProj.FullPath, new DotNetCoreTestSettings { Configuration = "Release", Framework = targetFramework });                              
-            }
+            DotNetCoreTest(
+                project.GetDirectory().FullPath,
+                new DotNetCoreTestSettings()
+                {
+                    ArgumentCustomization = args => args
+                        .Append("-xml")
+                        .Append(artifactsDirectory.Path.CombineWithFilePath(project.GetFilenameWithoutExtension()).FullPath + ".xml"),
+                    Configuration = configuration,
+                    NoBuild = true
+                });
         }
     });
-    
+ 
+// Run dotnet pack to produce NuGet packages from our projects. Versions the package
+// using the build number argument on the script which is used as the revision number 
+// (Last number in 1.0.0.0). The packages are dropped in the Artifacts directory.
 Task("Pack")
-    .IsDependentOn("Run-Unit-Tests")
+    .IsDependentOn("Test")
     .Does(() =>
     {
-        var nupkgFiles = GetFiles(nupkgRegex);
-        MoveFiles(nupkgFiles, nupkgPath);
-    });
-
-Task("NugetPublish")
-    .IsDependentOn("Pack")
-    .WithCriteria(() => branch == "master" && isRelease)
-    .Does(()=>
-    {
-        foreach(var nupkgFile in GetFiles(nupkgRegex))
+        var revision = buildNumber.ToString("D4");
+        foreach (var project in GetFiles("./Source/**/*.csproj"))
         {
-          if(!IsNuGetPublished(nupkgFile, nugetQueryUrl))
-          {
-             Information("Publishing... " + nupkgFile);
-             NuGetPush(nupkgFile, NUGET_PUSH_SETTINGS);
-          }
-          else
-          {
-             Information("Already published, skipping... " + nupkgFile);
-          }
+            DotNetCorePack(
+                project.GetDirectory().FullPath,
+                new DotNetCorePackSettings()
+                {
+                    Configuration = configuration,
+                    OutputDirectory = artifactsDirectory,
+                    VersionSuffix = revision
+                });
         }
     });
-
-//////////////////////////////////////////////////////////////////////
-// TASK TARGETS
-//////////////////////////////////////////////////////////////////////
-
+ 
+// The default task to run if none is explicitly specified. In this case, we want
+// to run everything starting from Clean, all the way up to Pack.
 Task("Default")
-    .IsDependentOn("Build")
-    .IsDependentOn("Run-Unit-Tests")
-    .IsDependentOn("Pack")
-    .IsDependentOn("NugetPublish");
-    
-//////////////////////////////////////////////////////////////////////
-// EXECUTION
-//////////////////////////////////////////////////////////////////////
-
+    .IsDependentOn("Pack");
+ 
+// Executes the task specified in the target argument.
 RunTarget(target);

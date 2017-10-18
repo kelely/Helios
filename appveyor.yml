@@ -1,34 +1,59 @@
 version: 1.0.0.{build}-{branch}
 
-configuration:
-  - Debug 
-  - Release
-
-image: Visual Studio 2017
-
 pull_requests:
+  # Do not increment build number for pull requests
   do_not_increment_build_number: true
 
-branches:
-  only:
-  - /develop/
-  - /master/
+nuget:
+  # Do not publish NuGet packages for pull requests
+  disable_publish_on_pr: true
+ 
+environment:
+  # Set the DOTNET_SKIP_FIRST_TIME_EXPERIENCE environment variable to stop wasting time caching packages
+  DOTNET_SKIP_FIRST_TIME_EXPERIENCE: true
+  # Disable sending usage data to Microsoft
+  DOTNET_CLI_TELEMETRY_OPTOUT: true
 
-skip_tags: true
+build_script:
+- ps: .\build.ps1
+ 
+test: off
+ 
+artifacts:
+# Store NuGet packages
+- path: .\Artifacts\**\*.nupkg
+  name: NuGet
+# Store xUnit Test Results
+- path: .\Artifacts\**\*.xml
+  name: xUnit Test Results
 
-assembly_info:
-  patch: true
-  file: '**\AssemblyInfo.*'
-  assembly_version: '{version}'
-  assembly_file_version: '{version}'
-  assembly_informational_version: '{version}'
 
-build:
-  project: Helios.sln
-  verbosity: minimal
+# configuration:
+#   - Debug 
+#   - Release
 
-before_build:
- - cmd: nuget restore Helios.sln
+# image: Visual Studio 2017
 
-test_script:
- - dotnet test Helios.sln
+# branches:
+#   only:
+#   - /develop/
+#   - /master/
+
+# skip_tags: true
+
+# assembly_info:
+#   patch: true
+#   file: '**\AssemblyInfo.*'
+#   assembly_version: '{version}'
+#   assembly_file_version: '{version}'
+#   assembly_informational_version: '{version}'
+
+# build:
+#   project: Helios.sln
+#   verbosity: minimal
+
+# before_build:
+#  - cmd: nuget restore Helios.sln
+
+# test_script:
+#  - dotnet test Helios.sln
