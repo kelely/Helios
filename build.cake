@@ -1,3 +1,6 @@
+using System.Text.RegularExpressions;
+using System.Xml.Linq;
+
 // Target - The task you want to start. Runs the Default task if not specified.
 var target = Argument("Target", "Default");
 // Configuration - The build configuration (Debug/Release) to use.
