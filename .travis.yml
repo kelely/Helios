@@ -8,4 +8,5 @@ before_install:
  - dotnet --version
 
 script:
- - dotnet restore
+ - dotnet restore Helios.sln
+ - xbuild /p:Configuration=Release Helios.sln
