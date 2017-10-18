@@ -60,7 +60,7 @@ Task("Test")
     .IsDependentOn("Build")
     .Does(() =>
     {
-        var projects = GetFiles("./Tests/**/*.csproj");
+        var projects = GetFiles("./**/*.Tests.csproj");
         foreach(var project in projects)
         {
             DotNetCoreTest(
