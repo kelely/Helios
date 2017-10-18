@@ -4,9 +4,9 @@ dotnet: 2.0.0
 solution: Helios.sln
 mono: none
 
-before_install:
- - dotnet --version
+# before_install:
+#  - dotnet --version
 
 script:
- - dotnet restore Helios.sln
- - xbuild /p:Configuration=Release Helios.sln
+ - dotnet restore
+ - dotnet build
