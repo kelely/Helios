@@ -1,52 +1,69 @@
-language: csharp
-os:
-  - linux
-  - osx
+# language: csharp
+# os:
+#   - linux
+# #  - osx
  
-# .NET CLI require Ubuntu 14.04
-sudo: required
-dist: trusty
-addons:
-  apt:
-    packages:
-    - gettext
-    - libcurl4-openssl-dev
-    - libicu-dev
-    - libssl-dev
-    - libunwind8
-    - zlib1g
+# # .NET CLI require Ubuntu 14.04
+# sudo: required
+# dist: trusty
+# addons:
+#   apt:
+#     packages:
+#     - gettext
+#     - libcurl4-openssl-dev
+#     - libicu-dev
+#     - libssl-dev
+#     - libunwind8
+#     - zlib1g
  
-# .NET CLI requires OSX 10.11
-osx_image: xcode7.2
+# # .NET CLI requires OSX 10.11
+# # osx_image: xcode7.2
  
-# Ensure that .NET Core is installed
-dotnet: 2.0.0
-# Ensure Mono is installed
-mono: latest
+# # Ensure that .NET Core is installed
+# dotnet: 2.0.0
+# # Ensure Mono is installed
+# # mono: latest
+# mono: none
  
-env:
-    # Set the DOTNET_SKIP_FIRST_TIME_EXPERIENCE environment variable to stop wasting time caching packages
-  - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
-    # Disable sending usage data to Microsoft
-  - DOTNET_CLI_TELEMETRY_OPTOUT=true
+# env:
+#     # Set the DOTNET_SKIP_FIRST_TIME_EXPERIENCE environment variable to stop wasting time caching packages
+#   - DOTNET_SKIP_FIRST_TIME_EXPERIENCE=true
+#     # Disable sending usage data to Microsoft
+#   - DOTNET_CLI_TELEMETRY_OPTOUT=true
  
-# You must run this command to give Travis permissions to execute the build.sh shell script:
-# git update-index --chmod=+x build.sh
-script:
-  - ./build.sh
+# # You must run this command to give Travis permissions to execute the build.sh shell script:
+# # git update-index --chmod=+x build.sh
+# script:
+#  - ./build.sh
 
 
 # language: csharp
-# dist: trusty
-# dotnet: 2.0.0
-# solution: Helios.sln
-# mono: none
-
-# # before_install:
-# #  - dotnet --version
-# install:
-#  - dotnet restore
-
 # script:
-#  - dotnet build
-#  - dotnet test
+#   - echo "Information(Context.Environment.Runtime.CakeVersion.ToString());" > build.cake
+#   - ./build.sh || exit 1
+#   - echo "Testing with modules/addin packages.config"
+#   - mkdir tools/modules
+#   - echo -e "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<packages>\r\n    <package id=\"Cake.Paket.Module\" version=\"1.2.2\" />\r\n</packages>" > ./tools/modules/packages.config
+#   - mkdir tools/addins
+#   - echo -e "<?xml version=\"1.0\" encoding=\"utf-8\"?>\r\n<packages>\r\n    <package id=\"Cake.MicrosoftTeams\" version=\"0.3.0\" />\r\n</packages>" > ./tools/addins/packages.config
+#   - ./build.sh --target Test || exit 1
+#   - ls -D -R
+# os:
+#   - linux
+
+
+language: csharp
+dist: trusty
+dotnet: 2.0.0
+mono: none
+solution: Helios.sln
+
+before_install:
+ - dotnet --version
+
+install:
+ - dotnet restore
+
+script:
+ - dotnet build
+ - dotnet test Helios.Orders/Helios.Orders.Tests/Helios.Orders.Tests.csproj
