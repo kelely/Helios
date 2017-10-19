@@ -3,7 +3,7 @@ using Abp.IdentityServer4;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Zero.EntityFrameworkCore;
-// TODO:暂不启用种子数据 by Ryan(21071019) using MyCompanyName.AbpZeroTemplate.Migrations.Seed;
+using MyCompanyName.AbpZeroTemplate.Migrations.Seed;
 
 namespace MyCompanyName.AbpZeroTemplate.EntityFrameworkCore
 {
@@ -46,7 +46,7 @@ namespace MyCompanyName.AbpZeroTemplate.EntityFrameworkCore
         {
             if (!SkipDbSeed)
             {
-                // TODO:暂不启用种子数据 by Ryan(21071019) SeedHelper.SeedHostDb(IocManager);
+                SeedHelper.SeedHostDb(IocManager);
             }
         }
     }

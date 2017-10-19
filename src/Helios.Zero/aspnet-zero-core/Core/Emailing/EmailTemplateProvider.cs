@@ -19,7 +19,7 @@ namespace MyCompanyName.AbpZeroTemplate.Emailing
 
         public string GetDefaultTemplate(int? tenantId)
         {
-            using (var stream = typeof(EmailTemplateProvider).GetAssembly().GetManifestResourceStream("MyCompanyName.AbpZeroTemplate.Emailing.EmailTemplates.default.html"))
+            using (var stream = typeof(EmailTemplateProvider).GetAssembly().GetManifestResourceStream("Helios.aspnet_zero_core.Core.Emailing.EmailTemplates.default.html"))
             {
                 var bytes = stream.GetAllBytes();
                 var template = Encoding.UTF8.GetString(bytes, 3, bytes.Length - 3);
