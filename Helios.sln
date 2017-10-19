@@ -17,6 +17,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helios.Membership", "src\He
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helios.Zero", "src\Helios.Zero\Helios.Zero.csproj", "{8BE96B32-9EFD-4D2A-800B-F0FEB488FFD1}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helios.Zero.Tests", "test\Helios.Zero.Tests\Helios.Zero.Tests.csproj", "{B399CDBF-AFBB-4D54-B9FF-4DEE1E93F34C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -43,6 +45,10 @@ Global
 		{8BE96B32-9EFD-4D2A-800B-F0FEB488FFD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8BE96B32-9EFD-4D2A-800B-F0FEB488FFD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8BE96B32-9EFD-4D2A-800B-F0FEB488FFD1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B399CDBF-AFBB-4D54-B9FF-4DEE1E93F34C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B399CDBF-AFBB-4D54-B9FF-4DEE1E93F34C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B399CDBF-AFBB-4D54-B9FF-4DEE1E93F34C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B399CDBF-AFBB-4D54-B9FF-4DEE1E93F34C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -53,6 +59,7 @@ Global
 		{53005CB0-753E-4F64-A09B-3D1D7DAD940F} = {42794D46-48AA-4C0C-B1B9-DA8E1FE51469}
 		{7B432933-01D6-44BE-9AF3-FFBB523C1A5A} = {7A1DDAE3-8AD3-4A28-BFD6-A4A9D042E5AA}
 		{8BE96B32-9EFD-4D2A-800B-F0FEB488FFD1} = {7A1DDAE3-8AD3-4A28-BFD6-A4A9D042E5AA}
+		{B399CDBF-AFBB-4D54-B9FF-4DEE1E93F34C} = {42794D46-48AA-4C0C-B1B9-DA8E1FE51469}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B35DB3BA-546F-4D13-86C4-6F263396B3EB}
