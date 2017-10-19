@@ -1,8 +1,8 @@
 ﻿using System;
 using Abp.Dependency;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Paypal;
+using Helios.MultiTenancy.Payments.Paypal;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public class PaymentGatewayManagerFactory : IPaymentGatewayManagerFactory, ITransientDependency
     {

@@ -1,6 +1,6 @@
-﻿using MyCompanyName.AbpZeroTemplate.Editions.Dto;
+﻿using Helios.Editions.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Dto
+namespace Helios.MultiTenancy.Payments.Dto
 {
     public class PaymentInfoDto
     {

@@ -2,12 +2,12 @@
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Editions;
-using MyCompanyName.AbpZeroTemplate.Editions.Dto;
-using MyCompanyName.AbpZeroTemplate.Features;
+using Helios.Editions;
+using Helios.Editions.Dto;
+using Helios.Features;
 using Shouldly;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Editions
+namespace Helios.Tests.Editions
 {
     public class EditionAppService_Tests : AppTestBase
     {

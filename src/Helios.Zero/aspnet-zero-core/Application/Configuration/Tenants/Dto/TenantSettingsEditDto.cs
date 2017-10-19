@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using Abp.Runtime.Validation;
 using Abp.Timing;
-using MyCompanyName.AbpZeroTemplate.Configuration.Host.Dto;
+using Helios.Configuration.Host.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Configuration.Tenants.Dto
+namespace Helios.Configuration.Tenants.Dto
 {
     public class TenantSettingsEditDto
     {

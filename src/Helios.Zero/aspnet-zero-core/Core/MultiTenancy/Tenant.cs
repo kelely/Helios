@@ -2,11 +2,11 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.MultiTenancy;
 using Abp.Timing;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Editions;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments;
+using Helios.Authorization.Users;
+using Helios.Editions;
+using Helios.MultiTenancy.Payments;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy
+namespace Helios.MultiTenancy
 {
     /// <summary>
     /// Represents a Tenant in the system.

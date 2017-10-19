@@ -1,13 +1,13 @@
 ﻿using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.DependencyInjection;
-using MyCompanyName.AbpZeroTemplate.Authentication.TwoFactor.Google;
-using MyCompanyName.AbpZeroTemplate.Authorization;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Editions;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
+using Helios.Authentication.TwoFactor.Google;
+using Helios.Authorization;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.Editions;
+using Helios.MultiTenancy;
 
-namespace MyCompanyName.AbpZeroTemplate.Identity
+namespace Helios.Identity
 {
     public static class IdentityRegistrar
     {

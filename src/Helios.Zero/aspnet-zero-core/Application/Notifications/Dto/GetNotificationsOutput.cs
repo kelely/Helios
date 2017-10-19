@@ -2,7 +2,7 @@
 using Abp.Application.Services.Dto;
 using Abp.Notifications;
 
-namespace MyCompanyName.AbpZeroTemplate.Notifications.Dto
+namespace Helios.Notifications.Dto
 {
     public class GetNotificationsOutput : PagedResultDto<UserNotification>
     {

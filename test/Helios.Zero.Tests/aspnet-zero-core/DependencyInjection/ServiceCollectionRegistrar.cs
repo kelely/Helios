@@ -4,10 +4,10 @@ using Castle.Windsor.MsDependencyInjection;
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
-using MyCompanyName.AbpZeroTemplate.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Identity;
+using Helios.EntityFrameworkCore;
+using Helios.Identity;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.DependencyInjection
+namespace Helios.Tests.DependencyInjection
 {
     public static class ServiceCollectionRegistrar
     {

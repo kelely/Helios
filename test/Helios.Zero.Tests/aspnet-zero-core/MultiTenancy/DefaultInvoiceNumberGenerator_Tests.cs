@@ -2,10 +2,10 @@
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Abp.Timing;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Accounting;
+using Helios.MultiTenancy.Accounting;
 using Shouldly;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.MultiTenancy
+namespace Helios.Tests.MultiTenancy
 {
     public class DefaultInvoiceNumberGenerator_Tests : AppTestBase
     {

@@ -10,13 +10,13 @@ using Abp.Runtime.Session;
 using Abp.UI;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Configuration;
-using MyCompanyName.AbpZeroTemplate.Debugging;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
-using MyCompanyName.AbpZeroTemplate.Notifications;
+using Helios.Authorization.Roles;
+using Helios.Configuration;
+using Helios.Debugging;
+using Helios.MultiTenancy;
+using Helios.Notifications;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public class UserRegistrationManager : AbpZeroTemplateDomainServiceBase
     {

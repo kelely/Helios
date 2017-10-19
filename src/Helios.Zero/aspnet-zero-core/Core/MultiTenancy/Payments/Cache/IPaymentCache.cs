@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Cache
+﻿namespace Helios.MultiTenancy.Payments.Cache
 {
     public interface IPaymentCache
     {

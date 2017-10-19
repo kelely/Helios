@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Abp.Runtime.Validation;
 
-namespace MyCompanyName.AbpZeroTemplate.Editions.Dto
+namespace Helios.Editions.Dto
 {
 	//Mapped in CustomDtoMapper
 	public class FeatureInputTypeDto

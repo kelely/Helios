@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using MyCompanyName.AbpZeroTemplate.Organizations.Dto;
+using Helios.Organizations.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
     public class GetUserForEditOutput
     {

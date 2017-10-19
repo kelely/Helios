@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Dto
+﻿namespace Helios.Dto
 {
     public class PagedSortedAndFilteredInputDto : PagedAndSortedInputDto
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace MyCompanyName.AbpZeroTemplate.Localization
+namespace Helios.Localization
 {
     public static class FamFamFamFlagsHelper
     {

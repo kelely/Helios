@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using Abp.UI;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.Authorization.Users.Dto;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Authorization.Users
+namespace Helios.Tests.Authorization.Users
 {
     public class UserAppService_Update_Tests : UserAppServiceTestBase
     {

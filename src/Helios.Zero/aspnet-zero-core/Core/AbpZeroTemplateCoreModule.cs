@@ -12,26 +12,26 @@ using Abp.Net.Mail.Smtp;
 using Abp.Zero;
 using Abp.Zero.Configuration;
 using Castle.MicroKernel.Registration;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Chat;
-using MyCompanyName.AbpZeroTemplate.Configuration;
-using MyCompanyName.AbpZeroTemplate.Debugging;
-using MyCompanyName.AbpZeroTemplate.Emailing;
-using MyCompanyName.AbpZeroTemplate.Features;
-using MyCompanyName.AbpZeroTemplate.Friendships;
-using MyCompanyName.AbpZeroTemplate.Friendships.Cache;
-using MyCompanyName.AbpZeroTemplate.Localization;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Cache;
-using MyCompanyName.AbpZeroTemplate.Notifications;
-using MyCompanyName.AbpZeroTemplate.Timing;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.Chat;
+using Helios.Configuration;
+using Helios.Debugging;
+using Helios.Emailing;
+using Helios.Features;
+using Helios.Friendships;
+using Helios.Friendships.Cache;
+using Helios.Localization;
+using Helios.MultiTenancy;
+using Helios.MultiTenancy.Payments.Cache;
+using Helios.Notifications;
+using Helios.Timing;
 
 #if FEATURE_LDAP
 using Abp.Zero.Ldap;
 #endif
 
-namespace MyCompanyName.AbpZeroTemplate
+namespace Helios
 {
     [DependsOn(
         typeof(AbpZeroCoreModule),

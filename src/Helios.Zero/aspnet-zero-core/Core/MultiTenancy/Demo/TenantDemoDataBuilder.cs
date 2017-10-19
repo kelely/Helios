@@ -9,14 +9,14 @@ using Abp.Dependency;
 using Abp.Domain.Repositories;
 using Abp.Organizations;
 using Microsoft.Extensions.Configuration;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Chat;
-using MyCompanyName.AbpZeroTemplate.Configuration;
-using MyCompanyName.AbpZeroTemplate.Friendships;
-using MyCompanyName.AbpZeroTemplate.Storage;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.Chat;
+using Helios.Configuration;
+using Helios.Friendships;
+using Helios.Storage;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Demo
+namespace Helios.MultiTenancy.Demo
 {
     /// <summary>
     /// Used to build demo data for new tenants.

@@ -1,6 +1,6 @@
-﻿using MyCompanyName.AbpZeroTemplate.Dto;
+﻿using Helios.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Common.Dto
+namespace Helios.Common.Dto
 {
     public class FindUsersInput : PagedAndFilteredInputDto
     {

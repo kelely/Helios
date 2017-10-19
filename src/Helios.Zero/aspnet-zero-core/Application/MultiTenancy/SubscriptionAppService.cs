@@ -1,9 +1,9 @@
 using System;
 using System.Threading.Tasks;
 using Abp.Runtime.Session;
-using MyCompanyName.AbpZeroTemplate.Editions;
+using Helios.Editions;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy
+namespace Helios.MultiTenancy
 {
     public class SubscriptionAppService : AbpZeroTemplateAppServiceBase, ISubscriptionAppService
     {

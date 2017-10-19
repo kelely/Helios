@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using MyCompanyName.AbpZeroTemplate.Sessions.Dto;
+using Helios.Sessions.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Sessions
+namespace Helios.Sessions
 {
     public interface ISessionAppService : IApplicationService
     {

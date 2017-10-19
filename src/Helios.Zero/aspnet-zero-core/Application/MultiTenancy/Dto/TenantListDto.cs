@@ -4,7 +4,7 @@ using Abp.AutoMapper;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto
+namespace Helios.MultiTenancy.Dto
 {
     [AutoMapFrom(typeof (Tenant))]
     public class TenantListDto : EntityDto, IPassivable, IHasCreationTime

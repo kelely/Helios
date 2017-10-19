@@ -20,17 +20,17 @@ using Abp.Zero.Configuration;
 using Castle.Components.DictionaryAdapter;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization.Permissions;
-using MyCompanyName.AbpZeroTemplate.Authorization.Permissions.Dto;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Exporting;
-using MyCompanyName.AbpZeroTemplate.Dto;
-using MyCompanyName.AbpZeroTemplate.Notifications;
-using MyCompanyName.AbpZeroTemplate.Url;
-using MyCompanyName.AbpZeroTemplate.Organizations.Dto;
+using Helios.Authorization.Permissions;
+using Helios.Authorization.Permissions.Dto;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users.Dto;
+using Helios.Authorization.Users.Exporting;
+using Helios.Dto;
+using Helios.Notifications;
+using Helios.Url;
+using Helios.Organizations.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Users)]
     public class UserAppService : AbpZeroTemplateAppServiceBase, IUserAppService

@@ -1,8 +1,8 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
+using Helios.MultiTenancy;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Accounts.Dto
+namespace Helios.Authorization.Accounts.Dto
 {
     [AutoMapFrom(typeof(Tenant))]
     public class CurrentTenantInfoDto : EntityDto

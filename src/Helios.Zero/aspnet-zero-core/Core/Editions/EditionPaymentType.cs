@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Editions
+﻿namespace Helios.Editions
 {
     public enum EditionPaymentType
     {

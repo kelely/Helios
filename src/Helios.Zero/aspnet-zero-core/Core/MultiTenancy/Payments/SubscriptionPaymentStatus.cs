@@ -1,4 +1,4 @@
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public enum SubscriptionPaymentStatus
     {

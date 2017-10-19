@@ -1,7 +1,7 @@
 ﻿using System;
 using Abp.Application.Services.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public class LinkedUserDto : EntityDto<long>
     {

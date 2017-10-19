@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using MyCompanyName.AbpZeroTemplate.Configuration.Host.Dto;
+using Helios.Configuration.Host.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Configuration.Host
+namespace Helios.Configuration.Host
 {
     public interface IHostSettingsAppService : IApplicationService
     {

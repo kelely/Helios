@@ -1,6 +1,6 @@
 ﻿using Abp;
 
-namespace MyCompanyName.AbpZeroTemplate.Friendships
+namespace Helios.Friendships
 {
     public static class FriendshipExtensions
     {

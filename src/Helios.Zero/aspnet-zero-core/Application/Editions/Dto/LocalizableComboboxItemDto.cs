@@ -1,4 +1,4 @@
-namespace MyCompanyName.AbpZeroTemplate.Editions.Dto
+namespace Helios.Editions.Dto
 {
 	//Mapped in CustomDtoMapper
 	public class LocalizableComboboxItemDto

@@ -1,7 +1,7 @@
 ﻿using Abp.Application.Features;
 using Abp.Localization;
 
-namespace MyCompanyName.AbpZeroTemplate.Features
+namespace Helios.Features
 {
     public static class FeatureExtensions
     {

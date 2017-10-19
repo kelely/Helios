@@ -1,6 +1,6 @@
 ﻿using Microsoft.Extensions.Configuration;
 
-namespace MyCompanyName.AbpZeroTemplate.Configuration
+namespace Helios.Configuration
 {
     public interface IAppConfigurationAccessor
     {

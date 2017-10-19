@@ -3,7 +3,7 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto
+namespace Helios.MultiTenancy.Dto
 {
     public class CreateTenantInput
     {

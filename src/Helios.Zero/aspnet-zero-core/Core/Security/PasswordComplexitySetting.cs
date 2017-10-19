@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Security
+﻿namespace Helios.Security
 {
     public class PasswordComplexitySetting
     {

@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Abp.Application.Services;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile.Dto;
+using Helios.Authorization.Users.Dto;
+using Helios.Authorization.Users.Profile.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile
+namespace Helios.Authorization.Users.Profile
 {
     public interface IProfileAppService : IApplicationService
     {

@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Accounting.Dto
+namespace Helios.MultiTenancy.Accounting.Dto
 {
     public class InvoiceDto
     {

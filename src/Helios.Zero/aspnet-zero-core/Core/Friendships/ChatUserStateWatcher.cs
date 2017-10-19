@@ -2,10 +2,10 @@
 using Abp;
 using Abp.Dependency;
 using Abp.RealTime;
-using MyCompanyName.AbpZeroTemplate.Chat;
-using MyCompanyName.AbpZeroTemplate.Friendships.Cache;
+using Helios.Chat;
+using Helios.Friendships.Cache;
 
-namespace MyCompanyName.AbpZeroTemplate.Friendships
+namespace Helios.Friendships
 {
     public class ChatUserStateWatcher : ISingletonDependency
     {

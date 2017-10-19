@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Sessions.Dto
+﻿namespace Helios.Sessions.Dto
 {
     public class UpdateUserSignInTokenOutput
     {

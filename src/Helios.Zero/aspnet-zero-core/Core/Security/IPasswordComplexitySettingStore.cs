@@ -1,6 +1,6 @@
 ﻿using System.Threading.Tasks;
 
-namespace MyCompanyName.AbpZeroTemplate.Security
+namespace Helios.Security
 {
     public interface IPasswordComplexitySettingStore
     {

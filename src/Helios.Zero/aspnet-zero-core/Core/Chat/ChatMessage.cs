@@ -7,7 +7,7 @@ using Abp.Domain.Entities.Auditing;
 using Abp.Events.Bus;
 using Abp.Timing;
 
-namespace MyCompanyName.AbpZeroTemplate.Chat
+namespace Helios.Chat
 {
     [Table("AppChatMessages")]
     public class ChatMessage : Entity<long>, IHasCreationTime, IMayHaveTenant

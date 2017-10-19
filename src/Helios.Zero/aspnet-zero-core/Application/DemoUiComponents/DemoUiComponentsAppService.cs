@@ -3,10 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using Abp;
 using Abp.Authorization;
-using MyCompanyName.AbpZeroTemplate.Authorization;
-using MyCompanyName.AbpZeroTemplate.DemoUiComponents.Dto;
+using Helios.Authorization;
+using Helios.DemoUiComponents.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.DemoUiComponents
+namespace Helios.DemoUiComponents
 {
     [AbpAuthorize(AppPermissions.Pages_DemoUiComponents)]
     public class DemoUiComponentsAppService : AbpZeroTemplateAppServiceBase, IDemoUiComponentsAppService

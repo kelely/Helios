@@ -14,17 +14,17 @@ using Abp.Runtime.Session;
 using Abp.Timing;
 using Abp.UI;
 using Abp.Zero.Configuration;
-using MyCompanyName.AbpZeroTemplate.Authentication.TwoFactor.Google;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile.Cache;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile.Dto;
-using MyCompanyName.AbpZeroTemplate.Friendships;
-using MyCompanyName.AbpZeroTemplate.Identity;
-using MyCompanyName.AbpZeroTemplate.Security;
-using MyCompanyName.AbpZeroTemplate.Storage;
-using MyCompanyName.AbpZeroTemplate.Timing;
+using Helios.Authentication.TwoFactor.Google;
+using Helios.Authorization.Users.Dto;
+using Helios.Authorization.Users.Profile.Cache;
+using Helios.Authorization.Users.Profile.Dto;
+using Helios.Friendships;
+using Helios.Identity;
+using Helios.Security;
+using Helios.Storage;
+using Helios.Timing;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile
+namespace Helios.Authorization.Users.Profile
 {
     [AbpAuthorize]
     public class ProfileAppService : AbpZeroTemplateAppServiceBase, IProfileAppService
@@ -62,7 +62,7 @@ namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile
             var userProfileEditDto = ObjectMapper.Map<CurrentUserProfileEditDto>(user);
 
             userProfileEditDto.QrCodeSetupImageUrl = user.GoogleAuthenticatorKey != null
-                ? _googleTwoFactorAuthenticateService.GenerateSetupCode("MyCompanyName.AbpZeroTemplate",
+                ? _googleTwoFactorAuthenticateService.GenerateSetupCode("Helios",
                     user.EmailAddress, user.GoogleAuthenticatorKey, 300, 300).QrCodeSetupImageUrl
                 : "";
             userProfileEditDto.IsGoogleAuthenticatorEnabled = user.GoogleAuthenticatorKey != null;
@@ -89,7 +89,7 @@ namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile
 
             return new UpdateGoogleAuthenticatorKeyOutput
             {
-                QrCodeSetupImageUrl = _googleTwoFactorAuthenticateService.GenerateSetupCode("MyCompanyName.AbpZeroTemplate",
+                QrCodeSetupImageUrl = _googleTwoFactorAuthenticateService.GenerateSetupCode("Helios",
                     user.EmailAddress, user.GoogleAuthenticatorKey, 300, 300).QrCodeSetupImageUrl
             };
         }

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using Abp.Application.Services.Dto;
-using MyCompanyName.AbpZeroTemplate.Editions.Dto;
+using Helios.Editions.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto
+namespace Helios.MultiTenancy.Dto
 {
     public class GetTenantFeaturesEditOutput
     {

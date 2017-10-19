@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Abp.Dependency;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Accounting
+namespace Helios.MultiTenancy.Accounting
 {
     public interface IInvoiceNumberGenerator : ITransientDependency
     {

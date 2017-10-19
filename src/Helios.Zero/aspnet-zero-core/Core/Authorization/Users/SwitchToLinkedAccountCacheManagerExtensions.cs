@@ -1,6 +1,6 @@
 ﻿using Abp.Runtime.Caching;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public static class SwitchToLinkedAccountCacheManagerExtensions
     {

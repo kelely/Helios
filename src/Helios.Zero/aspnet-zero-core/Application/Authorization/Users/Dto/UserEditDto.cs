@@ -3,7 +3,7 @@ using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.Domain.Entities;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
     //Mapped to/from User in CustomDtoMapper
     public class UserEditDto : IPassivable

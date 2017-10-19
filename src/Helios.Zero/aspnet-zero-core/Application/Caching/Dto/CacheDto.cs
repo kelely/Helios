@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Caching.Dto
+﻿namespace Helios.Caching.Dto
 {
     public class CacheDto
     {

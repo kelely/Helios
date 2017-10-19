@@ -6,11 +6,11 @@ using Abp.MultiTenancy;
 using Abp.RealTime;
 using Abp.Runtime.Session;
 using Abp.UI;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Chat;
-using MyCompanyName.AbpZeroTemplate.Friendships.Dto;
+using Helios.Authorization.Users;
+using Helios.Chat;
+using Helios.Friendships.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Friendships
+namespace Helios.Friendships
 {
     [AbpAuthorize]
     public class FriendshipAppService : AbpZeroTemplateAppServiceBase, IFriendshipAppService

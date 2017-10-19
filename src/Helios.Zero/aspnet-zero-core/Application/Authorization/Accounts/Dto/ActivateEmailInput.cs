@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Accounts.Dto
+namespace Helios.Authorization.Accounts.Dto
 {
     public class ActivateEmailInput
     {

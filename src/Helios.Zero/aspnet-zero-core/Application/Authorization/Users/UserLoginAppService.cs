@@ -8,9 +8,9 @@ using Abp.Authorization.Users;
 using Abp.Domain.Repositories;
 using Abp.Runtime.Session;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto;
+using Helios.Authorization.Users.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     [AbpAuthorize]
     public class UserLoginAppService : AbpZeroTemplateAppServiceBase, IUserLoginAppService

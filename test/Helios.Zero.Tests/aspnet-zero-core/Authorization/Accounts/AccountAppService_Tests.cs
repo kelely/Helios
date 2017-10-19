@@ -1,12 +1,12 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using MyCompanyName.AbpZeroTemplate.Authorization.Accounts;
-using MyCompanyName.AbpZeroTemplate.Authorization.Accounts.Dto;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
+using Helios.Authorization.Accounts;
+using Helios.Authorization.Accounts.Dto;
+using Helios.MultiTenancy;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Authorization.Accounts
+namespace Helios.Tests.Authorization.Accounts
 {
     public class AccountAppService_Tests : AppTestBase
     {

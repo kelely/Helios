@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.Localization;
 
-namespace MyCompanyName.AbpZeroTemplate.Localization.Dto
+namespace Helios.Localization.Dto
 {
     public class UpdateLanguageTextInput
     {

@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Features
+﻿namespace Helios.Features
 {
     public static class AppFeatures
     {

@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Abp.Dependency;
 using Abp.Domain.Repositories;
 
-namespace MyCompanyName.AbpZeroTemplate.Storage
+namespace Helios.Storage
 {
     public class DbBinaryObjectManager : IBinaryObjectManager, ITransientDependency
     {

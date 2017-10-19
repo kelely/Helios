@@ -3,9 +3,9 @@ using Abp.Application.Features;
 using Abp.Domain.Repositories;
 using Abp.Extensions;
 using Abp.UI;
-using MyCompanyName.AbpZeroTemplate.Features;
+using Helios.Features;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public class UserPolicy : AbpZeroTemplateServiceBase, IUserPolicy
     {

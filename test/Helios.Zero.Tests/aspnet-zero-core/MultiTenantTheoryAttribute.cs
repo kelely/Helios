@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests
+namespace Helios.Tests
 {
     public sealed class MultiTenantTheoryAttribute : TheoryAttribute
     {

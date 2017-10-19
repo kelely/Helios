@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using MyCompanyName.AbpZeroTemplate.Sessions;
+using Helios.Sessions;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Sessions
+namespace Helios.Tests.Sessions
 {
     public class SessionAppService_Tests : AppTestBase
     {

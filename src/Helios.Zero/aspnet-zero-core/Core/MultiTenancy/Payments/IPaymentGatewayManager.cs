@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using System.Threading.Tasks;
-using MyCompanyName.AbpZeroTemplate.Editions;
+using Helios.Editions;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public interface IPaymentGatewayManager
     {

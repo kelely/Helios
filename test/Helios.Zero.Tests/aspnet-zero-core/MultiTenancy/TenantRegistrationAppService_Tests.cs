@@ -3,17 +3,17 @@ using System.Threading.Tasks;
 using Abp.Timing;
 using Castle.MicroKernel.Registration;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Editions;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Cache;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Dto;
+using Helios.Editions;
+using Helios.MultiTenancy;
+using Helios.MultiTenancy.Dto;
+using Helios.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments.Cache;
+using Helios.MultiTenancy.Payments.Dto;
 using NSubstitute;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.MultiTenancy
+namespace Helios.Tests.MultiTenancy
 {
     public class TenantRegistrationAppService_Tests : AppTestBase
     {

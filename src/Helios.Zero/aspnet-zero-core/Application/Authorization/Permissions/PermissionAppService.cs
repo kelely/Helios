@@ -2,9 +2,9 @@
 using System.Linq;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
-using MyCompanyName.AbpZeroTemplate.Authorization.Permissions.Dto;
+using Helios.Authorization.Permissions.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Permissions
+namespace Helios.Authorization.Permissions
 {
     public class PermissionAppService : AbpZeroTemplateAppServiceBase, IPermissionAppService
     {

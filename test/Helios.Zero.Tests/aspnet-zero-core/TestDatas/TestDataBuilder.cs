@@ -1,6 +1,6 @@
-﻿using MyCompanyName.AbpZeroTemplate.EntityFrameworkCore;
+﻿using Helios.EntityFrameworkCore;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.TestDatas
+namespace Helios.Tests.TestDatas
 {
     public class TestDataBuilder
     {

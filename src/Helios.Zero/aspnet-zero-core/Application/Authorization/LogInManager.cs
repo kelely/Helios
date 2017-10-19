@@ -7,11 +7,11 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Zero.Configuration;
 using Microsoft.AspNetCore.Identity;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization
+namespace Helios.Authorization
 {
     public class LogInManager : AbpLogInManager<Tenant, Role, User>
     {

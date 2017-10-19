@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Identity;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile.Dto;
+using Helios.Authorization.Users;
+using Helios.Authorization.Users.Profile;
+using Helios.Authorization.Users.Profile.Dto;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Authorization.Users
+namespace Helios.Tests.Authorization.Users
 {
     public class ProfileAppService_Tests : AppTestBase
     {

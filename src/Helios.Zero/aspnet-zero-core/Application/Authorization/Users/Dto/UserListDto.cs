@@ -6,7 +6,7 @@ using Abp.AutoMapper;
 using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
     [AutoMapFrom(typeof(User))]
     public class UserListDto : EntityDto<long>, IPassivable, IHasCreationTime

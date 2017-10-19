@@ -3,7 +3,7 @@ using Abp.Configuration;
 using Abp.Dependency;
 using Abp.Zero.Configuration;
 
-namespace MyCompanyName.AbpZeroTemplate.Security
+namespace Helios.Security
 {
     public class PasswordComplexitySettingStore : IPasswordComplexitySettingStore, ITransientDependency
     {

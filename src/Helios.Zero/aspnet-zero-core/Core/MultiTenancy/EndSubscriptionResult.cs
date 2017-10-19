@@ -1,4 +1,4 @@
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy
+namespace Helios.MultiTenancy
 {
     public enum EndSubscriptionResult
     {

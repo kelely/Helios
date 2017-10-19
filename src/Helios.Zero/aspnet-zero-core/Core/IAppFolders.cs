@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate
+﻿namespace Helios
 {
     public interface IAppFolders
     {

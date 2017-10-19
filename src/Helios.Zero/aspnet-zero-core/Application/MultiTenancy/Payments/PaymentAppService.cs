@@ -6,19 +6,19 @@ using System.Threading.Tasks;
 using Abp.Authorization;
 using Abp.Runtime.Session;
 using Abp.UI;
-using MyCompanyName.AbpZeroTemplate.Authorization;
-using MyCompanyName.AbpZeroTemplate.Editions;
-using MyCompanyName.AbpZeroTemplate.Editions.Dto;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Cache;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Dto;
+using Helios.Authorization;
+using Helios.Editions;
+using Helios.Editions.Dto;
+using Helios.MultiTenancy.Dto;
+using Helios.MultiTenancy.Payments.Cache;
+using Helios.MultiTenancy.Payments.Dto;
 using Abp.Application.Services.Dto;
 using Microsoft.EntityFrameworkCore;
 using System.Linq.Dynamic.Core;
 using Abp.Domain.Repositories;
 using Abp.Linq.Extensions;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public class PaymentAppService : AbpZeroTemplateAppServiceBase, IPaymentAppService
     {

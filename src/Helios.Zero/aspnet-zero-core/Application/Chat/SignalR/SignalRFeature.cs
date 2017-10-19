@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Chat.SignalR
+﻿namespace Helios.Chat.SignalR
 {
     public static class SignalRFeature
     {

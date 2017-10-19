@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.HostDashboard.Dto;
+using Helios.MultiTenancy.HostDashboard.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.HostDashboard
+namespace Helios.MultiTenancy.HostDashboard
 {
     public interface IHostDashboardAppService : IApplicationService
     {

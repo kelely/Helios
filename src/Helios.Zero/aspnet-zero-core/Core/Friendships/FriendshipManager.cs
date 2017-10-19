@@ -5,7 +5,7 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.UI;
 
-namespace MyCompanyName.AbpZeroTemplate.Friendships
+namespace Helios.Friendships
 {
     public class FriendshipManager : AbpZeroTemplateDomainServiceBase, IFriendshipManager
     {

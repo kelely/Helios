@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyCompanyName.AbpZeroTemplate.Url
+namespace Helios.Url
 {
     public class NullAppUrlService : IAppUrlService
     {

@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Url
+﻿namespace Helios.Url
 {
     public interface IAppUrlService
     {

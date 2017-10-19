@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace MyCompanyName.AbpZeroTemplate.Chat.Dto
+namespace Helios.Chat.Dto
 {
     public class GetUserChatMessagesInput
     {

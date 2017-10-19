@@ -3,7 +3,7 @@ using Abp.Localization;
 using Abp.Runtime.Validation;
 using Abp.UI.Inputs;
 
-namespace MyCompanyName.AbpZeroTemplate.Features
+namespace Helios.Features
 {
     public class AppFeatureProvider : FeatureProvider
     {

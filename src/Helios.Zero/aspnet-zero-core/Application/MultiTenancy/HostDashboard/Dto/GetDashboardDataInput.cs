@@ -1,6 +1,6 @@
 ﻿using Abp.Runtime.Validation;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.HostDashboard.Dto
+namespace Helios.MultiTenancy.HostDashboard.Dto
 {
     public class GetDashboardDataInput : DashboardInputBase, IShouldNormalize
     {

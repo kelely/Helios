@@ -7,11 +7,11 @@ using Abp.Auditing;
 using Abp.MultiTenancy;
 using Abp.Runtime.Session;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Chat.SignalR;
-using MyCompanyName.AbpZeroTemplate.Editions;
-using MyCompanyName.AbpZeroTemplate.Sessions.Dto;
+using Helios.Chat.SignalR;
+using Helios.Editions;
+using Helios.Sessions.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Sessions
+namespace Helios.Sessions
 {
     public class SessionAppService : AbpZeroTemplateAppServiceBase, ISessionAppService
     {

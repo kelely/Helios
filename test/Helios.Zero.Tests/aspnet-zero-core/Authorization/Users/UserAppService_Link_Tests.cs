@@ -4,12 +4,12 @@ using Abp.Authorization.Users;
 using Abp.Domain.Uow;
 using Abp.Runtime.Security;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
+using Helios.Authorization.Users;
+using Helios.Authorization.Users.Dto;
+using Helios.MultiTenancy;
 using Shouldly;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Authorization.Users
+namespace Helios.Tests.Authorization.Users
 {
     public class UserAppService_Link_Tests : UserAppServiceTestBase
     {

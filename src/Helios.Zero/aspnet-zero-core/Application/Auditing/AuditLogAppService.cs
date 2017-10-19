@@ -9,13 +9,13 @@ using Abp.Domain.Repositories;
 using Abp.Extensions;
 using Abp.Linq.Extensions;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Auditing.Dto;
-using MyCompanyName.AbpZeroTemplate.Auditing.Exporting;
-using MyCompanyName.AbpZeroTemplate.Authorization;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Dto;
+using Helios.Auditing.Dto;
+using Helios.Auditing.Exporting;
+using Helios.Authorization;
+using Helios.Authorization.Users;
+using Helios.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Auditing
+namespace Helios.Auditing
 {
     [DisableAuditing]
     [AbpAuthorize(AppPermissions.Pages_Administration_AuditLogs)]

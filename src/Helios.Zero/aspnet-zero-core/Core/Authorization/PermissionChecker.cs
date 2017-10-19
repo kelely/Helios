@@ -1,8 +1,8 @@
 ﻿using Abp.Authorization;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization
+namespace Helios.Authorization
 {
     public class PermissionChecker : PermissionChecker<Role, User>
     {

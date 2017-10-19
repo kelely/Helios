@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Threading.Tasks;
 
-namespace MyCompanyName.AbpZeroTemplate.Storage
+namespace Helios.Storage
 {
     public interface IBinaryObjectManager
     {

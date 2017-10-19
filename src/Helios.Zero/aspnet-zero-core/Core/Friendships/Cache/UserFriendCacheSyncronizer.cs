@@ -4,9 +4,9 @@ using Abp.Dependency;
 using Abp.Events.Bus.Entities;
 using Abp.Events.Bus.Handlers;
 using Abp.ObjectMapping;
-using MyCompanyName.AbpZeroTemplate.Chat;
+using Helios.Chat;
 
-namespace MyCompanyName.AbpZeroTemplate.Friendships.Cache
+namespace Helios.Friendships.Cache
 {
     public class UserFriendCacheSyncronizer :
         IEventHandler<EntityCreatedEventData<Friendship>>,

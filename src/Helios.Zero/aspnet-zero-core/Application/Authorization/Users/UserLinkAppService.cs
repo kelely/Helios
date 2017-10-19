@@ -11,10 +11,10 @@ using Abp.Domain.Repositories;
 using Abp.Runtime.Session;
 using Abp.UI;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
+using Helios.Authorization.Users.Dto;
+using Helios.MultiTenancy;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     [AbpAuthorize]
     public class UserLinkAppService : AbpZeroTemplateAppServiceBase, IUserLinkAppService

@@ -1,10 +1,10 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using MyCompanyName.AbpZeroTemplate.Auditing.Dto;
-using MyCompanyName.AbpZeroTemplate.Dto;
+using Helios.Auditing.Dto;
+using Helios.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Auditing
+namespace Helios.Auditing
 {
     public interface IAuditLogAppService : IApplicationService
     {

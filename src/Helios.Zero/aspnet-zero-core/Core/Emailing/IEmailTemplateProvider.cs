@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Emailing
+﻿namespace Helios.Emailing
 {
     public interface IEmailTemplateProvider
     {

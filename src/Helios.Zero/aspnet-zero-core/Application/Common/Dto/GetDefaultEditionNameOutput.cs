@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Common.Dto
+﻿namespace Helios.Common.Dto
 {
     public class GetDefaultEditionNameOutput
     {

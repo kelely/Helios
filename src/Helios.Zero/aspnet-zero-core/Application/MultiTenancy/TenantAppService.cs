@@ -11,12 +11,12 @@ using Abp.Extensions;
 using Abp.Linq.Extensions;
 using Abp.Runtime.Security;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization;
-using MyCompanyName.AbpZeroTemplate.Editions.Dto;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto;
-using MyCompanyName.AbpZeroTemplate.Url;
+using Helios.Authorization;
+using Helios.Editions.Dto;
+using Helios.MultiTenancy.Dto;
+using Helios.Url;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy
+namespace Helios.MultiTenancy
 {
     [AbpAuthorize(AppPermissions.Pages_Tenants)]
     public class TenantAppService : AbpZeroTemplateAppServiceBase, ITenantAppService

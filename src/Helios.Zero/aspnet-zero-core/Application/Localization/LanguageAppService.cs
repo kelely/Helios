@@ -11,10 +11,10 @@ using Abp.Domain.Repositories;
 using Abp.Extensions;
 using Abp.Localization;
 using Abp.UI;
-using MyCompanyName.AbpZeroTemplate.Authorization;
-using MyCompanyName.AbpZeroTemplate.Localization.Dto;
+using Helios.Authorization;
+using Helios.Localization.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Localization
+namespace Helios.Localization
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Languages)]
     public class LanguageAppService : AbpZeroTemplateAppServiceBase, ILanguageAppService

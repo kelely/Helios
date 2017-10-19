@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto;
-using MyCompanyName.AbpZeroTemplate.Dto;
+using Helios.Authorization.Users.Dto;
+using Helios.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Exporting
+namespace Helios.Authorization.Users.Exporting
 {
     public interface IUserListExcelExporter
     {

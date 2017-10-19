@@ -12,21 +12,21 @@ using Abp.Runtime.Session;
 using Abp.Timing;
 using Abp.UI;
 using Abp.Zero.Configuration;
-using MyCompanyName.AbpZeroTemplate.Configuration;
-using MyCompanyName.AbpZeroTemplate.Debugging;
-using MyCompanyName.AbpZeroTemplate.Editions;
-using MyCompanyName.AbpZeroTemplate.Editions.Dto;
-using MyCompanyName.AbpZeroTemplate.Features;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Cache;
-using MyCompanyName.AbpZeroTemplate.Notifications;
-using MyCompanyName.AbpZeroTemplate.Security.Recaptcha;
-using MyCompanyName.AbpZeroTemplate.Url;
+using Helios.Configuration;
+using Helios.Debugging;
+using Helios.Editions;
+using Helios.Editions.Dto;
+using Helios.Features;
+using Helios.MultiTenancy.Dto;
+using Helios.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments.Cache;
+using Helios.Notifications;
+using Helios.Security.Recaptcha;
+using Helios.Url;
 using Abp.Extensions;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Dto;
+using Helios.MultiTenancy.Payments.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy
+namespace Helios.MultiTenancy
 {
     public class TenantRegistrationAppService : AbpZeroTemplateAppServiceBase, ITenantRegistrationAppService
     {

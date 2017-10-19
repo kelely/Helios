@@ -1,6 +1,6 @@
 using Abp;
 
-namespace MyCompanyName.AbpZeroTemplate.Chat.Dto
+namespace Helios.Chat.Dto
 {
     public class MarkAllUnreadMessagesOfUserAsReadInput
     {

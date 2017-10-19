@@ -1,10 +1,10 @@
 ﻿using System;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.Friendships;
+using Helios.Authorization.Users;
+using Helios.Friendships;
 
-namespace MyCompanyName.AbpZeroTemplate.Chat.Dto
+namespace Helios.Chat.Dto
 {
     [AutoMapFrom(typeof(User))]
     public class ChatUserDto : EntityDto<long>

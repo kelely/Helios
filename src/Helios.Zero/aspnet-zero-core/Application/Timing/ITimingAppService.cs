@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using MyCompanyName.AbpZeroTemplate.Timing.Dto;
+using Helios.Timing.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Timing
+namespace Helios.Timing
 {
     public interface ITimingAppService : IApplicationService
     {

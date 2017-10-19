@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace MyCompanyName.AbpZeroTemplate.Friendships.Dto
+namespace Helios.Friendships.Dto
 {
     public class CreateFriendshipRequestInput
     {

@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Dto
+﻿namespace Helios.MultiTenancy.Payments.Dto
 {
     public enum SubscriptionStartType
     {

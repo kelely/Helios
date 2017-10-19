@@ -3,9 +3,9 @@ using Abp.Configuration;
 using Abp.Localization;
 using Abp.Net.Mail;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.EntityFrameworkCore;
+using Helios.EntityFrameworkCore;
 
-namespace MyCompanyName.AbpZeroTemplate.Migrations.Seed.Host
+namespace Helios.Migrations.Seed.Host
 {
     public class DefaultSettingsCreator
     {

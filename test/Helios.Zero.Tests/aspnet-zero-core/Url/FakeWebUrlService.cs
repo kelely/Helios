@@ -1,7 +1,7 @@
 using System.Collections.Generic;
-using MyCompanyName.AbpZeroTemplate.Url;
+using Helios.Url;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Url
+namespace Helios.Tests.Url
 {
     public class FakeWebUrlService : IWebUrlService
     {

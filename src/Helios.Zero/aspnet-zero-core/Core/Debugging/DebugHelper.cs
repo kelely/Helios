@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Debugging
+﻿namespace Helios.Debugging
 {
     public static class DebugHelper
     {

@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Auditing
+﻿namespace Helios.Auditing
 {
     public interface INamespaceStripper
     {

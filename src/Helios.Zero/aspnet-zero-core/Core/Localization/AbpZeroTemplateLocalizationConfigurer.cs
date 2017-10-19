@@ -4,7 +4,7 @@ using Abp.Localization.Dictionaries;
 using Abp.Localization.Dictionaries.Xml;
 using Abp.Reflection.Extensions;
 
-namespace MyCompanyName.AbpZeroTemplate.Localization
+namespace Helios.Localization
 {
     public static class AbpZeroTemplateLocalizationConfigurer
     {
@@ -15,7 +15,7 @@ namespace MyCompanyName.AbpZeroTemplate.Localization
                     AbpZeroTemplateConsts.LocalizationSourceName,
                     new XmlEmbeddedFileLocalizationDictionaryProvider(
                         typeof(AbpZeroTemplateLocalizationConfigurer).GetAssembly(),
-                        "MyCompanyName.AbpZeroTemplate.Localization.AbpZeroTemplate"
+                        "Helios.Localization.AbpZeroTemplate"
                     )
                 )
             );

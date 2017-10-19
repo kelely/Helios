@@ -1,4 +1,4 @@
-namespace MyCompanyName.AbpZeroTemplate.Friendships
+namespace Helios.Friendships
 {
     public enum FriendshipState
     {

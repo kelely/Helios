@@ -3,9 +3,9 @@ using Abp.Dependency;
 using Abp.Extensions;
 using Abp.IO.Extensions;
 using Abp.Reflection.Extensions;
-using MyCompanyName.AbpZeroTemplate.Url;
+using Helios.Url;
 
-namespace MyCompanyName.AbpZeroTemplate.Emailing
+namespace Helios.Emailing
 {
     public class EmailTemplateProvider : IEmailTemplateProvider, ITransientDependency
     {

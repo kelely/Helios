@@ -1,4 +1,4 @@
-namespace MyCompanyName.AbpZeroTemplate.Configuration.Host.Dto
+namespace Helios.Configuration.Host.Dto
 {
     public class TenantManagementSettingsEditDto
     {

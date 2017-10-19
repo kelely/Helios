@@ -1,6 +1,6 @@
 ﻿using Abp.Application.Services.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Dto
+namespace Helios.Dto
 {
     public class PagedAndSortedInputDto : PagedInputDto, ISortedResultRequest
     {

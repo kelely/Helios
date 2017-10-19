@@ -1,6 +1,6 @@
 ﻿using Abp.Dependency;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public interface IPaymentGatewayManagerFactory
     {

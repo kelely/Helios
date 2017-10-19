@@ -1,10 +1,10 @@
 ﻿#if FEATURE_LDAP
 using Abp.Zero.Ldap.Authentication;
 using Abp.Zero.Ldap.Configuration;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Ldap
+namespace Helios.Authorization.Ldap
 {
     public class AppLdapAuthenticationSource : LdapAuthenticationSource<Tenant, User>
     {

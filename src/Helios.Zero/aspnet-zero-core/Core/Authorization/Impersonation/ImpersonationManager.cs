@@ -6,9 +6,9 @@ using Abp.Runtime.Caching;
 using Abp.Runtime.Security;
 using Abp.Runtime.Session;
 using Abp.UI;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Impersonation
+namespace Helios.Authorization.Impersonation
 {
     public class ImpersonationManager : AbpZeroTemplateDomainServiceBase, IImpersonationManager
     {

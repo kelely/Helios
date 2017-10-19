@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Abp.Configuration;
 
-namespace MyCompanyName.AbpZeroTemplate.Timing
+namespace Helios.Timing
 {
     public interface ITimeZoneService
     {

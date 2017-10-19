@@ -1,9 +1,9 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Application.Editions;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments;
 
-namespace MyCompanyName.AbpZeroTemplate.Editions
+namespace Helios.Editions
 {
     /// <summary>
     /// Extends <see cref="Edition"/> to add subscription features.

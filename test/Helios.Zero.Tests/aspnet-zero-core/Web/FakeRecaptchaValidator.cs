@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using MyCompanyName.AbpZeroTemplate.Security.Recaptcha;
+using Helios.Security.Recaptcha;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Web
+namespace Helios.Tests.Web
 {
     public class FakeRecaptchaValidator : IRecaptchaValidator
     {

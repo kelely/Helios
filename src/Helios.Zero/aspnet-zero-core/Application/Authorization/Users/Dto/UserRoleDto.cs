@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto
+﻿namespace Helios.Authorization.Users.Dto
 {
     public class UserRoleDto
     {

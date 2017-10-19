@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Chat
+﻿namespace Helios.Chat
 {
     public enum ChatSide
     {

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using MyCompanyName.AbpZeroTemplate.Auditing.Dto;
-using MyCompanyName.AbpZeroTemplate.Dto;
+using Helios.Auditing.Dto;
+using Helios.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Auditing.Exporting
+namespace Helios.Auditing.Exporting
 {
     public interface IAuditLogListExcelExporter
     {

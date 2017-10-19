@@ -1,4 +1,4 @@
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Accounting.Dto
+namespace Helios.MultiTenancy.Accounting.Dto
 {
     public class CreateInvoiceDto
     {

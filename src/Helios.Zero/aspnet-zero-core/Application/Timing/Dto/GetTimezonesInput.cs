@@ -1,6 +1,6 @@
 ﻿using Abp.Configuration;
 
-namespace MyCompanyName.AbpZeroTemplate.Timing.Dto
+namespace Helios.Timing.Dto
 {
     public class GetTimezonesInput
     {

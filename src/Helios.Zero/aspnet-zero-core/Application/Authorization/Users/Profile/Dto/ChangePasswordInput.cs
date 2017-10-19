@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.Auditing;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile.Dto
+namespace Helios.Authorization.Users.Profile.Dto
 {
     public class ChangePasswordInput
     {

@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace MyCompanyName.AbpZeroTemplate.Localization
+namespace Helios.Localization
 {
     public static class CultureHelper
     {

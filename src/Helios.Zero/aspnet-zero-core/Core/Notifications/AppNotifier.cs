@@ -2,10 +2,10 @@ using System.Threading.Tasks;
 using Abp;
 using Abp.Localization;
 using Abp.Notifications;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 
-namespace MyCompanyName.AbpZeroTemplate.Notifications
+namespace Helios.Notifications
 {
     public class AppNotifier : AbpZeroTemplateDomainServiceBase, IAppNotifier
     {

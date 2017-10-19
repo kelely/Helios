@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using MyCompanyName.AbpZeroTemplate.Authorization.Permissions.Dto;
+using Helios.Authorization.Permissions.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
     public class GetUserPermissionsForEditOutput
     {

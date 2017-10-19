@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile.Dto
+namespace Helios.Authorization.Users.Profile.Dto
 {
     public class GetFriendProfilePictureByIdInput
     {

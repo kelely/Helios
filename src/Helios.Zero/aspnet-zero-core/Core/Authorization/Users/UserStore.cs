@@ -2,9 +2,9 @@
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.Linq;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
+using Helios.Authorization.Roles;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     /// <summary>
     /// Used to perform database operations for <see cref="UserManager"/>.

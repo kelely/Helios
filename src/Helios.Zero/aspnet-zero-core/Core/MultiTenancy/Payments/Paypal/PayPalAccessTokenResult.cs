@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Payments.Paypal
+namespace Helios.MultiTenancy.Payments.Paypal
 {
     public class PayPalAccessTokenResult
     {

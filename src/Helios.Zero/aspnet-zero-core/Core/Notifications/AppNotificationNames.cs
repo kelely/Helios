@@ -1,4 +1,4 @@
-namespace MyCompanyName.AbpZeroTemplate.Notifications
+namespace Helios.Notifications
 {
     /// <summary>
     /// Constants for notification names used in this application.

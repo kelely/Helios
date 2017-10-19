@@ -1,6 +1,6 @@
-﻿using MyCompanyName.AbpZeroTemplate.EntityFrameworkCore;
+﻿using Helios.EntityFrameworkCore;
 
-namespace MyCompanyName.AbpZeroTemplate.Migrations.Seed.Host
+namespace Helios.Migrations.Seed.Host
 {
     public class InitialHostDbBuilder
     {

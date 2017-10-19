@@ -1,6 +1,6 @@
 ﻿using Abp.Dependency;
 
-namespace MyCompanyName.AbpZeroTemplate
+namespace Helios
 {
     public class AppFolders : IAppFolders, ISingletonDependency
     {

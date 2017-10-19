@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles;
-using MyCompanyName.AbpZeroTemplate.Authorization.Roles.Dto;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Roles.Dto;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Authorization.Roles
+namespace Helios.Tests.Authorization.Roles
 {
     public class RoleAppService_Tests : AppTestBase
     {

@@ -1,6 +1,6 @@
-﻿using MyCompanyName.AbpZeroTemplate.Url;
+﻿using Helios.Url;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Url
+namespace Helios.Tests.Url
 {
     public class FakeAppUrlService : IAppUrlService
     {

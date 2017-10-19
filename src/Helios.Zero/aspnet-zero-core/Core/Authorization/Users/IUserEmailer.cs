@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
-using MyCompanyName.AbpZeroTemplate.Chat;
+using Helios.Chat;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public interface IUserEmailer
     {

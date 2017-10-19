@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Dto
+namespace Helios.Dto
 {
     public class PagedInputDto : IPagedResultRequest
     {

@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using Abp.Reflection.Extensions;
 
-namespace MyCompanyName.AbpZeroTemplate.Web
+namespace Helios.Web
 {
     /// <summary>
     /// This class is used to find root path of the web project in;
@@ -16,11 +16,11 @@ namespace MyCompanyName.AbpZeroTemplate.Web
             var coreAssemblyDirectoryPath = Path.GetDirectoryName(typeof(AbpZeroTemplateCoreModule).GetAssembly().Location);
             if (coreAssemblyDirectoryPath == null)
             {
-                throw new Exception("Could not find location of MyCompanyName.AbpZeroTemplate.Core assembly!");
+                throw new Exception("Could not find location of Helios.Core assembly!");
             }
 
             var directoryInfo = new DirectoryInfo(coreAssemblyDirectoryPath);
-            while (!DirectoryContains(directoryInfo.FullName, "MyCompanyName.AbpZeroTemplate.sln"))
+            while (!DirectoryContains(directoryInfo.FullName, "Helios.sln"))
             {
                 if (directoryInfo.Parent == null)
                 {
@@ -30,13 +30,13 @@ namespace MyCompanyName.AbpZeroTemplate.Web
                 directoryInfo = directoryInfo.Parent;
             }
 
-            var webMvcFolder = Path.Combine(directoryInfo.FullName, $"src{Path.DirectorySeparatorChar}MyCompanyName.AbpZeroTemplate.Web.Mvc");
+            var webMvcFolder = Path.Combine(directoryInfo.FullName, $"src{Path.DirectorySeparatorChar}Helios.Web.Mvc");
             if (Directory.Exists(webMvcFolder))
             {
                 return webMvcFolder;
             }
 
-            var webHostFolder = Path.Combine(directoryInfo.FullName, $"src{Path.DirectorySeparatorChar}MyCompanyName.AbpZeroTemplate.Web.Host");
+            var webHostFolder = Path.Combine(directoryInfo.FullName, $"src{Path.DirectorySeparatorChar}Helios.Web.Host");
             if (Directory.Exists(webHostFolder))
             {
                 return webHostFolder;

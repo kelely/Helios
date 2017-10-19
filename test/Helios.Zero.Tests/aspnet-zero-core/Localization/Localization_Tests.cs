@@ -4,7 +4,7 @@ using Abp.Zero;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Localization
+namespace Helios.Tests.Localization
 {
     public class Localization_Tests : AppTestBase
     {

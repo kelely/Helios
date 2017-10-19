@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Authorization.Roles
+﻿namespace Helios.Authorization.Roles
 {
     public static class StaticRoleNames
     {

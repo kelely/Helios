@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using Castle.Components.DictionaryAdapter;
-using MyCompanyName.AbpZeroTemplate.Friendships.Dto;
+using Helios.Friendships.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Chat.Dto
+namespace Helios.Chat.Dto
 {
     public class GetUserChatFriendsWithSettingsOutput
     {

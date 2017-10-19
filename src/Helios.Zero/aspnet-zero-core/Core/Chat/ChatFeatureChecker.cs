@@ -1,9 +1,9 @@
 #if FEATURE_SIGNALR
 using Abp.Application.Features;
 using Abp.UI;
-using MyCompanyName.AbpZeroTemplate.Features;
+using Helios.Features;
 
-namespace MyCompanyName.AbpZeroTemplate.Chat
+namespace Helios.Chat
 {
     public class ChatFeatureChecker : AbpZeroTemplateDomainServiceBase, IChatFeatureChecker
     {

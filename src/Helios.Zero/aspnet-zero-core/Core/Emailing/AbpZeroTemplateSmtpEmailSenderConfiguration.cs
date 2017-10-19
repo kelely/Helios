@@ -3,7 +3,7 @@ using Abp.Net.Mail;
 using Abp.Net.Mail.Smtp;
 using Abp.Runtime.Security;
 
-namespace MyCompanyName.AbpZeroTemplate.Emailing
+namespace Helios.Emailing
 {
     public class AbpZeroTemplateSmtpEmailSenderConfiguration : SmtpEmailSenderConfiguration
     {

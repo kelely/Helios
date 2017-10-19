@@ -1,6 +1,6 @@
 using Abp.Application.Services.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Editions.Dto
+namespace Helios.Editions.Dto
 {
     public class SubscribableEditionComboboxItemDto : ComboboxItemDto
     {

@@ -5,7 +5,7 @@ using Abp.Dependency;
 using Abp.Timing;
 using Abp.Extensions;
 
-namespace MyCompanyName.AbpZeroTemplate.Timing
+namespace Helios.Timing
 {
     public class TimeZoneService : ITimeZoneService, ITransientDependency
     {

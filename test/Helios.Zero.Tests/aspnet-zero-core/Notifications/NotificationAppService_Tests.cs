@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using MyCompanyName.AbpZeroTemplate.Notifications;
+using Helios.Notifications;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Notifications
+namespace Helios.Tests.Notifications
 {
     public class NotificationAppService_Tests : AppTestBase
     {

@@ -3,7 +3,7 @@ using Abp.Application.Services.Dto;
 using Shouldly;
 using Xunit;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Authorization.Users
+namespace Helios.Tests.Authorization.Users
 {
     public class UserAppService_Delete_Tests : UserAppServiceTestBase
     {

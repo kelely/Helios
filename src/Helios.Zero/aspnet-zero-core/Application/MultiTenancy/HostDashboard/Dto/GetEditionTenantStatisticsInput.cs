@@ -1,6 +1,6 @@
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.HostDashboard.Dto;
+using Helios.MultiTenancy.HostDashboard.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.HostDashboard.Dto
+namespace Helios.MultiTenancy.HostDashboard.Dto
 {
     public class GetEditionTenantStatisticsInput : DashboardInputBase
     {

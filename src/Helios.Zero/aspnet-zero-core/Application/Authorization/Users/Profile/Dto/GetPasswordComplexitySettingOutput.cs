@@ -1,6 +1,6 @@
-﻿using MyCompanyName.AbpZeroTemplate.Security;
+﻿using Helios.Security;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Users.Profile.Dto
+namespace Helios.Authorization.Users.Profile.Dto
 {
     public class GetPasswordComplexitySettingOutput
     {

@@ -2,10 +2,10 @@
 using Abp.Configuration;
 using Abp.Net.Mail;
 using Abp.Runtime.Security;
-using MyCompanyName.AbpZeroTemplate.Configuration.Host;
+using Helios.Configuration.Host;
 using Shouldly;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.Configuration.Host
+namespace Helios.Tests.Configuration.Host
 {
     public class HostSettingsAppService_EmailSettings_Test : AppTestBase
     {

@@ -3,7 +3,7 @@ using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Domain.Entities.Auditing;
 
-namespace MyCompanyName.AbpZeroTemplate.Authorization.Roles.Dto
+namespace Helios.Authorization.Roles.Dto
 {
     [AutoMapFrom(typeof(Role))]
     public class RoleListDto : EntityDto, IHasCreationTime

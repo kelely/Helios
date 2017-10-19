@@ -1,8 +1,8 @@
 ﻿using Abp.Application.Services;
-using MyCompanyName.AbpZeroTemplate.Dto;
-using MyCompanyName.AbpZeroTemplate.Logging.Dto;
+using Helios.Dto;
+using Helios.Logging.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Logging
+namespace Helios.Logging
 {
     public interface IWebLogAppService : IApplicationService
     {

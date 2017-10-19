@@ -2,7 +2,7 @@
 using Abp.EntityFrameworkCore;
 using Abp.EntityFrameworkCore.Repositories;
 
-namespace MyCompanyName.AbpZeroTemplate.EntityFrameworkCore.Repositories
+namespace Helios.EntityFrameworkCore.Repositories
 {
     /// <summary>
     /// Base class for custom repositories of the application.

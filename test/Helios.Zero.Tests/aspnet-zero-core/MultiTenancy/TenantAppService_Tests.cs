@@ -4,13 +4,13 @@ using Abp.Application.Services.Dto;
 using Abp.MultiTenancy;
 using Abp.Zero.Configuration;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization.Users;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy;
-using MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto;
-using MyCompanyName.AbpZeroTemplate.Notifications;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
+using Helios.MultiTenancy.Dto;
+using Helios.Notifications;
 using Shouldly;
 
-namespace MyCompanyName.AbpZeroTemplate.Tests.MultiTenancy
+namespace Helios.Tests.MultiTenancy
 {
     public class TenantAppService_Tests : AppTestBase
     {

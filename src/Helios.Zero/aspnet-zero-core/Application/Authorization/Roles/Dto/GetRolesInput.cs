@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate.Authorization.Roles.Dto
+﻿namespace Helios.Authorization.Roles.Dto
 {
     public class GetRolesInput
     {

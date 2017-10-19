@@ -9,10 +9,10 @@ using Abp.Collections.Extensions;
 using Abp.Domain.Repositories;
 using Abp.UI;
 using Microsoft.EntityFrameworkCore;
-using MyCompanyName.AbpZeroTemplate.Authorization;
-using MyCompanyName.AbpZeroTemplate.Editions.Dto;
+using Helios.Authorization;
+using Helios.Editions.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.Editions
+namespace Helios.Editions
 {
     [AbpAuthorize(AppPermissions.Pages_Editions)]
     public class EditionAppService : AbpZeroTemplateAppServiceBase, IEditionAppService

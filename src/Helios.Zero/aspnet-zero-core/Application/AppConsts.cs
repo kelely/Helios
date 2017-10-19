@@ -1,4 +1,4 @@
-﻿namespace MyCompanyName.AbpZeroTemplate
+﻿namespace Helios
 {
     /// <summary>
     /// Some consts used in the application.

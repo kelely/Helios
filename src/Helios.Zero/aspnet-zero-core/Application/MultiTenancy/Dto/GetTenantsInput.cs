@@ -1,8 +1,8 @@
 ﻿using System;
 using Abp.Runtime.Validation;
-using MyCompanyName.AbpZeroTemplate.Dto;
+using Helios.Dto;
 
-namespace MyCompanyName.AbpZeroTemplate.MultiTenancy.Dto
+namespace Helios.MultiTenancy.Dto
 {
     public class GetTenantsInput : PagedAndSortedInputDto, IShouldNormalize
     {
