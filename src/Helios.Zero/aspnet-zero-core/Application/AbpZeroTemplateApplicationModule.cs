@@ -20,7 +20,7 @@ namespace MyCompanyName.AbpZeroTemplate
             Configuration.Authorization.Providers.Add<AppAuthorizationProvider>();
 
             //Adding custom AutoMapper configuration
-            //TODO: 配置AutoMapper by Ryan(20171019) Configuration.Modules.AbpAutoMapper().Configurators.Add(CustomDtoMapper.CreateMappings);
+            Configuration.Modules.AbpAutoMapper().Configurators.Add(CustomDtoMapper.CreateMappings);
         }
 
         public override void Initialize()
