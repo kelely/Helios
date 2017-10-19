@@ -74,5 +74,5 @@ install:
 script:
  - dotnet build
  - dotnet test test/Helios.Membership.Tests/Helios.Membership.Tests.csproj
- - dotnet test test/Helios.Order.Tests/Helios.Order.Tests.csproj
+ - dotnet test test/Helios.Orders.Tests/Helios.Orders.Tests.csproj
  - dotnet test test/Helios.Zero.Tests/Helios.Zero.Tests.csproj
