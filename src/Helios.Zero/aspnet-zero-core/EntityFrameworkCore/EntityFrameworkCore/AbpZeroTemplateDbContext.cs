@@ -11,9 +11,10 @@ using Helios.MultiTenancy.Accounting;
 using Helios.MultiTenancy.Payments;
 using Helios.Storage;
 
+// ReSharper disable once CheckNamespace
 namespace Helios.EntityFrameworkCore
 {
-    public class AbpZeroTemplateDbContext : AbpZeroDbContext<Tenant, Role, User, AbpZeroTemplateDbContext>, IAbpPersistedGrantDbContext
+    public partial class AbpZeroTemplateDbContext : AbpZeroDbContext<Tenant, Role, User, AbpZeroTemplateDbContext>, IAbpPersistedGrantDbContext
     {
         /* Define an IDbSet for each entity of the application */
 
@@ -74,7 +75,10 @@ namespace Helios.EntityFrameworkCore
                 b.HasIndex(e => new { e.PaymentId, e.Gateway });
             });
 
-            modelBuilder.ConfigurePersistedGrantEntity();
+            // 使用 Abp.IdentityServer4 源码中的实体配置方法会出现"Specified key was too long; max key length is 767 bytes"的错误，所以此处使用手写代码进行替换
+            this.ConfigurePersistedGrantEntity(modelBuilder);       // modelBuilder.ConfigurePersistedGrantEntity();
+
+            this.ConfigureHeliosEntity(modelBuilder);
         }
     }
 }
