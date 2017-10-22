@@ -5,9 +5,10 @@ using Abp.Notifications;
 using Helios.Authorization.Users;
 using Helios.MultiTenancy;
 
+// ReSharper disable once CheckNamespace
 namespace Helios.Notifications
 {
-    public class AppNotifier : AbpZeroTemplateDomainServiceBase, IAppNotifier
+    public partial class AppNotifier : AbpZeroTemplateDomainServiceBase, IAppNotifier
     {
         private readonly INotificationPublisher _notificationPublisher;
 

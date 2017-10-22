@@ -4,9 +4,10 @@ using Abp.Application.Editions;
 using Abp.Application.Features;
 using Abp.Domain.Repositories;
 
+// ReSharper disable once CheckNamespace
 namespace Helios.Editions
 {
-    public class EditionManager : AbpEditionManager
+    public partial class EditionManager : AbpEditionManager
     {
         public const string DefaultEditionName = "Standard";
 

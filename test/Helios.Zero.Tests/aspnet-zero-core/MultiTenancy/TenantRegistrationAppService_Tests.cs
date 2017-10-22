@@ -38,7 +38,7 @@ namespace Helios.Tests.MultiTenancy
             LocalIocManager.IocContainer.Register(Component.For<IPaymentCache>().Instance(_fakePaymentCache).IsDefault());
         }
 
-        [MultiTenantFact]
+        [MultiTenantFact(DisplayName = "确保新开通的免费版租户没有租约为永久有效")]
         public async Task SubscriptionEndDateUtc_ShouldBe_Null_After_Free_Registration()
         {
             //Arrange
@@ -73,7 +73,7 @@ namespace Helios.Tests.MultiTenancy
             });
         }
 
-        [MultiTenantFact]
+        [MultiTenantFact(DisplayName = "确保开通免费版租户时没有试用期")]
         public async Task Cannot_Register_To_Free_Edition_As_Trial()
         {
             //Arrange
@@ -101,7 +101,7 @@ namespace Helios.Tests.MultiTenancy
             exception.Message.ShouldBe("Trial is not available for this edition !");
         }
 
-        [MultiTenantFact]
+        [MultiTenantFact(DisplayName = "确保租户开通服务时订阅的版本提供免费试用的时候可以进行一定时间的免费试用")]
         public async Task Should_Subscribe_To_Edition_As_Trial_If_Trial_Is_Available()
         {
             //Arrange
@@ -141,13 +141,13 @@ namespace Helios.Tests.MultiTenancy
             });
         }
 
-        [MultiTenantFact]
+        [MultiTenantFact(DisplayName = "确保租户开通服务时选择按月付的服务周期为30天")]
         public async Task Monthly_Registratin_Should_Add_30_Days_To_SubscriptionEndDate()
         {
             await Paid_Registratin_Should_Add_N_Days_To_SubscriptionEndDate(PaymentPeriodType.Monthly);
         }
 
-        [MultiTenantFact]
+        [MultiTenantFact(DisplayName = "确保租户开通服务时选择按年付的服务周期为365天")]
         public async Task Annual_Registratin_Should_Add_365_Days_To_SubscriptionEndDate()
         {
             await Paid_Registratin_Should_Add_N_Days_To_SubscriptionEndDate(PaymentPeriodType.Annual);

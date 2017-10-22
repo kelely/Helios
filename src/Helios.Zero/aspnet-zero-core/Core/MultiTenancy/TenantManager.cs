@@ -23,12 +23,13 @@ using Abp.UI;
 using Microsoft.EntityFrameworkCore;
 using Helios.MultiTenancy.Payments;
 
+// ReSharper disable once CheckNamespace
 namespace Helios.MultiTenancy
 {
     /// <summary>
     /// Tenant manager.
     /// </summary>
-    public class TenantManager : AbpTenantManager<Tenant, User>
+    public partial class TenantManager : AbpTenantManager<Tenant, User>
     {
         private readonly IUnitOfWorkManager _unitOfWorkManager;
         private readonly RoleManager _roleManager;
@@ -77,6 +78,22 @@ namespace Helios.MultiTenancy
             _subscribableEditionRepository = subscribableEditionRepository;
         }
 
+        /// <summary>
+        /// 创建租户的同时新增租户的管理员用户
+        /// </summary>
+        /// <param name="tenancyName"></param>
+        /// <param name="name"></param>
+        /// <param name="adminPassword"></param>
+        /// <param name="adminEmailAddress"></param>
+        /// <param name="connectionString"></param>
+        /// <param name="isActive"></param>
+        /// <param name="editionId"></param>
+        /// <param name="shouldChangePasswordOnNextLogin"></param>
+        /// <param name="sendActivationEmail"></param>
+        /// <param name="subscriptionEndDate"></param>
+        /// <param name="isInTrialPeriod"></param>
+        /// <param name="emailActivationLink"></param>
+        /// <returns></returns>
         public async Task<int> CreateWithAdminUserAsync(
             string tenancyName,
             string name,
@@ -98,7 +115,7 @@ namespace Helios.MultiTenancy
 
             using (var uow = _unitOfWorkManager.Begin(TransactionScopeOption.RequiresNew))
             {
-                //Create tenant
+                // 创建租户
                 var tenant = new Tenant(tenancyName, name)
                 {
                     IsActive = isActive,
@@ -109,28 +126,28 @@ namespace Helios.MultiTenancy
                 };
 
                 await CreateAsync(tenant);
-                await _unitOfWorkManager.Current.SaveChangesAsync(); //To get new tenant's id.
+                await _unitOfWorkManager.Current.SaveChangesAsync(); // 保存后可获得新租户的Id
 
-                //Create tenant database
+                // 创建租户的数据库
                 _abpZeroDbMigrator.CreateOrMigrateForTenant(tenant);
 
-                //We are working entities of new tenant, so changing tenant filter
+                // 以下的实体需要进行租户隔离，所以需要改变事务的租户Id
                 using (_unitOfWorkManager.Current.SetTenantId(tenant.Id))
                 {
-                    //Create static roles for new tenant
+                    // 给新租户添加静态角色
                     CheckErrors(await _roleManager.CreateStaticRoles(tenant.Id));
                     await _unitOfWorkManager.Current.SaveChangesAsync(); //To get static role ids
 
-                    //grant all permissions to admin role
+                    // 赋予 Admin 角色所有操作权限
                     var adminRole = _roleManager.Roles.Single(r => r.Name == StaticRoleNames.Tenants.Admin);
                     await _roleManager.GrantAllPermissionsAsync(adminRole);
 
-                    //User role should be default
+                    // 设置 User 角色为默认角色
                     var userRole = _roleManager.Roles.Single(r => r.Name == StaticRoleNames.Tenants.User);
                     userRole.IsDefault = true;
                     CheckErrors(await _roleManager.UpdateAsync(userRole));
 
-                    //Create admin user for the tenant
+                    // 创建管理员用户
                     if (adminPassword.IsNullOrEmpty())
                     {
                         adminPassword = User.CreateRandomPassword();
@@ -144,13 +161,13 @@ namespace Helios.MultiTenancy
                     CheckErrors(await _userManager.CreateAsync(adminUser));
                     await _unitOfWorkManager.Current.SaveChangesAsync(); //To get admin user's id
 
-                    //Assign admin user to admin role!
+                    // 设置管理员用户的 Admin 角色
                     CheckErrors(await _userManager.AddToRoleAsync(adminUser, adminRole.Name));
 
-                    //Notifications
+                    // 给管理员用户发送欢迎消息
                     await _appNotifier.WelcomeToTheApplicationAsync(adminUser);
 
-                    //Send activation email
+                    // 发送用户账号激活邮件
                     if (sendActivationEmail)
                     {
                         adminUser.SetNewEmailConfirmationCode();
@@ -182,6 +199,12 @@ namespace Helios.MultiTenancy
             return newTenantId;
         }
 
+        /// <summary>
+        /// 确保免费版无须试用期
+        /// </summary>
+        /// <param name="editionId"></param>
+        /// <param name="isInTrialPeriod"></param>
+        /// <returns></returns>
         public async Task CheckEditionAsync(int? editionId, bool isInTrialPeriod)
         {
             if (!editionId.HasValue || !isInTrialPeriod)
@@ -231,6 +254,16 @@ namespace Helios.MultiTenancy
             return additionalPrice;
         }
 
+        /// <summary>
+        /// 更新租户
+        /// </summary>
+        /// <param name="tenantId"></param>
+        /// <param name="isActive"></param>
+        /// <param name="isInTrialPeriod"></param>
+        /// <param name="paymentPeriodType"></param>
+        /// <param name="editionId"></param>
+        /// <param name="editionPaymentType"></param>
+        /// <returns></returns>
         public async Task<Tenant> UpdateTenantAsync(int tenantId, bool isActive, bool isInTrialPeriod, PaymentPeriodType? paymentPeriodType, int editionId, EditionPaymentType editionPaymentType)
         {
             var tenant = await FindByIdAsync(tenantId);

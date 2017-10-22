@@ -7,6 +7,7 @@ using Abp.Application.Services.Dto;
 using Abp.Authorization.Users;
 using Abp.Configuration;
 using Abp.Configuration.Startup;
+using Abp.Extensions;
 using Abp.Localization;
 using Abp.Runtime.Session;
 using Abp.Timing;
@@ -23,12 +24,15 @@ using Helios.MultiTenancy.Payments.Cache;
 using Helios.Notifications;
 using Helios.Security.Recaptcha;
 using Helios.Url;
-using Abp.Extensions;
 using Helios.MultiTenancy.Payments.Dto;
 
+// ReSharper disable once CheckNamespace
 namespace Helios.MultiTenancy
 {
-    public class TenantRegistrationAppService : AbpZeroTemplateAppServiceBase, ITenantRegistrationAppService
+    /// <summary>
+    /// 租户注册应用服务接口，用于接待租户注册相关业务
+    /// </summary>
+    public partial class TenantRegistrationAppService : AbpZeroTemplateAppServiceBase, ITenantRegistrationAppService
     {
         public IAppUrlService AppUrlService { get; set; }
 
@@ -66,6 +70,11 @@ namespace Helios.MultiTenancy
             AppUrlService = NullAppUrlService.Instance;
         }
 
+        /// <summary>
+        /// 建立新租户，开启一个新的租户
+        /// </summary>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public async Task<RegisterTenantOutput> RegisterTenant(RegisterTenantInput input)
         {
             if (input.EditionId.HasValue)
@@ -170,6 +179,10 @@ namespace Helios.MultiTenancy
             }
         }
 
+        /// <summary>
+        /// 检查是否是否不区分版本，租户注册时无须选定版本
+        /// </summary>
+        /// <returns></returns>
         private async Task CheckRegistrationWithoutEdition()
         {
             var editions = await _editionManager.GetAllAsync();
@@ -249,6 +262,9 @@ namespace Helios.MultiTenancy
             };
         }
 
+        /// <summary>
+        /// 检查是否允许注册注册
+        /// </summary>
         private void CheckTenantRegistrationIsEnabled()
         {
             if (!IsSelfRegistrationEnabled())
@@ -256,17 +272,26 @@ namespace Helios.MultiTenancy
                 throw new UserFriendlyException(L("SelfTenantRegistrationIsDisabledMessage_Detail"));
             }
 
+            // 是否启用多租户功能
             if (!_multiTenancyConfig.IsEnabled)
             {
                 throw new UserFriendlyException(L("MultiTenancyIsNotEnabled"));
             }
         }
 
+        /// <summary>
+        /// 检查是否允许租户自主注册开通服务
+        /// </summary>
+        /// <returns></returns>
         private bool IsSelfRegistrationEnabled()
         {
             return SettingManager.GetSettingValueForApplication<bool>(AppSettings.TenantManagement.AllowSelfRegistration);
         }
 
+        /// <summary>
+        /// 是否在注册租户时要求填写验证码
+        /// </summary>
+        /// <returns></returns>
         private bool UseCaptchaOnRegistration()
         {
             if (DebugHelper.IsDebug)
@@ -277,6 +302,14 @@ namespace Helios.MultiTenancy
             return SettingManager.GetSettingValueForApplication<bool>(AppSettings.TenantManagement.UseCaptchaOnRegistration);
         }
 
+        /// <summary>
+        /// 检查系统内指定的版本和特定的订阅类型是否合规
+        /// </summary>
+        /// <param name="editionId"></param>
+        /// <param name="subscriptionStartType"></param>
+        /// <param name="gateway"></param>
+        /// <param name="paymentId"></param>
+        /// <returns></returns>
         private async Task CheckEditionSubscriptionAsync(int editionId, SubscriptionStartType subscriptionStartType, SubscriptionPaymentGatewayType? gateway, string paymentId)
         {
             var edition = await _editionManager.GetByIdAsync(editionId);
@@ -286,6 +319,13 @@ namespace Helios.MultiTenancy
             CheckPaymentCache(subscribableEdition, subscriptionStartType, gateway, paymentId);
         }
 
+        /// <summary>
+        /// 检查付款结果是否成功
+        /// </summary>
+        /// <param name="edition"></param>
+        /// <param name="subscriptionStartType"></param>
+        /// <param name="gateway"></param>
+        /// <param name="paymentId"></param>
         private void CheckPaymentCache(SubscribableEdition edition, SubscriptionStartType subscriptionStartType, SubscriptionPaymentGatewayType? gateway, string paymentId)
         {
             if (edition.IsFree || subscriptionStartType != SubscriptionStartType.Paid)
@@ -310,6 +350,11 @@ namespace Helios.MultiTenancy
             }
         }
 
+        /// <summary>
+        /// 检查版本和订阅类型是否合规
+        /// </summary>
+        /// <param name="edition"></param>
+        /// <param name="subscriptionStartType"></param>
         private static void CheckSubscriptionStart(SubscribableEdition edition, SubscriptionStartType subscriptionStartType)
         {
             switch (subscriptionStartType)

@@ -1,6 +1,7 @@
-﻿namespace Helios.Url
+﻿// ReSharper disable once CheckNamespace
+namespace Helios.Url
 {
-    public interface IAppUrlService
+    public partial interface IAppUrlService
     {
         string CreateEmailActivationUrlFormat(int? tenantId);
 

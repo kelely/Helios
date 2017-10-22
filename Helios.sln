@@ -15,9 +15,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helios.Orders.Tests", "test
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helios.Membership", "src\Helios.Membership\Helios.Membership.csproj", "{7B432933-01D6-44BE-9AF3-FFBB523C1A5A}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helios.Zero", "src\Helios.Zero\Helios.Zero.csproj", "{8BE96B32-9EFD-4D2A-800B-F0FEB488FFD1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helios.Zero", "src\Helios.Zero\Helios.Zero.csproj", "{8BE96B32-9EFD-4D2A-800B-F0FEB488FFD1}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helios.Zero.Tests", "test\Helios.Zero.Tests\Helios.Zero.Tests.csproj", "{B399CDBF-AFBB-4D54-B9FF-4DEE1E93F34C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helios.Zero.Tests", "test\Helios.Zero.Tests\Helios.Zero.Tests.csproj", "{B399CDBF-AFBB-4D54-B9FF-4DEE1E93F34C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "apps", "apps", "{D92F410B-D885-4DFB-8F56-9F99D8072D13}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
