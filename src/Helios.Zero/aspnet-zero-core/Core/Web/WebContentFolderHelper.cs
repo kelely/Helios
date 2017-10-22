@@ -30,13 +30,13 @@ namespace Helios.Web
                 directoryInfo = directoryInfo.Parent;
             }
 
-            var webMvcFolder = Path.Combine(directoryInfo.FullName, $"src{Path.DirectorySeparatorChar}Helios.Web.Mvc");
+            var webMvcFolder = Path.Combine(directoryInfo.FullName, $"apps{Path.DirectorySeparatorChar}Helios.Web.Mvc");
             if (Directory.Exists(webMvcFolder))
             {
                 return webMvcFolder;
             }
 
-            var webHostFolder = Path.Combine(directoryInfo.FullName, $"src{Path.DirectorySeparatorChar}Helios.Web.Host");
+            var webHostFolder = Path.Combine(directoryInfo.FullName, $"apps{Path.DirectorySeparatorChar}Helios.Web.Host");
             if (Directory.Exists(webHostFolder))
             {
                 return webHostFolder;
