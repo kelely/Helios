@@ -2,6 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
+    <UserSecretsId>Helios-894FDFC1-6482-4A56-926A-3C46C9FE0329</UserSecretsId>
     <RootNamespace>Helios</RootNamespace>
   </PropertyGroup>
 
@@ -21,6 +22,7 @@
     <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="2.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.UserSecrets" Version="2.0.0" />
+    <PackageReference Include="Pomelo.EntityFrameworkCore.MySql" Version="2.0.0" />
   </ItemGroup>
 
   <ItemGroup>

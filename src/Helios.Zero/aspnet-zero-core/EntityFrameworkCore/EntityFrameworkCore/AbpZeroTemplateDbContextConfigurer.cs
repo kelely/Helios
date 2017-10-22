@@ -1,18 +1,21 @@
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 
+// ReSharper disable once CheckNamespace
 namespace Helios.EntityFrameworkCore
 {
     public static class AbpZeroTemplateDbContextConfigurer
     {
         public static void Configure(DbContextOptionsBuilder<AbpZeroTemplateDbContext> builder, string connectionString)
         {
-            // TODO:修改为支持MySQL by Ryan(21071019) builder.UseSqlServer(connectionString);
+            // 修改为支持MySQLbuilder.UseSqlServer(connectionString);
+            builder.UseMySql(connectionString);
         }
 
         public static void Configure(DbContextOptionsBuilder<AbpZeroTemplateDbContext> builder, DbConnection connection)
         {
-            // TODO:修改为支持MySQL by Ryan(21071019) builder.UseSqlServer(connection);
+            // 修改为支持MySQLbuilder.UseSqlServer(connection);
+            builder.UseMySql(connection);
         }
     }
 }
