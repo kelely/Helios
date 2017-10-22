@@ -175,6 +175,7 @@ namespace Helios.Web.Startup
             app.UseSwaggerUI(options =>
             {
                 options.SwaggerEndpoint("/swagger/v1/swagger.json", "AbpZeroTemplate API V1");
+                options.InjectOnCompleteJavaScript("/swagger/ui/swagger.zh-CN.js");
             }); //URL: /swagger
         }
 
