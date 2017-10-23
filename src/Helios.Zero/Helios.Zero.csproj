@@ -11,6 +11,10 @@
       <LogicalName>Helios.Emailing.EmailTemplates.default.html</LogicalName>
       <InProject>false</InProject>
     </EmbeddedResource>
+    <EmbeddedResource Include="aspnet-zero-core\Core\Localization\AbpZeroTemplate\*.xml">
+      <LogicalName>Helios.Localization.AbpZeroTemplate.%(FileName)%(Extension)</LogicalName>
+      <InProject>false</InProject>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup Label="Package References">
