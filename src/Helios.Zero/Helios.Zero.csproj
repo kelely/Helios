@@ -7,7 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <EmbeddedResource Include="aspnet-zero-core\Core\Emailing\EmailTemplates\default.html" />
+    <EmbeddedResource Include="aspnet-zero-core\Core\Emailing\EmailTemplates\default.html">
+      <LogicalName>Helios.Emailing.EmailTemplates.default.html</LogicalName>
+      <InProject>false</InProject>
+    </EmbeddedResource>
   </ItemGroup>
 
   <ItemGroup Label="Package References">
