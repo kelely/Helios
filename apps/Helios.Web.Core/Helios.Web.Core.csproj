@@ -21,7 +21,8 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\..\src\Helios.Zero\Helios.Zero.csproj" />
+    <ProjectReference Include="..\..\src\Helios.Zero\Helios.Zero.Application\Helios.Zero.Application.csproj" />
+    <ProjectReference Include="..\..\src\Helios.Zero\Helios.Zero.EntityFrameworkCore\Helios.Zero.EntityFrameworkCore.csproj" />
   </ItemGroup>
 
 </Project>

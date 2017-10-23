@@ -1,16 +1,17 @@
 using System;
 using Abp.AspNetCore.Mvc.Controllers;
 using Abp.IdentityFramework;
+using Helios.Zero;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 
 namespace Helios.Web.Controllers
 {
-    public abstract class AbpZeroTemplateControllerBase : AbpController
+    public abstract class HeliosZeroControllerBase : AbpController
     {
-        protected AbpZeroTemplateControllerBase()
+        protected HeliosZeroControllerBase()
         {
-            LocalizationSourceName = AbpZeroTemplateConsts.LocalizationSourceName;
+            LocalizationSourceName = HeliosZeroConsts.LocalizationSourceName;
         }
 
         protected void CheckErrors(IdentityResult identityResult)

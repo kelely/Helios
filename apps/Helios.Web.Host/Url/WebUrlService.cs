@@ -1,6 +1,6 @@
 using Abp.Dependency;
-using Helios.Configuration;
-using Helios.Url;
+using Helios.Zero.Configuration;
+using Helios.Zero.Url;
 
 namespace Helios.Web.Url
 {

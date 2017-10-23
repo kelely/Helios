@@ -2,7 +2,7 @@
 using System.Linq;
 using Abp.Extensions;
 using Microsoft.Extensions.Configuration;
-using Helios.Configuration;
+using Helios.Zero.Configuration;
 
 namespace Helios.Web.Url
 {

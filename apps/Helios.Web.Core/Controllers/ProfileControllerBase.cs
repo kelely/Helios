@@ -10,12 +10,13 @@ using Abp.Runtime.Session;
 using Abp.UI;
 using Abp.Web.Models;
 using Microsoft.AspNetCore.Mvc;
-using Helios.IO;
 using Helios.Web.Helpers;
+using Helios.Zero;
+using Helios.Zero.IO;
 
 namespace Helios.Web.Controllers
 {
-    public abstract class ProfileControllerBase : AbpZeroTemplateControllerBase
+    public abstract class ProfileControllerBase : HeliosZeroControllerBase
     {
         private readonly IAppFolders _appFolders;
 

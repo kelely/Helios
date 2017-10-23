@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.IdentityModel.Tokens.Jwt;
 using System.Linq;
+using System.Net;
 using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
@@ -25,22 +26,23 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 using Microsoft.IdentityModel.Tokens;
-using Helios.Authentication.TwoFactor.Google;
-using Helios.Authorization;
-using Helios.Authorization.Users;
-using Helios.MultiTenancy;
 using Helios.Web.Authentication.JwtBearer;
 using Helios.Web.Authentication.TwoFactor;
 using Helios.Web.Models.TokenAuth;
-using Helios.Authorization.Impersonation;
-using Helios.Identity;
-using Helios.Notifications;
 using Helios.Web.Authentication.External;
+using Helios.Zero;
+using Helios.Zero.Authentication.TwoFactor.Google;
+using Helios.Zero.Authorization;
+using Helios.Zero.Authorization.Impersonation;
+using Helios.Zero.Authorization.Users;
+using Helios.Zero.Identity;
+using Helios.Zero.MultiTenancy;
+using Helios.Zero.Notifications;
 
 namespace Helios.Web.Controllers
 {
     [Route("api/[controller]/[action]")]
-    public class TokenAuthController : AbpZeroTemplateControllerBase
+    public class TokenAuthController : HeliosZeroControllerBase
     {
         private const string UserIdentifierClaimType = "http://aspnetzero.com/claims/useridentifier";
 
@@ -345,7 +347,7 @@ namespace Helios.Web.Controllers
                 externalLoginInfo.Surname,
                 externalLoginInfo.EmailAddress,
                 externalLoginInfo.EmailAddress,
-                Authorization.Users.User.CreateRandomPassword(),
+                Helios.Zero.Authorization.Users.User.CreateRandomPassword(),
                 true,
                 null
             );

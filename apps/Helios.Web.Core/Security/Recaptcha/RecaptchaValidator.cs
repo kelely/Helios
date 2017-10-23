@@ -4,12 +4,13 @@ using Abp.Dependency;
 using Abp.Extensions;
 using Abp.UI;
 using Microsoft.AspNetCore.Http;
-using Helios.Security.Recaptcha;
+using Helios.Zero;
+using Helios.Zero.Security.Recaptcha;
 using PaulMiami.AspNetCore.Mvc.Recaptcha;
 
 namespace Helios.Web.Security.Recaptcha
 {
-    public class RecaptchaValidator : AbpZeroTemplateServiceBase, IRecaptchaValidator, ITransientDependency
+    public class RecaptchaValidator : HeliosZeroServiceBase, IRecaptchaValidator, ITransientDependency
     {
         public const string RecaptchaResponseKey = "g-recaptcha-response";
 

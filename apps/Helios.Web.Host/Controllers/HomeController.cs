@@ -3,7 +3,7 @@ using Microsoft.AspNetCore.Mvc;
 
 namespace Helios.Web.Controllers
 {
-    public class HomeController : AbpZeroTemplateControllerBase
+    public class HomeController : HeliosZeroControllerBase
     {
         [DisableAuditing]
         public IActionResult Index()

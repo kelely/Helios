@@ -16,16 +16,12 @@ using Microsoft.AspNetCore.Mvc.Cors.Internal;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Logging;
-using Helios.Authorization;
-using Helios.Authorization.Roles;
-using Helios.Authorization.Users;
-using Helios.Configuration;
-using Helios.Identity;
-using Helios.MultiTenancy;
 using Helios.Web.Authentication.JwtBearer;
 using PaulMiami.AspNetCore.Mvc.Recaptcha;
 using Swashbuckle.AspNetCore.Swagger;
 using Helios.Web.IdentityServer;
+using Helios.Zero.Configuration;
+using Helios.Zero.Identity;
 
 #if FEATURE_SIGNALR
 using Helios.Web.Owin;
@@ -85,7 +81,7 @@ namespace Helios.Web.Startup
             //Swagger - Enable this line and the related lines in Configure method to enable swagger UI
             services.AddSwaggerGen(options =>
             {
-                options.SwaggerDoc("v1", new Info { Title = "AbpZeroTemplate API", Version = "v1" });
+                options.SwaggerDoc("v1", new Info { Title = "HeliosZero API", Version = "v1" });
                 options.DocInclusionPredicate((docName, description) => true);
             });
 
@@ -103,7 +99,7 @@ namespace Helios.Web.Startup
             //});
 
             //Configure Abp and Dependency Injection
-            return services.AddAbp<AbpZeroTemplateWebHostModule>(options =>
+            return services.AddAbp<HeliosZeroWebHostModule>(options =>
             {
                 //Configure Log4Net logging
                 options.IocManager.IocContainer.AddFacility<LoggingFacility>(
@@ -174,7 +170,7 @@ namespace Helios.Web.Startup
             // Enable middleware to serve swagger-ui assets (HTML, JS, CSS etc.)
             app.UseSwaggerUI(options =>
             {
-                options.SwaggerEndpoint("/swagger/v1/swagger.json", "AbpZeroTemplate API V1");
+                options.SwaggerEndpoint("/swagger/v1/swagger.json", "HeliosZero API V1");
                 options.InjectOnCompleteJavaScript("/swagger/ui/swagger.zh-CN.js");
             }); //URL: /swagger
         }
@@ -183,7 +179,7 @@ namespace Helios.Web.Startup
         private static void ConfigureOwinServices(IAppBuilder app)
         {
             GlobalHost.DependencyResolver.Register(typeof(IAssemblyLocator), () => new SignalRAssemblyLocator());
-            app.Properties["host.AppName"] = "AbpZeroTemplate";
+            app.Properties["host.AppName"] = "HeliosZero";
 
             app.UseAbp();
             app.UseAesDataProtectorProvider();

@@ -1,8 +1,8 @@
 ﻿using Abp.IdentityServer4;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Helios.Authorization.Users;
-using Helios.EntityFrameworkCore;
+using Helios.Zero.Authorization.Users;
+using Helios.Zero.EntityFrameworkCore;
 
 namespace Helios.Web.IdentityServer
 {
@@ -15,7 +15,7 @@ namespace Helios.Web.IdentityServer
                 .AddInMemoryIdentityResources(IdentityServerConfig.GetIdentityResources())
                 .AddInMemoryApiResources(IdentityServerConfig.GetApiResources())
                 .AddInMemoryClients(IdentityServerConfig.GetClients(configuration))
-                .AddAbpPersistedGrants<AbpZeroTemplateDbContext>()
+                .AddAbpPersistedGrants<HeliosZeroDbContext>()
                 .AddAbpIdentityServer<User>();
         }
     }

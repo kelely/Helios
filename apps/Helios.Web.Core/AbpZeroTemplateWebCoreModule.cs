@@ -14,11 +14,13 @@ using Abp.Zero.Configuration;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
-using Helios.Configuration;
-using Helios.EntityFrameworkCore;
 using Helios.Web.Authentication.JwtBearer;
 using Helios.Web.Authentication.TwoFactor;
 using Helios.Web.Configuration;
+using Helios.Zero;
+using Helios.Zero.Configuration;
+using Helios.Zero.EntityFrameworkCore;
+
 #if FEATURE_SIGNALR
 using Abp.Web.SignalR;
 #endif
@@ -26,8 +28,8 @@ using Abp.Web.SignalR;
 namespace Helios.Web
 {
     [DependsOn(
-        typeof(AbpZeroTemplateApplicationModule),
-        typeof(AbpZeroTemplateEntityFrameworkCoreModule),
+        typeof(HeliosZeroApplicationModule),
+        typeof(HeliosZeroEntityFrameworkCoreModule),
         typeof(AbpAspNetCoreModule),
 #if FEATURE_SIGNALR
         typeof(AbpWebSignalRModule),
@@ -35,12 +37,12 @@ namespace Helios.Web
         typeof(AbpRedisCacheModule), //AbpRedisCacheModule dependency (and Abp.RedisCache nuget package) can be removed if not using Redis cache
         typeof(AbpHangfireAspNetCoreModule) //AbpHangfireModule dependency (and Abp.Hangfire.AspNetCore nuget package) can be removed if not using Hangfire
     )] 
-    public class AbpZeroTemplateWebCoreModule : AbpModule
+    public class HeliosZeroWebCoreModule : AbpModule
     {
         private readonly IHostingEnvironment _env;
         private readonly IConfigurationRoot _appConfiguration;
 
-        public AbpZeroTemplateWebCoreModule(IHostingEnvironment env)
+        public HeliosZeroWebCoreModule(IHostingEnvironment env)
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();
@@ -50,7 +52,7 @@ namespace Helios.Web
         {
             //Set default connection string
             Configuration.DefaultNameOrConnectionString = _appConfiguration.GetConnectionString(
-                AbpZeroTemplateConsts.ConnectionStringName
+                HeliosZeroConsts.ConnectionStringName
             );
 
             //Use database for language management
@@ -58,7 +60,7 @@ namespace Helios.Web
 
             Configuration.Modules.AbpAspNetCore()
                 .CreateControllersForAppServices(
-                    typeof(AbpZeroTemplateApplicationModule).GetAssembly()
+                    typeof(HeliosZeroApplicationModule).GetAssembly()
                 );
 
             Configuration.Caching.Configure(TwoFactorCodeCacheItem.CacheName, cache =>
@@ -99,7 +101,7 @@ namespace Helios.Web
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateWebCoreModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(HeliosZeroWebCoreModule).GetAssembly());
         }
 
         public override void PostInitialize()
@@ -118,7 +120,7 @@ namespace Helios.Web
 #if NET461
             if (_env.IsDevelopment())
             {
-                var currentAssemblyDirectoryPath = typeof(AbpZeroTemplateWebCoreModule).GetAssembly().GetDirectoryPathOrNull();
+                var currentAssemblyDirectoryPath = typeof(HeliosZeroWebCoreModule).GetAssembly().GetDirectoryPathOrNull();
                 if (currentAssemblyDirectoryPath != null)
                 {
                     appFolders.WebLogsFolder = Path.Combine(currentAssemblyDirectoryPath, @"App_Data\Logs");

@@ -10,15 +10,15 @@ using Abp.UI;
 using Abp.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using Helios.MultiTenancy;
-using Helios.Net.MimeTypes;
-using Helios.Storage;
 using Helios.Web.Helpers;
+using Helios.Zero.MultiTenancy;
+using Helios.Zero.Net.MimeTypes;
+using Helios.Zero.Storage;
 
 namespace Helios.Web.Controllers
 {
     [AbpMvcAuthorize]
-    public class TenantCustomizationController : AbpZeroTemplateControllerBase
+    public class TenantCustomizationController : HeliosZeroControllerBase
     {
         private readonly TenantManager _tenantManager;
         private readonly IBinaryObjectManager _binaryObjectManager;

@@ -1,5 +1,5 @@
 ﻿using Abp.MultiTenancy;
-using Helios.Url;
+using Helios.Zero.Url;
 
 namespace Helios.Web.Url
 {

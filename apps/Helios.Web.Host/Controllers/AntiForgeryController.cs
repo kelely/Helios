@@ -2,7 +2,7 @@
 
 namespace Helios.Web.Controllers
 {
-    public class AntiForgeryController : AbpZeroTemplateControllerBase
+    public class AntiForgeryController : HeliosZeroControllerBase
     {
         private readonly IAntiforgery _antiforgery;
 

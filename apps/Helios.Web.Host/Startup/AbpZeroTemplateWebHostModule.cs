@@ -4,23 +4,23 @@ using Abp.Reflection.Extensions;
 using Abp.Threading.BackgroundWorkers;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Helios.Configuration;
-using Helios.MultiTenancy;
 using Helios.Web.Authentication.External;
 using Helios.Web.Authentication.External.Facebook;
 using Helios.Web.Authentication.External.Google;
 using Helios.Web.Authentication.External.Microsoft;
+using Helios.Zero.Configuration;
+using Helios.Zero.MultiTenancy;
 
 namespace Helios.Web.Startup
 {
     [DependsOn(
-        typeof(AbpZeroTemplateWebCoreModule))]
-    public class AbpZeroTemplateWebHostModule : AbpModule
+        typeof(HeliosZeroWebCoreModule))]
+    public class HeliosZeroWebHostModule : AbpModule
     {
         private readonly IHostingEnvironment _env;
         private readonly IConfigurationRoot _appConfiguration;
 
-        public AbpZeroTemplateWebHostModule(IHostingEnvironment env)
+        public HeliosZeroWebHostModule(IHostingEnvironment env)
         {
             _env = env;
             _appConfiguration = env.GetAppConfiguration();
@@ -33,7 +33,7 @@ namespace Helios.Web.Startup
 
         public override void Initialize()
         {
-            IocManager.RegisterAssemblyByConvention(typeof(AbpZeroTemplateWebHostModule).GetAssembly());
+            IocManager.RegisterAssemblyByConvention(typeof(HeliosZeroWebHostModule).GetAssembly());
         }
 
         public override void PostInitialize()

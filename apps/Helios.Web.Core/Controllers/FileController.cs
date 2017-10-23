@@ -2,11 +2,12 @@
 using Abp.Auditing;
 using Abp.UI;
 using Microsoft.AspNetCore.Mvc;
-using Helios.Dto;
+using Helios.Zero;
+using Helios.Zero.Dto;
 
 namespace Helios.Web.Controllers
 {
-    public class FileController : AbpZeroTemplateControllerBase
+    public class FileController : HeliosZeroControllerBase
     {
         private readonly IAppFolders _appFolders;
 
