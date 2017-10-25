@@ -480,5 +480,6 @@
     <text name="PleaseWaitToConfirmYourEmailMessage">正在确认您的电子邮件地址，请稍后...</text>
     <text name="ChatIsConnecting">正在连接聊天...</text>
     <text name="Note_RefreshPageForPermissionChanges">如果您正在更改自己的权限，则可能需要刷新页面（F5），以在您所做的权限更改生效！</text>
+    <text name="DemoUiComponents">UI组件演示</text>
   </texts>
 </localizationDictionary>

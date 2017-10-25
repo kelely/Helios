@@ -1,5 +1,6 @@
 ﻿using Abp.Configuration.Startup;
 using Abp.Localization.Dictionaries;
+using Abp.Localization.Dictionaries.Json;
 using Abp.Localization.Dictionaries.Xml;
 using Abp.Reflection.Extensions;
 
@@ -12,10 +13,14 @@ namespace Helios.Membership.Localization
             localizationConfiguration.Sources.Add(
                 new DictionaryBasedLocalizationSource(
                     HeliosMembershipConsts.LocalizationSourceName,
-                    new XmlEmbeddedFileLocalizationDictionaryProvider(
+                    new JsonEmbeddedFileLocalizationDictionaryProvider(
                         typeof(HeliosMembershipLocalizationConfigurer).GetAssembly(),
-                        "Helios.Localization.Membership"
+                        "Helios.Membership.Localization.Membership"
                     )
+                    //new XmlEmbeddedFileLocalizationDictionaryProvider(
+                    //    typeof(HeliosMembershipLocalizationConfigurer).GetAssembly(),
+                    //    "Helios.Membership.Localization.Membership"
+                    //)
                 )
             );
         }
