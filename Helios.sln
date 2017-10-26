@@ -29,9 +29,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helios.Zero.EntityFramework
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Helios.Zero.Application.Tests", "src\Helios.Zero\Helios.Zero.Application.Tests\Helios.Zero.Application.Tests.csproj", "{BA611C7B-7D1E-4299-8F3F-0E4645607FF9}"
 EndProject
+<<<<<<< HEAD
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helios.Customers", "Helios.Customers", "{BDC2C08C-899E-4CD9-A8E4-82AAF3C21806}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Helios.Customers.Core", "src\Helios.Customers\Helios.Customers.Core\Helios.Customers.Core.csproj", "{DCC378E2-3AC6-40ED-A426-88CE8A5C5C1A}"
+=======
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Helios.Products", "Helios.Products", "{784F430F-C8DD-46C4-B799-A42319371B53}"
+>>>>>>> 47e87cd7fee23772c2e7babad7bf2ba9a454f1e4
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -90,8 +94,12 @@ Global
 		{54BD6939-4356-42AC-9D2E-C87831D25236} = {0FBCA183-9BF9-41B5-9DF2-CD315617F4DB}
 		{34869D5F-781B-4F17-8FAC-C8A88E5A98FD} = {0FBCA183-9BF9-41B5-9DF2-CD315617F4DB}
 		{BA611C7B-7D1E-4299-8F3F-0E4645607FF9} = {0FBCA183-9BF9-41B5-9DF2-CD315617F4DB}
+<<<<<<< HEAD
 		{BDC2C08C-899E-4CD9-A8E4-82AAF3C21806} = {7A1DDAE3-8AD3-4A28-BFD6-A4A9D042E5AA}
 		{DCC378E2-3AC6-40ED-A426-88CE8A5C5C1A} = {BDC2C08C-899E-4CD9-A8E4-82AAF3C21806}
+=======
+		{784F430F-C8DD-46C4-B799-A42319371B53} = {7A1DDAE3-8AD3-4A28-BFD6-A4A9D042E5AA}
+>>>>>>> 47e87cd7fee23772c2e7babad7bf2ba9a454f1e4
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {B35DB3BA-546F-4D13-86C4-6F263396B3EB}

@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <EmbeddedResource Include="Localization\Membership\*.json;" Exclude="bin\**;obj\**;**\*.xproj;packages\**;@(EmbeddedResource)" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Abp.ZeroCore" Version="3.1.2" />
   </ItemGroup>
 

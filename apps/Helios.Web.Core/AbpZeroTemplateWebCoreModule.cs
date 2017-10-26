@@ -11,6 +11,7 @@ using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Runtime.Caching.Redis;
 using Abp.Zero.Configuration;
+using Helios.Membership;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.IdentityModel.Tokens;
@@ -30,6 +31,7 @@ namespace Helios.Web
     [DependsOn(
         typeof(HeliosZeroApplicationModule),
         typeof(HeliosZeroEntityFrameworkCoreModule),
+        typeof(HeliosMembershipApplicationModule),
         typeof(AbpAspNetCoreModule),
 #if FEATURE_SIGNALR
         typeof(AbpWebSignalRModule),

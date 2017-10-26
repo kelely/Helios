@@ -1,11 +1,18 @@
-﻿using Abp.Modules;
+﻿using Abp.AutoMapper;
+using Abp.Modules;
 using Abp.Reflection.Extensions;
+using Abp.Zero;
 using Abp.Zero.Configuration;
 using Helios.Membership.Authorization.Roles;
 using Helios.Membership.Localization;
+using Helios.Zero;
 
 namespace Helios.Membership
 {
+    [DependsOn(
+        typeof(AbpZeroCoreModule),
+        typeof(AbpAutoMapperModule),
+        typeof(HeliosZeroCoreModule))]
     public class HeliosMembershipCoreModule : AbpModule
     {
         public override void PreInitialize()
