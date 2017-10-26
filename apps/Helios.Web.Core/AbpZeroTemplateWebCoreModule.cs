@@ -1,5 +1,6 @@
 ﻿using System;
 using System.IO;
+using System.Reflection;
 using System.Text;
 using Abp.AspNetCore;
 using Abp.AspNetCore.Configuration;
@@ -59,14 +60,9 @@ namespace Helios.Web
             //Use database for language management
             Configuration.Modules.Zero().LanguageManagement.EnableDbLocalization();
 
-            Configuration.Modules.AbpAspNetCore()
-                .CreateControllersForAppServices(
-                    typeof(HeliosZeroApplicationModule).GetAssembly()
-                );
-
-            Configuration.Modules.AbpAspNetCore()
-                .CreateControllersForAppServices(
-                    typeof(HeliosCustomersApplicationModule).GetAssembly()
+            ConfigureAppServices(
+                typeof(HeliosZeroApplicationModule).GetAssembly(),      // 添加 Helios.Zero 的 AppServices
+                typeof(HeliosCustomersApplicationModule).GetAssembly()  // 添加 Helios.Customers 的 AppServices
                 );
 
             Configuration.Caching.Configure(TwoFactorCodeCacheItem.CacheName, cache =>
@@ -91,6 +87,15 @@ namespace Helios.Web
             //    options.ConnectionString = _appConfiguration["Abp:RedisCache:ConnectionString"];
             //    options.DatabaseId = _appConfiguration.GetValue<int>("Abp:RedisCache:DatabaseId");
             //});
+        }
+
+        private void ConfigureAppServices(params Assembly[] moduleAssemblies)
+        {
+            foreach (var assembly in moduleAssemblies)
+            {
+                Configuration.Modules.AbpAspNetCore()
+                    .CreateControllersForAppServices(assembly);
+            }
         }
 
         private void ConfigureTokenAuth()
