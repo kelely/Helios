@@ -7,13 +7,13 @@ namespace Helios
     /// It has some useful objects property-injected and has some basic methods most of services may need to.
     /// It's suitable for non domain nor application service classes.
     /// For domain services inherit <see cref="HeliosCustomersDomainServiceBase"/>.
-    /// For application services inherit <see cref="HeliosCustomersAppServiceBase"/>.
+    /// For application services inherit HeliosCustomersServiceBase.
     /// </summary>
-    public abstract class HeliosCustomersAppServiceBase : AbpServiceBase
+    public abstract class HeliosCustomersServiceBase : AbpServiceBase
     {
-        protected HeliosCustomersAppServiceBase()
+        protected HeliosCustomersServiceBase()
         {
-            LocalizationSourceName = HeliosCustomersConsts.LocalizationSourceName;
+            LocalizationSourceName = HeliosZeroConsts.LocalizationSourceName;
         }
     }
 }

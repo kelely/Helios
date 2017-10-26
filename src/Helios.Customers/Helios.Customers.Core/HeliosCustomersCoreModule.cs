@@ -11,7 +11,7 @@ namespace Helios
         public override void PreInitialize()
         {
             // 配置会员模块的多语言定义
-            LocalizationConfigurer.Configure(Configuration.Localization);
+            HeliosCustomersLocalizationConfigurer.Configure(Configuration.Localization);
 
             // 配置会员模块的角色定义
             AppRoleConfig.Configure(Configuration.Modules.Zero().RoleManagement);

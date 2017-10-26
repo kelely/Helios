@@ -1,6 +1,6 @@
 ﻿namespace Helios.Authorization.Roles
 {
-    public static class StaticRoleNames
+    public static class HeliosCustomersStaticRoleNames
     {
         //public static class Host
         //{

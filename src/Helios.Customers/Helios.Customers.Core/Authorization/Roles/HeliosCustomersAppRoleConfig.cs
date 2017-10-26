@@ -3,7 +3,7 @@ using Abp.Zero.Configuration;
 
 namespace Helios.Authorization.Roles
 {
-    public static class AppRoleConfig
+    public static class HeliosCustomersAppRoleConfig
     {
         public static void Configure(IRoleManagementConfig roleManagementConfig)
         {
@@ -19,13 +19,13 @@ namespace Helios.Authorization.Roles
 
             roleManagementConfig.StaticRoles.Add(
                 new StaticRoleDefinition(
-                    StaticRoleNames.Tenants.Customer,
+                    HeliosCustomersStaticRoleNames.Tenants.Customer,
                     MultiTenancySides.Tenant)
             );
 
             roleManagementConfig.StaticRoles.Add(
                 new StaticRoleDefinition(
-                    StaticRoleNames.Tenants.CustomerSupervisor,
+                    HeliosCustomersStaticRoleNames.Tenants.CustomerSupervisor,
                     MultiTenancySides.Tenant)
             );
         }

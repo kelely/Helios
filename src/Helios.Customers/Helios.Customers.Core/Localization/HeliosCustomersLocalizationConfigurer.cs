@@ -1,19 +1,19 @@
 ﻿using Abp.Configuration.Startup;
 using Abp.Localization.Dictionaries;
-using Abp.Localization.Dictionaries.Xml;
+using Abp.Localization.Dictionaries.Json;
 using Abp.Reflection.Extensions;
 
 namespace Helios.Localization
 {
-    public static class LocalizationConfigurer
+    public static class HeliosCustomersLocalizationConfigurer
     {
         public static void Configure(ILocalizationConfiguration localizationConfiguration)
         {
             localizationConfiguration.Sources.Add(
                 new DictionaryBasedLocalizationSource(
                     HeliosCustomersConsts.LocalizationSourceName,
-                    new XmlEmbeddedFileLocalizationDictionaryProvider(
-                        typeof(LocalizationConfigurer).GetAssembly(),
+                    new JsonEmbeddedFileLocalizationDictionaryProvider(
+                        typeof(HeliosCustomersLocalizationConfigurer).GetAssembly(),
                         "Helios.Localization.Customers"
                     )
                 )
