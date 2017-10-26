@@ -3,7 +3,7 @@ using System.Threading.Tasks;
 using Abp;
 using Abp.Domain.Services;
 
-namespace Helios.Zero.Chat
+namespace Helios.Chat
 {
     public interface IChatMessageManager : IDomainService
     {

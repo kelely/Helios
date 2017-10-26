@@ -1,4 +1,4 @@
-namespace Helios.Zero.Authentication.TwoFactor.Google
+namespace Helios.Authentication.TwoFactor.Google
 {
     public class GoogleAuthenticatorSetupCode
     {

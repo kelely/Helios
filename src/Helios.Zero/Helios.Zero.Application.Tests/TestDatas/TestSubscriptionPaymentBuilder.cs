@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using System.Linq.Dynamic.Core;
-using Helios.Zero.Editions;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.Editions;
+using Helios.EntityFrameworkCore;
+using Helios.MultiTenancy.Payments;
 
-namespace Helios.Zero.Application.Tests.TestDatas
+namespace Helios.Application.Tests.TestDatas
 {
 
     public class TestSubscriptionPaymentBuilder

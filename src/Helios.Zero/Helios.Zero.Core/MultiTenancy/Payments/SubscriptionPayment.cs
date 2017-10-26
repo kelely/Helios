@@ -4,7 +4,7 @@ using Abp.Application.Editions;
 using Abp.Domain.Entities.Auditing;
 using Abp.MultiTenancy;
 
-namespace Helios.Zero.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     [Table("AppSubscriptionPayments")]
     [MultiTenancySide(MultiTenancySides.Host)]

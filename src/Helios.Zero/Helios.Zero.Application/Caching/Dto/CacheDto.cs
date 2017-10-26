@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Caching.Dto
+﻿namespace Helios.Caching.Dto
 {
     public class CacheDto
     {

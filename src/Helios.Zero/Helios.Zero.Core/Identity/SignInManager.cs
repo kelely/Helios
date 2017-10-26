@@ -6,11 +6,11 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.MultiTenancy;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 
-namespace Helios.Zero.Identity
+namespace Helios.Identity
 {
     public class SignInManager : AbpSignInManager<Tenant, Role, User>
     {

@@ -1,9 +1,9 @@
 ﻿using Abp.Dependency;
 using Abp.Reflection.Extensions;
 using Microsoft.Extensions.Configuration;
-using Helios.Zero.Configuration;
+using Helios.Configuration;
 
-namespace Helios.Zero.Application.Tests.Configuration
+namespace Helios.Application.Tests.Configuration
 {
     public class TestAppConfigurationAccessor : IAppConfigurationAccessor, ISingletonDependency
     {

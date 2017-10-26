@@ -4,13 +4,13 @@ using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Authorization.Users;
 using Abp.Organizations;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Organizations;
-using Helios.Zero.Organizations.Dto;
+using Helios.Authorization.Users;
+using Helios.Organizations;
+using Helios.Organizations.Dto;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Organizations
+namespace Helios.Application.Tests.Organizations
 {
     public class OrganizationUnitAppService_Tests : AppTestBase
     {

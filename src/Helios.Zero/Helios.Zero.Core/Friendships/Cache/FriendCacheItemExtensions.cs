@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Linq;
 
-namespace Helios.Zero.Friendships.Cache
+namespace Helios.Friendships.Cache
 {
     public static class FriendCacheItemExtensions
     {

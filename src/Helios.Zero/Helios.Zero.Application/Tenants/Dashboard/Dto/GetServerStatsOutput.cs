@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Tenants.Dashboard.Dto
+﻿namespace Helios.Tenants.Dashboard.Dto
 {
     public class GetServerStatsOutput
     {

@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Helios.Zero.Localization.Dto
+namespace Helios.Localization.Dto
 {
     public class CreateOrUpdateLanguageInput
     {

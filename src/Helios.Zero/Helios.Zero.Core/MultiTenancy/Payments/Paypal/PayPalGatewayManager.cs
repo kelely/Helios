@@ -7,11 +7,11 @@ using System.Threading.Tasks;
 using Abp.Dependency;
 using Abp.Extensions;
 using Abp.UI;
-using Helios.Zero.Editions;
-using Helios.Zero.Net.MimeTypes;
+using Helios.Editions;
+using Helios.Net.MimeTypes;
 using Newtonsoft.Json;
 
-namespace Helios.Zero.MultiTenancy.Payments.Paypal
+namespace Helios.MultiTenancy.Payments.Paypal
 {
     public class PayPalGatewayManager : HeliosZeroServiceBase, IPaymentGatewayManager, ITransientDependency
     {

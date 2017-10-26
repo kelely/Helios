@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Helios.Zero.Sessions.Dto
+namespace Helios.Sessions.Dto
 {
     public class ApplicationInfoDto
     {

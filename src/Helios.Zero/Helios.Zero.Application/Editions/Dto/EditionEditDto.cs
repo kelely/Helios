@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.Editions.Dto
+namespace Helios.Editions.Dto
 {
     [AutoMap(typeof(SubscribableEdition))]
     public class EditionEditDto

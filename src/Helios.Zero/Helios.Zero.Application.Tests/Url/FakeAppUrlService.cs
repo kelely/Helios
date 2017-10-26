@@ -1,6 +1,6 @@
-﻿using Helios.Zero.Url;
+﻿using Helios.Url;
 
-namespace Helios.Zero.Application.Tests.Url
+namespace Helios.Application.Tests.Url
 {
     public class FakeAppUrlService : IAppUrlService
     {

@@ -1,8 +1,8 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Sessions.Dto
+namespace Helios.Sessions.Dto
 {
     [AutoMapFrom(typeof(User))]
     public class UserLoginInfoDto : EntityDto<long>

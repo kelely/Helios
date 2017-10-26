@@ -1,9 +1,9 @@
 ﻿using System;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Organizations.Dto
+namespace Helios.Organizations.Dto
 {
     [AutoMapFrom(typeof(User))]
     public class OrganizationUnitUserListDto : EntityDto<long>

@@ -1,6 +1,6 @@
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Application.Tests.Authorization.Users
+namespace Helios.Application.Tests.Authorization.Users
 {
     public abstract class UserAppServiceTestBase : AppTestBase
     {

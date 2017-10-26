@@ -1,7 +1,7 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.Authorization.Roles.Dto
+namespace Helios.Authorization.Roles.Dto
 {
     [AutoMap(typeof(Role))]
     public class RoleEditDto

@@ -1,7 +1,7 @@
 using Abp.Application.Features;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.Editions.Dto
+namespace Helios.Editions.Dto
 {
     [AutoMapFrom(typeof(Feature))]
     public class FlatFeatureDto

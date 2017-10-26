@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Authorization.Users.Dto;
+using Helios.Authorization.Users;
+using Helios.Authorization.Users.Dto;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Authorization.Users
+namespace Helios.Application.Tests.Authorization.Users
 {
     public class UserAppService_GetUsers_Tests : UserAppServiceTestBase
     {

@@ -1,7 +1,7 @@
 using System;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.MultiTenancy.HostDashboard.Dto
+namespace Helios.MultiTenancy.HostDashboard.Dto
 {
     [AutoMapFrom(typeof(Tenant))]
     public class RecentTenant

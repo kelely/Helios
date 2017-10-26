@@ -30,14 +30,14 @@ using Helios.Web.Authentication.JwtBearer;
 using Helios.Web.Authentication.TwoFactor;
 using Helios.Web.Models.TokenAuth;
 using Helios.Web.Authentication.External;
-using Helios.Zero;
-using Helios.Zero.Authentication.TwoFactor.Google;
-using Helios.Zero.Authorization;
-using Helios.Zero.Authorization.Impersonation;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Identity;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.Notifications;
+using Helios;
+using Helios.Authentication.TwoFactor.Google;
+using Helios.Authorization;
+using Helios.Authorization.Impersonation;
+using Helios.Authorization.Users;
+using Helios.Identity;
+using Helios.MultiTenancy;
+using Helios.Notifications;
 
 namespace Helios.Web.Controllers
 {
@@ -347,7 +347,7 @@ namespace Helios.Web.Controllers
                 externalLoginInfo.Surname,
                 externalLoginInfo.EmailAddress,
                 externalLoginInfo.EmailAddress,
-                Helios.Zero.Authorization.Users.User.CreateRandomPassword(),
+                Helios.Authorization.Users.User.CreateRandomPassword(),
                 true,
                 null
             );

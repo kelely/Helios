@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Helios.Zero.Identity
+namespace Helios.Identity
 {
     public interface ISmsSender
     {

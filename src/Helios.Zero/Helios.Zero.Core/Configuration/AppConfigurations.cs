@@ -3,7 +3,7 @@ using Abp.Extensions;
 using Abp.Reflection.Extensions;
 using Microsoft.Extensions.Configuration;
 
-namespace Helios.Zero.Configuration
+namespace Helios.Configuration
 {
     public static class AppConfigurations
     {

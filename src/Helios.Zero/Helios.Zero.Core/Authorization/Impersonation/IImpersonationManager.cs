@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Abp.Domain.Services;
 
-namespace Helios.Zero.Authorization.Impersonation
+namespace Helios.Authorization.Impersonation
 {
     public interface IImpersonationManager : IDomainService
     {

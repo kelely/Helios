@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using Helios.Zero.Authorization.Accounts.Dto;
+using Helios.Authorization.Accounts.Dto;
 
-namespace Helios.Zero.Authorization.Accounts
+namespace Helios.Authorization.Accounts
 {
     public interface IAccountAppService : IApplicationService
     {

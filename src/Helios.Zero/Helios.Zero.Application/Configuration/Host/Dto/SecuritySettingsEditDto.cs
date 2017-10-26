@@ -1,6 +1,6 @@
-﻿using Helios.Zero.Security;
+﻿using Helios.Security;
 
-namespace Helios.Zero.Configuration.Host.Dto
+namespace Helios.Configuration.Host.Dto
 {
     public class SecuritySettingsEditDto
     {

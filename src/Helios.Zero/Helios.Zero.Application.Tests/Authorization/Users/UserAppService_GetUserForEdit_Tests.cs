@@ -1,12 +1,12 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Authorization.Users
+namespace Helios.Application.Tests.Authorization.Users
 {
     public class UserAppService_GetUserForEdit_Tests : UserAppServiceTestBase
     {

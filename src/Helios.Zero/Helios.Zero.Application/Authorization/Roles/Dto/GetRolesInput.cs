@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Authorization.Roles.Dto
+﻿namespace Helios.Authorization.Roles.Dto
 {
     public class GetRolesInput
     {

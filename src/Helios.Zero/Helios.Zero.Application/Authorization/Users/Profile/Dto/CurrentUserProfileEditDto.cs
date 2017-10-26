@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Authorization.Users;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.Authorization.Users.Profile.Dto
+namespace Helios.Authorization.Users.Profile.Dto
 {
     [AutoMap(typeof(User))]
     public class CurrentUserProfileEditDto

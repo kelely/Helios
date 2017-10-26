@@ -1,7 +1,7 @@
 using System.Collections.Generic;
 using Abp.Application.Services.Dto;
 
-namespace Helios.Zero.Localization.Dto
+namespace Helios.Localization.Dto
 {
     public class GetLanguagesOutput : ListResultDto<ApplicationLanguageListDto>
     {

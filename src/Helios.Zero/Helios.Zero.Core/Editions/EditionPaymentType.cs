@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Editions
+﻿namespace Helios.Editions
 {
     public enum EditionPaymentType
     {

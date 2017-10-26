@@ -1,6 +1,6 @@
 ﻿using Abp.Runtime.Caching;
 
-namespace Helios.Zero.Authorization.Impersonation
+namespace Helios.Authorization.Impersonation
 {
     public static class ImpersonationCacheManagerExtensions
     {

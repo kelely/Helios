@@ -1,6 +1,6 @@
 ﻿using System.Globalization;
 
-namespace Helios.Zero.Localization
+namespace Helios.Localization
 {
     public static class CultureHelper
     {

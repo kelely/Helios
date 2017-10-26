@@ -1,14 +1,14 @@
 ﻿using System.Threading.Tasks;
 using Castle.MicroKernel.Registration;
 using Microsoft.AspNetCore.Identity;
-using Helios.Zero.Authorization.Accounts;
-using Helios.Zero.Authorization.Accounts.Dto;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Accounts;
+using Helios.Authorization.Accounts.Dto;
+using Helios.Authorization.Users;
 using NSubstitute;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Authorization.Accounts
+namespace Helios.Application.Tests.Authorization.Accounts
 {
     public class Password_Reset_Tests : AppTestBase
     {

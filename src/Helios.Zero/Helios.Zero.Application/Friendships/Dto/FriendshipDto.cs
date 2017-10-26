@@ -1,8 +1,8 @@
 ﻿using System;
 using Abp.AutoMapper;
-using Helios.Zero.Friendships.Cache;
+using Helios.Friendships.Cache;
 
-namespace Helios.Zero.Friendships.Dto
+namespace Helios.Friendships.Dto
 {
     [AutoMapFrom(typeof(FriendCacheItem), typeof(Friendship))]
     public class FriendDto

@@ -2,7 +2,7 @@
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.MultiTenancy.Payments.Dto
+namespace Helios.MultiTenancy.Payments.Dto
 {
     [AutoMap(typeof(SubscriptionPayment))]
     public class SubscriptionPaymentListDto: AuditedEntityDto

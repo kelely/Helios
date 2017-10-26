@@ -1,6 +1,6 @@
 using Abp;
 
-namespace Helios.Zero
+namespace Helios
 {
     /// <summary>
     /// This class can be used as a base class for services in this application.

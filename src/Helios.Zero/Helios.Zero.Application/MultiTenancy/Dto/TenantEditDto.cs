@@ -4,7 +4,7 @@ using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.MultiTenancy;
 
-namespace Helios.Zero.MultiTenancy.Dto
+namespace Helios.MultiTenancy.Dto
 {
     [AutoMap(typeof (Tenant))]
     public class TenantEditDto : EntityDto

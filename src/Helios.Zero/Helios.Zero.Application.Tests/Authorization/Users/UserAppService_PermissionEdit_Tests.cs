@@ -4,13 +4,13 @@ using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.Authorization.Users;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Authorization.Users.Dto;
+using Helios.Authorization;
+using Helios.Authorization.Users;
+using Helios.Authorization.Users.Dto;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Authorization.Users
+namespace Helios.Application.Tests.Authorization.Users
 {
     public class UserAppService_PermissionEdit_Tests : UserAppServiceTestBase
     {

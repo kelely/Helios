@@ -1,12 +1,12 @@
 ﻿using System.Linq;
 using System.Threading.Tasks;
-using Helios.Zero.Authorization.Accounts;
-using Helios.Zero.Authorization.Accounts.Dto;
-using Helios.Zero.MultiTenancy;
+using Helios.Authorization.Accounts;
+using Helios.Authorization.Accounts.Dto;
+using Helios.MultiTenancy;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Authorization.Accounts
+namespace Helios.Application.Tests.Authorization.Accounts
 {
     public class AccountAppService_Tests : AppTestBase
     {

@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 
-namespace Helios.Zero.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public interface ISubscriptionPaymentRepository : IRepository<SubscriptionPayment, long>
     {

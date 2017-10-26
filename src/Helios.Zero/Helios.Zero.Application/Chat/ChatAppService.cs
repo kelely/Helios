@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 using Abp.Domain.Repositories;
-using Helios.Zero.Chat.Dto;
+using Helios.Chat.Dto;
 using System.Linq;
 using System.Threading.Tasks;
 using Abp;
@@ -11,10 +11,10 @@ using Abp.RealTime;
 using Abp.Runtime.Session;
 using Abp.Timing;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Friendships.Cache;
-using Helios.Zero.Friendships.Dto;
+using Helios.Friendships.Cache;
+using Helios.Friendships.Dto;
 
-namespace Helios.Zero.Chat
+namespace Helios.Chat
 {
     public class ChatAppService : HeliosZeroAppServiceBase, IChatAppService
     {

@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Security
+﻿namespace Helios.Security
 {
     public class PasswordComplexitySetting
     {

@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Helios.Zero.Tenants.Dashboard.Dto
+namespace Helios.Tenants.Dashboard.Dto
 {
     public class GetWorldMapOutput
     {

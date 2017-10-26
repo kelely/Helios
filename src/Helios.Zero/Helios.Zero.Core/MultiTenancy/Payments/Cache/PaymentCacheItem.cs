@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Helios.Zero.MultiTenancy.Payments.Cache
+namespace Helios.MultiTenancy.Payments.Cache
 {
     [Serializable]
     public class PaymentCacheItem

@@ -2,9 +2,9 @@
 using Abp.Extensions;
 using Abp.Runtime.Validation;
 using Abp.Timing;
-using Helios.Zero.Dto;
+using Helios.Dto;
 
-namespace Helios.Zero.Auditing.Dto
+namespace Helios.Auditing.Dto
 {
     public class GetAuditLogsInput : PagedAndSortedInputDto, IShouldNormalize
     {

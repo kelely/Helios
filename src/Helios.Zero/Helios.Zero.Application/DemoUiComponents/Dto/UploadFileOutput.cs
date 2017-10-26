@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Helios.Zero.DemoUiComponents.Dto
+namespace Helios.DemoUiComponents.Dto
 {
     public class UploadFileOutput
     {

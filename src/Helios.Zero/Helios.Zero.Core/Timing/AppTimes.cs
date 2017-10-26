@@ -1,7 +1,7 @@
 ﻿using System;
 using Abp.Dependency;
 
-namespace Helios.Zero.Timing
+namespace Helios.Timing
 {
     public class AppTimes : ISingletonDependency
     {

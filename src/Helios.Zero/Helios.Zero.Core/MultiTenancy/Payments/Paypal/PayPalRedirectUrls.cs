@@ -1,6 +1,6 @@
 using Newtonsoft.Json;
 
-namespace Helios.Zero.MultiTenancy.Payments.Paypal
+namespace Helios.MultiTenancy.Payments.Paypal
 {
     public class PayPalRedirectUrls
     {

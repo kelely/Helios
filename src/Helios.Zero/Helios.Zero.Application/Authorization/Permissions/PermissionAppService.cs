@@ -2,9 +2,9 @@
 using System.Linq;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
-using Helios.Zero.Authorization.Permissions.Dto;
+using Helios.Authorization.Permissions.Dto;
 
-namespace Helios.Zero.Authorization.Permissions
+namespace Helios.Authorization.Permissions
 {
     public class PermissionAppService : HeliosZeroAppServiceBase, IPermissionAppService
     {

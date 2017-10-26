@@ -3,7 +3,7 @@ using Abp.Configuration.Startup;
 using Abp.Localization;
 using Abp.MultiTenancy;
 
-namespace Helios.Zero.Authorization
+namespace Helios.Authorization
 {
     /// <summary>
     /// Application's authorization provider.

@@ -1,10 +1,10 @@
 ﻿using System.Linq;
 using Abp.MultiTenancy;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Editions;
-using Helios.Zero.EntityFrameworkCore;
+using Helios.Editions;
+using Helios.EntityFrameworkCore;
 
-namespace Helios.Zero.Migrations.Seed.Tenants
+namespace Helios.Migrations.Seed.Tenants
 {
     public class DefaultTenantBuilder
     {

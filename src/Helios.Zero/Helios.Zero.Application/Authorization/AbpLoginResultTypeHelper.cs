@@ -4,7 +4,7 @@ using Abp.Authorization.Users;
 using Abp.Dependency;
 using Abp.UI;
 
-namespace Helios.Zero.Authorization
+namespace Helios.Authorization
 {
     public class AbpLoginResultTypeHelper : HeliosZeroServiceBase, ITransientDependency
     {

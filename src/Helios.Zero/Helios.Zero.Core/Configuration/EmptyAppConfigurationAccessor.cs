@@ -1,7 +1,7 @@
 ﻿using Abp.Dependency;
 using Microsoft.Extensions.Configuration;
 
-namespace Helios.Zero.Configuration
+namespace Helios.Configuration
 {
     /* This service is replaced in Web layer and Test project separately */
     public class EmptyAppConfigurationAccessor : IAppConfigurationAccessor, ISingletonDependency

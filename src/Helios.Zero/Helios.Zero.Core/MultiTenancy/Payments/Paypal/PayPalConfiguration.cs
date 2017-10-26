@@ -1,9 +1,9 @@
 using Abp.Dependency;
 using Abp.Extensions;
 using Microsoft.Extensions.Configuration;
-using Helios.Zero.Configuration;
+using Helios.Configuration;
 
-namespace Helios.Zero.MultiTenancy.Payments.Paypal
+namespace Helios.MultiTenancy.Payments.Paypal
 {
     public class PayPalConfiguration : ITransientDependency
     {

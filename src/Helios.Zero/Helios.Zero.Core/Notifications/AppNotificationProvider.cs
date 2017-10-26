@@ -1,9 +1,9 @@
 ﻿using Abp.Authorization;
 using Abp.Localization;
 using Abp.Notifications;
-using Helios.Zero.Authorization;
+using Helios.Authorization;
 
-namespace Helios.Zero.Notifications
+namespace Helios.Notifications
 {
     public class AppNotificationProvider : NotificationProvider
     {

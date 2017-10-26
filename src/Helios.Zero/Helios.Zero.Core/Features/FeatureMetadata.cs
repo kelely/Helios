@@ -1,7 +1,7 @@
 using System;
 using Abp.Localization;
 
-namespace Helios.Zero.Features
+namespace Helios.Features
 {
     public class FeatureMetadata
     {

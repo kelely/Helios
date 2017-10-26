@@ -3,10 +3,10 @@ using System.ComponentModel.DataAnnotations;
 using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.Extensions;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Validation;
+using Helios.Authorization.Users;
+using Helios.Validation;
 
-namespace Helios.Zero.Authorization.Accounts.Dto
+namespace Helios.Authorization.Accounts.Dto
 {
     public class RegisterInput : IValidatableObject
     {

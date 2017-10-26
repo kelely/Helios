@@ -2,10 +2,10 @@
 using Abp.Auditing;
 using Abp.Authorization.Users;
 using Abp.MultiTenancy;
-using Helios.Zero.MultiTenancy.Payments;
-using Helios.Zero.MultiTenancy.Payments.Dto;
+using Helios.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments.Dto;
 
-namespace Helios.Zero.MultiTenancy.Dto
+namespace Helios.MultiTenancy.Dto
 {
     public class RegisterTenantInput
     {

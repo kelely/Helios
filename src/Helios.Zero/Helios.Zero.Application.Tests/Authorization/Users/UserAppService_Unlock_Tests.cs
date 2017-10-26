@@ -1,13 +1,13 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
-using Helios.Zero.Authorization;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.MultiTenancy;
+using Helios.Authorization;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Authorization.Users
+namespace Helios.Application.Tests.Authorization.Users
 {
     public class UserAppService_Unlock_Tests : UserAppServiceTestBase
     {

@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using Helios.Zero.Configuration.Tenants.Dto;
+using Helios.Configuration.Tenants.Dto;
 
-namespace Helios.Zero.Configuration.Tenants
+namespace Helios.Configuration.Tenants
 {
     public interface ITenantSettingsAppService : IApplicationService
     {

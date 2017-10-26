@@ -1,6 +1,6 @@
 using Abp.AutoMapper;
 
-namespace Helios.Zero.Authorization.Permissions.Dto
+namespace Helios.Authorization.Permissions.Dto
 {
     [AutoMapFrom(typeof(Abp.Authorization.Permission))]
     public class FlatPermissionDto

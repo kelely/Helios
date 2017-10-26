@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations.Schema;
 using Abp.Domain.Entities;
 
-namespace Helios.Zero.MultiTenancy.Accounting
+namespace Helios.MultiTenancy.Accounting
 {
     [Table("AppInvoices")]
     public class Invoice : Entity<int>

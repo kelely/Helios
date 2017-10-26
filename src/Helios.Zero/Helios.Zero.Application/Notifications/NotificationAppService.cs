@@ -8,9 +8,9 @@ using Abp.Authorization;
 using Abp.Configuration;
 using Abp.Notifications;
 using Abp.Runtime.Session;
-using Helios.Zero.Notifications.Dto;
+using Helios.Notifications.Dto;
 
-namespace Helios.Zero.Notifications
+namespace Helios.Notifications
 {
     [AbpAuthorize]
     public class NotificationAppService : HeliosZeroAppServiceBase, INotificationAppService

@@ -1,17 +1,17 @@
 ﻿using Abp.IdentityServer4;
 using Abp.Zero.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Chat;
-using Helios.Zero.Editions;
-using Helios.Zero.Friendships;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.MultiTenancy.Accounting;
-using Helios.Zero.MultiTenancy.Payments;
-using Helios.Zero.Storage;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.Chat;
+using Helios.Editions;
+using Helios.Friendships;
+using Helios.MultiTenancy;
+using Helios.MultiTenancy.Accounting;
+using Helios.MultiTenancy.Payments;
+using Helios.Storage;
 
-namespace Helios.Zero.EntityFrameworkCore
+namespace Helios.EntityFrameworkCore
 {
     public class HeliosZeroDbContext : AbpZeroDbContext<Tenant, Role, User, HeliosZeroDbContext>, IAbpPersistedGrantDbContext
     {

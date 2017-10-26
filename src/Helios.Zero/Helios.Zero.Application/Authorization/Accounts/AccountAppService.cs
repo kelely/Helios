@@ -7,16 +7,16 @@ using Abp.Runtime.Session;
 using Abp.UI;
 using Abp.Zero.Configuration;
 using Microsoft.AspNetCore.Identity;
-using Helios.Zero.Authorization.Accounts.Dto;
-using Helios.Zero.Authorization.Impersonation;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Configuration;
-using Helios.Zero.Debugging;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.Security.Recaptcha;
-using Helios.Zero.Url;
+using Helios.Authorization.Accounts.Dto;
+using Helios.Authorization.Impersonation;
+using Helios.Authorization.Users;
+using Helios.Configuration;
+using Helios.Debugging;
+using Helios.MultiTenancy;
+using Helios.Security.Recaptcha;
+using Helios.Url;
 
-namespace Helios.Zero.Authorization.Accounts
+namespace Helios.Authorization.Accounts
 {
     public class AccountAppService : HeliosZeroAppServiceBase, IAccountAppService
     {

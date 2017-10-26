@@ -2,10 +2,10 @@ using System.Threading.Tasks;
 using Abp;
 using Abp.Localization;
 using Abp.Notifications;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.MultiTenancy;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 
-namespace Helios.Zero.Notifications
+namespace Helios.Notifications
 {
     public class AppNotifier : HeliosZeroDomainServiceBase, IAppNotifier
     {

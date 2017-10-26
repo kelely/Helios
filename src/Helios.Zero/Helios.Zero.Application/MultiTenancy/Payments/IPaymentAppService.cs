@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using Helios.Zero.MultiTenancy.Dto;
-using Helios.Zero.MultiTenancy.Payments.Dto;
+using Helios.MultiTenancy.Dto;
+using Helios.MultiTenancy.Payments.Dto;
 using Abp.Application.Services.Dto;
 
-namespace Helios.Zero.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public interface IPaymentAppService : IApplicationService
     {

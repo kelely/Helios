@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
-using Helios.Zero.Auditing.Dto;
-using Helios.Zero.Dto;
+using Helios.Auditing.Dto;
+using Helios.Dto;
 
-namespace Helios.Zero.Auditing.Exporting
+namespace Helios.Auditing.Exporting
 {
     public interface IAuditLogListExcelExporter
     {

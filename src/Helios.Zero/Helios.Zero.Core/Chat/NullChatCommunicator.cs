@@ -1,9 +1,9 @@
 ﻿using System.Collections.Generic;
 using Abp;
 using Abp.RealTime;
-using Helios.Zero.Friendships;
+using Helios.Friendships;
 
-namespace Helios.Zero.Chat
+namespace Helios.Chat
 {
     public class NullChatCommunicator : IChatCommunicator
     {

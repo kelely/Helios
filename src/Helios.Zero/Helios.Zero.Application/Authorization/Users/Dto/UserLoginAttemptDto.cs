@@ -2,7 +2,7 @@
 using Abp.Authorization.Users;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
 
     [AutoMap(typeof(UserLoginAttempt))]

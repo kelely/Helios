@@ -1,11 +1,11 @@
 using System.Linq;
 using Abp.Application.Features;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Editions;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.Features;
+using Helios.Editions;
+using Helios.EntityFrameworkCore;
+using Helios.Features;
 
-namespace Helios.Zero.Migrations.Seed.Host
+namespace Helios.Migrations.Seed.Host
 {
     public class DefaultEditionCreator
     {

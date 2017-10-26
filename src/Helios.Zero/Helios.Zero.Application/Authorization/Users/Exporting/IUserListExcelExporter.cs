@@ -1,8 +1,8 @@
 using System.Collections.Generic;
-using Helios.Zero.Authorization.Users.Dto;
-using Helios.Zero.Dto;
+using Helios.Authorization.Users.Dto;
+using Helios.Dto;
 
-namespace Helios.Zero.Authorization.Users.Exporting
+namespace Helios.Authorization.Users.Exporting
 {
     public interface IUserListExcelExporter
     {

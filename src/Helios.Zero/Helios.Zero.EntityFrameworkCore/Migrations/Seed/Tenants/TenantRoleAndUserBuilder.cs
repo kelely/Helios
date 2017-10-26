@@ -8,13 +8,13 @@ using Abp.Notifications;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Options;
-using Helios.Zero.Authorization;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.Notifications;
+using Helios.Authorization;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.EntityFrameworkCore;
+using Helios.Notifications;
 
-namespace Helios.Zero.Migrations.Seed.Tenants
+namespace Helios.Migrations.Seed.Tenants
 {
     public class TenantRoleAndUserBuilder
     {

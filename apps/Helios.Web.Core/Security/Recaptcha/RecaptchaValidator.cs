@@ -4,8 +4,8 @@ using Abp.Dependency;
 using Abp.Extensions;
 using Abp.UI;
 using Microsoft.AspNetCore.Http;
-using Helios.Zero;
-using Helios.Zero.Security.Recaptcha;
+using Helios;
+using Helios.Security.Recaptcha;
 using PaulMiami.AspNetCore.Mvc.Recaptcha;
 
 namespace Helios.Web.Security.Recaptcha

@@ -1,8 +1,8 @@
 ﻿using System.Collections.Generic;
 using Abp.AutoMapper;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments;
 
-namespace Helios.Zero.Editions.Dto
+namespace Helios.Editions.Dto
 {
     [AutoMap(typeof(SubscribableEdition))]
     public class EditionSelectDto

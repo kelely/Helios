@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Helios.Zero.Notifications.Dto
+namespace Helios.Notifications.Dto
 {
     public class UpdateNotificationSettingsInput
     {

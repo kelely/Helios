@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Auditing
+﻿namespace Helios.Auditing
 {
     public interface INamespaceStripper
     {

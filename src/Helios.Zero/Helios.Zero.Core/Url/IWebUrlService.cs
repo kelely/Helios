@@ -1,6 +1,6 @@
 ﻿using System.Collections.Generic;
 
-namespace Helios.Zero.Url
+namespace Helios.Url
 {
     public interface IWebUrlService
     {

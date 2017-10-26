@@ -3,9 +3,9 @@ using Abp.Dependency;
 using Abp.Extensions;
 using Abp.IO.Extensions;
 using Abp.Reflection.Extensions;
-using Helios.Zero.Url;
+using Helios.Url;
 
-namespace Helios.Zero.Emailing
+namespace Helios.Emailing
 {
     public class EmailTemplateProvider : IEmailTemplateProvider, ITransientDependency
     {
@@ -19,7 +19,7 @@ namespace Helios.Zero.Emailing
 
         public string GetDefaultTemplate(int? tenantId)
         {
-            using (var stream = typeof(EmailTemplateProvider).GetAssembly().GetManifestResourceStream("Helios.Zero.Emailing.EmailTemplates.default.html"))
+            using (var stream = typeof(EmailTemplateProvider).GetAssembly().GetManifestResourceStream("Helios.Emailing.EmailTemplates.default.html"))
             {
                 var bytes = stream.GetAllBytes();
                 var template = Encoding.UTF8.GetString(bytes, 3, bytes.Length - 3);

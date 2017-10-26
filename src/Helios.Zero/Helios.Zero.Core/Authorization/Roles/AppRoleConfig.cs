@@ -1,7 +1,7 @@
 ﻿using Abp.MultiTenancy;
 using Abp.Zero.Configuration;
 
-namespace Helios.Zero.Authorization.Roles
+namespace Helios.Authorization.Roles
 {
     public static class AppRoleConfig
     {

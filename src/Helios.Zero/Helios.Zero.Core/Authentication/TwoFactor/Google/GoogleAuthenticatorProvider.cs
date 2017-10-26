@@ -2,9 +2,9 @@ using System.Threading.Tasks;
 using Abp.Dependency;
 using Abp.UI;
 using Microsoft.AspNetCore.Identity;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Authentication.TwoFactor.Google
+namespace Helios.Authentication.TwoFactor.Google
 {
     public class GoogleAuthenticatorProvider : HeliosZeroServiceBase, IUserTwoFactorTokenProvider<User>, ITransientDependency
     {
@@ -21,7 +21,7 @@ namespace Helios.Zero.Authentication.TwoFactor.Google
         {
             CheckIfGoogleAuthenticatorIsEnabled(user);
 
-            var setupInfo = _googleTwoFactorAuthenticateService.GenerateSetupCode("Helios.Zero", user.EmailAddress, user.GoogleAuthenticatorKey, 300, 300);
+            var setupInfo = _googleTwoFactorAuthenticateService.GenerateSetupCode("Helios", user.EmailAddress, user.GoogleAuthenticatorKey, 300, 300);
 
             return Task.FromResult(setupInfo.QrCodeSetupImageUrl);
         }

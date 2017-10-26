@@ -1,6 +1,6 @@
 using Abp.Runtime.Caching;
 
-namespace Helios.Zero.Authorization.Users.Profile.Cache
+namespace Helios.Authorization.Users.Profile.Cache
 {
     public static class SmsVerificationCodeCacheExtensions
     {

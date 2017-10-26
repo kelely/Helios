@@ -1,6 +1,6 @@
 using Abp;
 
-namespace Helios.Zero.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
     public class UnlinkUserInput
     {

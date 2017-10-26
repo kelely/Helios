@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
-using Helios.Zero.Editions.Dto;
+using Helios.Editions.Dto;
 
-namespace Helios.Zero.MultiTenancy.Dto
+namespace Helios.MultiTenancy.Dto
 {
     public class EditionsSelectOutput
     {

@@ -2,10 +2,10 @@
 using Abp.Authorization;
 using Abp.BackgroundJobs;
 using Abp.Notifications;
-using Helios.Zero.Chat;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.Friendships;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.Chat;
+using Helios.EntityFrameworkCore;
+using Helios.Friendships;
+using Helios.MultiTenancy.Payments;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
@@ -15,7 +15,7 @@ using Microsoft.EntityFrameworkCore.Storage.Internal;
 using Microsoft.EntityFrameworkCore.ValueGeneration;
 using System;
 
-namespace Helios.Zero.Migrations
+namespace Helios.Migrations
 {
     [DbContext(typeof(HeliosZeroDbContext))]
     partial class HeliosZeroDbContextModelSnapshot : ModelSnapshot
@@ -769,7 +769,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AbpOrganizationUnits");
                 });
 
-            modelBuilder.Entity("Helios.Zero.Authorization.Roles.Role", b =>
+            modelBuilder.Entity("Helios.Authorization.Roles.Role", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -822,7 +822,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AbpRoles");
                 });
 
-            modelBuilder.Entity("Helios.Zero.Authorization.Users.User", b =>
+            modelBuilder.Entity("Helios.Authorization.Users.User", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
@@ -928,7 +928,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AbpUsers");
                 });
 
-            modelBuilder.Entity("Helios.Zero.Chat.ChatMessage", b =>
+            modelBuilder.Entity("Helios.Chat.ChatMessage", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
@@ -968,7 +968,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AppChatMessages");
                 });
 
-            modelBuilder.Entity("Helios.Zero.Friendships.Friendship", b =>
+            modelBuilder.Entity("Helios.Friendships.Friendship", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
@@ -1006,7 +1006,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AppFriendships");
                 });
 
-            modelBuilder.Entity("Helios.Zero.MultiTenancy.Accounting.Invoice", b =>
+            modelBuilder.Entity("Helios.MultiTenancy.Accounting.Invoice", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -1026,7 +1026,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AppInvoices");
                 });
 
-            modelBuilder.Entity("Helios.Zero.MultiTenancy.Payments.SubscriptionPayment", b =>
+            modelBuilder.Entity("Helios.MultiTenancy.Payments.SubscriptionPayment", b =>
                 {
                     b.Property<long>("Id")
                         .ValueGeneratedOnAdd();
@@ -1074,7 +1074,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AppSubscriptionPayments");
                 });
 
-            modelBuilder.Entity("Helios.Zero.MultiTenancy.Tenant", b =>
+            modelBuilder.Entity("Helios.MultiTenancy.Tenant", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd();
@@ -1138,7 +1138,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AbpTenants");
                 });
 
-            modelBuilder.Entity("Helios.Zero.Storage.BinaryObject", b =>
+            modelBuilder.Entity("Helios.Storage.BinaryObject", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd();
@@ -1155,7 +1155,7 @@ namespace Helios.Zero.Migrations
                     b.ToTable("AppBinaryObjects");
                 });
 
-            modelBuilder.Entity("Helios.Zero.Editions.SubscribableEdition", b =>
+            modelBuilder.Entity("Helios.Editions.SubscribableEdition", b =>
                 {
                     b.HasBaseType("Abp.Application.Editions.Edition");
 
@@ -1227,7 +1227,7 @@ namespace Helios.Zero.Migrations
 
             modelBuilder.Entity("Abp.Authorization.Roles.RoleClaim", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Roles.Role")
+                    b.HasOne("Helios.Authorization.Roles.Role")
                         .WithMany("Claims")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -1235,7 +1235,7 @@ namespace Helios.Zero.Migrations
 
             modelBuilder.Entity("Abp.Authorization.Users.UserClaim", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User")
+                    b.HasOne("Helios.Authorization.Users.User")
                         .WithMany("Claims")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -1243,7 +1243,7 @@ namespace Helios.Zero.Migrations
 
             modelBuilder.Entity("Abp.Authorization.Users.UserLogin", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User")
+                    b.HasOne("Helios.Authorization.Users.User")
                         .WithMany("Logins")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -1251,7 +1251,7 @@ namespace Helios.Zero.Migrations
 
             modelBuilder.Entity("Abp.Authorization.Users.UserRole", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User")
+                    b.HasOne("Helios.Authorization.Users.User")
                         .WithMany("Roles")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -1259,7 +1259,7 @@ namespace Helios.Zero.Migrations
 
             modelBuilder.Entity("Abp.Authorization.Users.UserToken", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User")
+                    b.HasOne("Helios.Authorization.Users.User")
                         .WithMany("Tokens")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -1267,7 +1267,7 @@ namespace Helios.Zero.Migrations
 
             modelBuilder.Entity("Abp.Configuration.Setting", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User")
+                    b.HasOne("Helios.Authorization.Users.User")
                         .WithMany("Settings")
                         .HasForeignKey("UserId");
                 });
@@ -1279,37 +1279,37 @@ namespace Helios.Zero.Migrations
                         .HasForeignKey("ParentId");
                 });
 
-            modelBuilder.Entity("Helios.Zero.Authorization.Roles.Role", b =>
+            modelBuilder.Entity("Helios.Authorization.Roles.Role", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "CreatorUser")
+                    b.HasOne("Helios.Authorization.Users.User", "CreatorUser")
                         .WithMany()
                         .HasForeignKey("CreatorUserId");
 
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "DeleterUser")
+                    b.HasOne("Helios.Authorization.Users.User", "DeleterUser")
                         .WithMany()
                         .HasForeignKey("DeleterUserId");
 
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "LastModifierUser")
+                    b.HasOne("Helios.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
                 });
 
-            modelBuilder.Entity("Helios.Zero.Authorization.Users.User", b =>
+            modelBuilder.Entity("Helios.Authorization.Users.User", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "CreatorUser")
+                    b.HasOne("Helios.Authorization.Users.User", "CreatorUser")
                         .WithMany()
                         .HasForeignKey("CreatorUserId");
 
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "DeleterUser")
+                    b.HasOne("Helios.Authorization.Users.User", "DeleterUser")
                         .WithMany()
                         .HasForeignKey("DeleterUserId");
 
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "LastModifierUser")
+                    b.HasOne("Helios.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
                 });
 
-            modelBuilder.Entity("Helios.Zero.MultiTenancy.Payments.SubscriptionPayment", b =>
+            modelBuilder.Entity("Helios.MultiTenancy.Payments.SubscriptionPayment", b =>
                 {
                     b.HasOne("Abp.Application.Editions.Edition", "Edition")
                         .WithMany()
@@ -1317,13 +1317,13 @@ namespace Helios.Zero.Migrations
                         .OnDelete(DeleteBehavior.Cascade);
                 });
 
-            modelBuilder.Entity("Helios.Zero.MultiTenancy.Tenant", b =>
+            modelBuilder.Entity("Helios.MultiTenancy.Tenant", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "CreatorUser")
+                    b.HasOne("Helios.Authorization.Users.User", "CreatorUser")
                         .WithMany()
                         .HasForeignKey("CreatorUserId");
 
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "DeleterUser")
+                    b.HasOne("Helios.Authorization.Users.User", "DeleterUser")
                         .WithMany()
                         .HasForeignKey("DeleterUserId");
 
@@ -1331,7 +1331,7 @@ namespace Helios.Zero.Migrations
                         .WithMany()
                         .HasForeignKey("EditionId");
 
-                    b.HasOne("Helios.Zero.Authorization.Users.User", "LastModifierUser")
+                    b.HasOne("Helios.Authorization.Users.User", "LastModifierUser")
                         .WithMany()
                         .HasForeignKey("LastModifierUserId");
                 });
@@ -1346,7 +1346,7 @@ namespace Helios.Zero.Migrations
 
             modelBuilder.Entity("Abp.Authorization.Roles.RolePermissionSetting", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Roles.Role")
+                    b.HasOne("Helios.Authorization.Roles.Role")
                         .WithMany("Permissions")
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade);
@@ -1354,7 +1354,7 @@ namespace Helios.Zero.Migrations
 
             modelBuilder.Entity("Abp.Authorization.Users.UserPermissionSetting", b =>
                 {
-                    b.HasOne("Helios.Zero.Authorization.Users.User")
+                    b.HasOne("Helios.Authorization.Users.User")
                         .WithMany("Permissions")
                         .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade);

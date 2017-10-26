@@ -2,15 +2,15 @@
 using System.Linq;
 using System.Threading.Tasks;
 using Abp.Timing;
-using Helios.Zero.Editions;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.MultiTenancy.Dto;
-using Helios.Zero.MultiTenancy.Payments;
-using Helios.Zero.MultiTenancy.Payments.Dto;
+using Helios.Editions;
+using Helios.MultiTenancy;
+using Helios.MultiTenancy.Dto;
+using Helios.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments.Dto;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.MultiTenancy
+namespace Helios.Application.Tests.MultiTenancy
 {
     public class SubscriptionManagement_Tests : AppTestBase
     {

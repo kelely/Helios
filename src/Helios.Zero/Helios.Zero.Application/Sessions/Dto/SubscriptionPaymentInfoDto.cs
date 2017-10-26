@@ -1,7 +1,7 @@
 ﻿using Abp.AutoMapper;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments;
 
-namespace Helios.Zero.Sessions.Dto
+namespace Helios.Sessions.Dto
 {
     [AutoMapFrom(typeof(SubscriptionPayment))]
     public class SubscriptionPaymentInfoDto

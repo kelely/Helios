@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Chat.Dto;
+using Helios.Chat.Dto;
 
-namespace Helios.Zero.Chat
+namespace Helios.Chat
 {
     public interface IChatAppService : IApplicationService
     {

@@ -1,8 +1,8 @@
 using System.Collections.Generic;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Authorization.Permissions.Dto;
+using Helios.Authorization.Permissions.Dto;
 
-namespace Helios.Zero.Authorization.Roles.Dto
+namespace Helios.Authorization.Roles.Dto
 {
     public class GetRoleForEditOutput
     {

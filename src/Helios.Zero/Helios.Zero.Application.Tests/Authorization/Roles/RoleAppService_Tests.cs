@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Roles.Dto;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Roles.Dto;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Authorization.Roles
+namespace Helios.Application.Tests.Authorization.Roles
 {
     public class RoleAppService_Tests : AppTestBase
     {

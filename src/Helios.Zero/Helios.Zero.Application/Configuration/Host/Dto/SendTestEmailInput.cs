@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Configuration.Host.Dto
+namespace Helios.Configuration.Host.Dto
 {
     public class SendTestEmailInput
     {

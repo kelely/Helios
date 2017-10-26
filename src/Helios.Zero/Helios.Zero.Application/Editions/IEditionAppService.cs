@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Editions.Dto;
+using Helios.Editions.Dto;
 
-namespace Helios.Zero.Editions
+namespace Helios.Editions
 {
     public interface IEditionAppService : IApplicationService
     {

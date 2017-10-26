@@ -1,4 +1,4 @@
-namespace Helios.Zero.MultiTenancy.Dto
+namespace Helios.MultiTenancy.Dto
 {
     public class RegisterTenantOutput
     {

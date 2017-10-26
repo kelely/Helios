@@ -20,17 +20,17 @@ using Abp.Zero.Configuration;
 using Castle.Components.DictionaryAdapter;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization.Permissions;
-using Helios.Zero.Authorization.Permissions.Dto;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users.Dto;
-using Helios.Zero.Authorization.Users.Exporting;
-using Helios.Zero.Dto;
-using Helios.Zero.Notifications;
-using Helios.Zero.Url;
-using Helios.Zero.Organizations.Dto;
+using Helios.Authorization.Permissions;
+using Helios.Authorization.Permissions.Dto;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users.Dto;
+using Helios.Authorization.Users.Exporting;
+using Helios.Dto;
+using Helios.Notifications;
+using Helios.Url;
+using Helios.Organizations.Dto;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Users)]
     public class UserAppService : HeliosZeroAppServiceBase, IUserAppService

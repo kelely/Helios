@@ -1,13 +1,13 @@
 ﻿using System.Threading.Tasks;
 using Abp.Auditing;
 using Abp.Timing;
-using Helios.Zero.Auditing;
-using Helios.Zero.Auditing.Dto;
-using Helios.Zero.Authorization.Users;
+using Helios.Auditing;
+using Helios.Auditing.Dto;
+using Helios.Authorization.Users;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Auditing
+namespace Helios.Application.Tests.Auditing
 {
     public class AuditLogAppService_Tests : AppTestBase
     {

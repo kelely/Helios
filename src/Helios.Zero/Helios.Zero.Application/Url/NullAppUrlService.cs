@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Helios.Zero.Url
+namespace Helios.Url
 {
     public class NullAppUrlService : IAppUrlService
     {

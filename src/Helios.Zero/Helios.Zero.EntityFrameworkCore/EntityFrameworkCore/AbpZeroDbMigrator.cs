@@ -3,7 +3,7 @@ using Abp.EntityFrameworkCore;
 using Abp.MultiTenancy;
 using Abp.Zero.EntityFrameworkCore;
 
-namespace Helios.Zero.EntityFrameworkCore
+namespace Helios.EntityFrameworkCore
 {
     public class AbpZeroDbMigrator : AbpZeroDbMigrator<HeliosZeroDbContext>
     {

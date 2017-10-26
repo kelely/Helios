@@ -2,9 +2,9 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Notifications.Dto;
+using Helios.Notifications.Dto;
 
-namespace Helios.Zero.Notifications
+namespace Helios.Notifications
 {
     public interface INotificationAppService : IApplicationService
     {

@@ -1,6 +1,6 @@
 ﻿using Abp.Domain.Services;
 
-namespace Helios.Zero
+namespace Helios
 {
     public abstract class HeliosZeroDomainServiceBase : DomainService
     {

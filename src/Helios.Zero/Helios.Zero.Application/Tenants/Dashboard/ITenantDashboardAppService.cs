@@ -1,7 +1,7 @@
 ﻿using Abp.Application.Services;
-using Helios.Zero.Tenants.Dashboard.Dto;
+using Helios.Tenants.Dashboard.Dto;
 
-namespace Helios.Zero.Tenants.Dashboard
+namespace Helios.Tenants.Dashboard
 {
     public interface ITenantDashboardAppService : IApplicationService
     {

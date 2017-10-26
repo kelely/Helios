@@ -8,17 +8,17 @@ using Abp.Net.Mail;
 using Abp.TestBase;
 using Abp.Zero.Configuration;
 using Castle.MicroKernel.Registration;
-using Helios.Zero.Configuration;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.Security.Recaptcha;
-using Helios.Zero.Application.Tests.Configuration;
-using Helios.Zero.Application.Tests.DependencyInjection;
-using Helios.Zero.Application.Tests.Url;
-using Helios.Zero.Application.Tests.Web;
-using Helios.Zero.Url;
+using Helios.Configuration;
+using Helios.EntityFrameworkCore;
+using Helios.Security.Recaptcha;
+using Helios.Application.Tests.Configuration;
+using Helios.Application.Tests.DependencyInjection;
+using Helios.Application.Tests.Url;
+using Helios.Application.Tests.Web;
+using Helios.Url;
 using NSubstitute;
 
-namespace Helios.Zero.Application.Tests
+namespace Helios.Application.Tests
 {
     [DependsOn(
         typeof(HeliosZeroApplicationModule),

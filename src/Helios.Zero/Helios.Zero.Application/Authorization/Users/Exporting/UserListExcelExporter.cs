@@ -3,11 +3,11 @@ using System.Linq;
 using Abp.Collections.Extensions;
 using Abp.Runtime.Session;
 using Abp.Timing.Timezone;
-using Helios.Zero.Authorization.Users.Dto;
-using Helios.Zero.DataExporting.Excel.EpPlus;
-using Helios.Zero.Dto;
+using Helios.Authorization.Users.Dto;
+using Helios.DataExporting.Excel.EpPlus;
+using Helios.Dto;
 
-namespace Helios.Zero.Authorization.Users.Exporting
+namespace Helios.Authorization.Users.Exporting
 {
     public class UserListExcelExporter : EpPlusExcelExporterBase, IUserListExcelExporter
     {

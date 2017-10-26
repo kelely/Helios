@@ -7,11 +7,11 @@ using Abp.Collections.Extensions;
 using Abp.Extensions;
 using Abp.Linq.Extensions;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Common.Dto;
-using Helios.Zero.Editions;
-using Helios.Zero.Editions.Dto;
+using Helios.Common.Dto;
+using Helios.Editions;
+using Helios.Editions.Dto;
 
-namespace Helios.Zero.Common
+namespace Helios.Common
 {
     [AbpAuthorize]
     public class CommonLookupAppService : HeliosZeroAppServiceBase, ICommonLookupAppService

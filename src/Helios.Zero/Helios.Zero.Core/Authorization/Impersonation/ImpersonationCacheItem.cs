@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Helios.Zero.Authorization.Impersonation
+namespace Helios.Authorization.Impersonation
 {
     [Serializable]
     public class ImpersonationCacheItem

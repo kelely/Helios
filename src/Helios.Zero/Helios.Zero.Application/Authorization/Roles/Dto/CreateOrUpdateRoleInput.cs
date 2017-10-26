@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 
-namespace Helios.Zero.Authorization.Roles.Dto
+namespace Helios.Authorization.Roles.Dto
 {
     public class CreateOrUpdateRoleInput
     {

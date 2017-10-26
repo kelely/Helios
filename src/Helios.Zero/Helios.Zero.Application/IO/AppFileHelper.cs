@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using Abp.IO;
 
-namespace Helios.Zero.IO
+namespace Helios.IO
 {
     public static class AppFileHelper
     {

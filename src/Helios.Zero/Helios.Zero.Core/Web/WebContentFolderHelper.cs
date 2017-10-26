@@ -3,7 +3,7 @@ using System.IO;
 using System.Linq;
 using Abp.Reflection.Extensions;
 
-namespace Helios.Zero.Web
+namespace Helios.Web
 {
     /// <summary>
     /// This class is used to find root path of the web project in;
@@ -16,7 +16,7 @@ namespace Helios.Zero.Web
             var coreAssemblyDirectoryPath = Path.GetDirectoryName(typeof(HeliosZeroCoreModule).GetAssembly().Location);
             if (coreAssemblyDirectoryPath == null)
             {
-                throw new Exception("Could not find location of Helios.Zero.Core assembly!");
+                throw new Exception("Could not find location of Helios.Core assembly!");
             }
 
             var directoryInfo = new DirectoryInfo(coreAssemblyDirectoryPath);

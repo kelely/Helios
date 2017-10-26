@@ -10,9 +10,9 @@ using Abp.UI;
 using Abp.Zero.Configuration;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Authorization.Roles
+namespace Helios.Authorization.Roles
 {
     /// <summary>
     /// Role manager.

@@ -7,23 +7,23 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.IdentityFramework;
 using Abp.MultiTenancy;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Editions;
-using Helios.Zero.MultiTenancy.Demo;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.Editions;
+using Helios.MultiTenancy.Demo;
 using Abp.Extensions;
 using Abp.Notifications;
 using Abp.Runtime.Security;
 using Microsoft.AspNetCore.Identity;
-using Helios.Zero.Notifications;
+using Helios.Notifications;
 using System;
 using System.Diagnostics;
 using System.Linq.Expressions;
 using Abp.UI;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments;
 
-namespace Helios.Zero.MultiTenancy
+namespace Helios.MultiTenancy
 {
     /// <summary>
     /// Tenant manager.

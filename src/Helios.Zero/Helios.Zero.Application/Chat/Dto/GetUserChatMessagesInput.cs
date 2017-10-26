@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Helios.Zero.Chat.Dto
+namespace Helios.Chat.Dto
 {
     public class GetUserChatMessagesInput
     {

@@ -1,7 +1,7 @@
 ﻿using Abp.Dependency;
 using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
-using Helios.Zero.Configuration;
+using Helios.Configuration;
 
 namespace Helios.Web.Configuration
 {

@@ -9,17 +9,17 @@ using Abp.Runtime.Security;
 using Abp.Runtime.Session;
 using Abp.Timing;
 using Abp.Zero.Configuration;
-using Helios.Zero.Authorization;
-using Helios.Zero.Configuration.Host.Dto;
-using Helios.Zero.Configuration.Tenants.Dto;
-using Helios.Zero.Security;
-using Helios.Zero.Storage;
-using Helios.Zero.Timing;
+using Helios.Authorization;
+using Helios.Configuration.Host.Dto;
+using Helios.Configuration.Tenants.Dto;
+using Helios.Security;
+using Helios.Storage;
+using Helios.Timing;
 #if FEATURE_LDAP
 using Abp.Zero.Ldap.Configuration;
 #endif
 
-namespace Helios.Zero.Configuration.Tenants
+namespace Helios.Configuration.Tenants
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Tenant_Settings)]
     public class TenantSettingsAppService : SettingsAppServiceBase, ITenantSettingsAppService

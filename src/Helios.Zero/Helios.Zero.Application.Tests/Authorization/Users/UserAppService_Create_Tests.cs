@@ -3,13 +3,13 @@ using System.Threading.Tasks;
 using Abp.Collections.Extensions;
 using Abp.UI;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users.Dto;
-using Helios.Zero.MultiTenancy;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users.Dto;
+using Helios.MultiTenancy;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Authorization.Users
+namespace Helios.Application.Tests.Authorization.Users
 {
     public class UserAppService_Create_Tests : UserAppServiceTestBase
     {

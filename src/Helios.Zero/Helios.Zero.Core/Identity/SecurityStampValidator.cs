@@ -2,11 +2,11 @@
 using Microsoft.AspNetCore.Authentication;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.MultiTenancy;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 
-namespace Helios.Zero.Identity
+namespace Helios.Identity
 {
     public class SecurityStampValidator : AbpSecurityStampValidator<Tenant, Role, User>
     {

@@ -2,7 +2,7 @@
 using Abp.AutoMapper;
 using Abp.UI.Inputs;
 
-namespace Helios.Zero.Editions.Dto
+namespace Helios.Editions.Dto
 {
     [AutoMap(typeof(Feature))]
     public class FlatFeatureSelectDto

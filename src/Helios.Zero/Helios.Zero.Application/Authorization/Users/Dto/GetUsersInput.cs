@@ -1,7 +1,7 @@
 ﻿using Abp.Runtime.Validation;
-using Helios.Zero.Dto;
+using Helios.Dto;
 
-namespace Helios.Zero.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
     public class GetUsersInput : PagedAndSortedInputDto, IShouldNormalize
     {

@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Common.Dto;
-using Helios.Zero.Editions.Dto;
+using Helios.Common.Dto;
+using Helios.Editions.Dto;
 
-namespace Helios.Zero.Common
+namespace Helios.Common
 {
     public interface ICommonLookupAppService : IApplicationService
     {

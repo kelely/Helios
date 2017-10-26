@@ -6,13 +6,13 @@ using Abp.Authorization.Users;
 using Abp.MultiTenancy;
 using Abp.Notifications;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.Notifications;
+using Helios.Authorization;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.EntityFrameworkCore;
+using Helios.Notifications;
 
-namespace Helios.Zero.Migrations.Seed.Host
+namespace Helios.Migrations.Seed.Host
 {
     public class HostRoleAndUserCreator
     {

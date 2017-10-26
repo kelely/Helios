@@ -4,7 +4,7 @@ using Abp.Extensions;
 using Abp.Localization;
 using Abp.Runtime.Validation;
 
-namespace Helios.Zero.Localization
+namespace Helios.Localization
 {
     public class GetLanguageTextsInput : IPagedResultRequest, ISortedResultRequest, IShouldNormalize
     {

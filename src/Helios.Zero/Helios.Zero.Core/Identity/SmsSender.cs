@@ -2,7 +2,7 @@
 using Abp.Dependency;
 using Castle.Core.Logging;
 
-namespace Helios.Zero.Identity
+namespace Helios.Identity
 {
     public class SmsSender : ISmsSender, ITransientDependency
     {

@@ -2,7 +2,7 @@
 using System.ComponentModel.DataAnnotations;
 using Abp.Application.Services.Dto;
 
-namespace Helios.Zero.Editions.Dto
+namespace Helios.Editions.Dto
 {
     public class CreateOrUpdateEditionDto
     {

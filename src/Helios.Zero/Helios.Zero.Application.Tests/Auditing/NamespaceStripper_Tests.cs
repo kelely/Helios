@@ -1,8 +1,8 @@
-﻿using Helios.Zero.Auditing;
+﻿using Helios.Auditing;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Auditing
+namespace Helios.Application.Tests.Auditing
 {
     public class NamespaceStripper_Tests: AppTestBase
     {
@@ -16,14 +16,14 @@ namespace Helios.Zero.Application.Tests.Auditing
         [Fact]
         public void Should_Stripe_Namespace()
         {
-            var controllerName = _namespaceStripper.StripNameSpace("Helios.Zero.Web.Controllers.HomeController");
+            var controllerName = _namespaceStripper.StripNameSpace("Helios.Web.Controllers.HomeController");
             controllerName.ShouldBe("HomeController");
         }
 
         [Theory]
-        [InlineData("Helios.Zero.Auditing.GenericEntityService`1[[Helios.Zero.Storage.BinaryObject, Helios.Zero.Core, Version=1.10.1.0, Culture=neutral, PublicKeyToken=null]]", "GenericEntityService<BinaryObject>")]
+        [InlineData("Helios.Auditing.GenericEntityService`1[[Helios.Storage.BinaryObject, Helios.Core, Version=1.10.1.0, Culture=neutral, PublicKeyToken=null]]", "GenericEntityService<BinaryObject>")]
         [InlineData("CompanyName.ProductName.Services.Base.EntityService`6[[CompanyName.ProductName.Entity.Book, CompanyName.ProductName.Core, Version=1.10.1.0, Culture=neutral, PublicKeyToken=null],[CompanyName.ProductName.Services.Dto.Book.CreateInput, N...", "EntityService<Book, CreateInput>")]
-        [InlineData("Helios.Zero.Auditing.XEntityService`1[Helios.Zero.Auditing.AService`5[[Helios.Zero.Storage.BinaryObject, Helios.Zero.Core, Version=1.10.1.0, Culture=neutral, PublicKeyToken=null],[Helios.Zero.Storage.TestObject, Helios.Zero.Core, Version=1.10.1.0, Culture=neutral, PublicKeyToken=null],]]", "XEntityService<AService<BinaryObject, TestObject>>")]
+        [InlineData("Helios.Auditing.XEntityService`1[Helios.Auditing.AService`5[[Helios.Storage.BinaryObject, Helios.Core, Version=1.10.1.0, Culture=neutral, PublicKeyToken=null],[Helios.Storage.TestObject, Helios.Core, Version=1.10.1.0, Culture=neutral, PublicKeyToken=null],]]", "XEntityService<AService<BinaryObject, TestObject>>")]
         public void Should_Stripe_Generic_Namespace(string serviceName, string result)
         {
             var genericServiceName = _namespaceStripper.StripNameSpace(serviceName);

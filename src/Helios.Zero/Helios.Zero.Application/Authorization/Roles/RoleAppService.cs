@@ -8,11 +8,11 @@ using Abp.Authorization.Users;
 using Abp.Linq.Extensions;
 using Abp.Extensions;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization.Permissions;
-using Helios.Zero.Authorization.Permissions.Dto;
-using Helios.Zero.Authorization.Roles.Dto;
+using Helios.Authorization.Permissions;
+using Helios.Authorization.Permissions.Dto;
+using Helios.Authorization.Roles.Dto;
 
-namespace Helios.Zero.Authorization.Roles
+namespace Helios.Authorization.Roles
 {
     /// <summary>
     /// Application service that is used by 'role management' page.

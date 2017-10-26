@@ -1,10 +1,10 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Authorization.Users.Dto;
-using Helios.Zero.Dto;
+using Helios.Authorization.Users.Dto;
+using Helios.Dto;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public interface IUserAppService : IApplicationService
     {

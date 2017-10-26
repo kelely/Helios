@@ -11,9 +11,9 @@ using Abp.Runtime.Caching;
 using Abp.Runtime.Security;
 using Abp.Runtime.Session;
 using Abp.UI;
-using Helios.Zero.Authorization.Impersonation;
+using Helios.Authorization.Impersonation;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public class UserLinkManager : HeliosZeroDomainServiceBase, IUserLinkManager
     {

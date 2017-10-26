@@ -12,26 +12,26 @@ using Abp.Net.Mail.Smtp;
 using Abp.Zero;
 using Abp.Zero.Configuration;
 using Castle.MicroKernel.Registration;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Chat;
-using Helios.Zero.Configuration;
-using Helios.Zero.Debugging;
-using Helios.Zero.Emailing;
-using Helios.Zero.Features;
-using Helios.Zero.Friendships;
-using Helios.Zero.Friendships.Cache;
-using Helios.Zero.Localization;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.MultiTenancy.Payments.Cache;
-using Helios.Zero.Notifications;
-using Helios.Zero.Timing;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.Chat;
+using Helios.Configuration;
+using Helios.Debugging;
+using Helios.Emailing;
+using Helios.Features;
+using Helios.Friendships;
+using Helios.Friendships.Cache;
+using Helios.Localization;
+using Helios.MultiTenancy;
+using Helios.MultiTenancy.Payments.Cache;
+using Helios.Notifications;
+using Helios.Timing;
 
 #if FEATURE_LDAP
 using Abp.Zero.Ldap;
 #endif
 
-namespace Helios.Zero
+namespace Helios
 {
     [DependsOn(
         typeof(AbpZeroCoreModule),

@@ -1,15 +1,15 @@
 using Abp;
 using Abp.Domain.Repositories;
 using Abp.Runtime.Caching;
-using Helios.Zero.Chat;
+using Helios.Chat;
 using System.Linq;
 using Abp.Dependency;
 using Abp.Domain.Uow;
 using Abp.MultiTenancy;
 using Abp.Threading;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Friendships.Cache
+namespace Helios.Friendships.Cache
 {
     public class UserFriendsCache : IUserFriendsCache, ISingletonDependency
     {

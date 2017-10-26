@@ -4,9 +4,9 @@ using System.Linq;
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Configuration;
-using Helios.Zero.Timing.Dto;
+using Helios.Timing.Dto;
 
-namespace Helios.Zero.Timing
+namespace Helios.Timing
 {
     public class TimingAppService : HeliosZeroAppServiceBase, ITimingAppService
     {

@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Authorization.Permissions.Dto
+﻿namespace Helios.Authorization.Permissions.Dto
 {
     public class FlatPermissionWithLevelDto: FlatPermissionDto
     {

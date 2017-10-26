@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
-using Helios.Zero.Configuration;
-using Helios.Zero.Web;
+using Helios.Configuration;
+using Helios.Web;
 
-namespace Helios.Zero.EntityFrameworkCore
+namespace Helios.EntityFrameworkCore
 {
     /* This class is needed to run "dotnet ef ..." commands from command line on development. Not used anywhere else */
     public class HeliosZeroDbContextFactory : IDesignTimeDbContextFactory<HeliosZeroDbContext>

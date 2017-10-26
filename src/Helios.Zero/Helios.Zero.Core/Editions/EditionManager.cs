@@ -4,7 +4,7 @@ using Abp.Application.Editions;
 using Abp.Application.Features;
 using Abp.Domain.Repositories;
 
-namespace Helios.Zero.Editions
+namespace Helios.Editions
 {
     public class EditionManager : AbpEditionManager
     {

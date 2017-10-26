@@ -1,7 +1,7 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 
-namespace Helios.Zero.MultiTenancy
+namespace Helios.MultiTenancy
 {
     public interface ISubscriptionAppService : IApplicationService
     {

@@ -2,10 +2,10 @@
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 using Abp.Timing;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.MultiTenancy;
+using Helios.MultiTenancy.Payments;
 
-namespace Helios.Zero.Sessions.Dto
+namespace Helios.Sessions.Dto
 {
     [AutoMapFrom(typeof(Tenant))]
     public class TenantLoginInfoDto : EntityDto

@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
-using Helios.Zero.MultiTenancy.Accounting.Dto;
+using Helios.MultiTenancy.Accounting.Dto;
 
-namespace Helios.Zero.MultiTenancy.Accounting
+namespace Helios.MultiTenancy.Accounting
 {
     public interface IInvoiceAppService
     {

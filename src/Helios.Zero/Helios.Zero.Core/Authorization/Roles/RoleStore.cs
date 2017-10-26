@@ -1,9 +1,9 @@
 ﻿using Abp.Authorization.Roles;
 using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Authorization.Roles
+namespace Helios.Authorization.Roles
 {
     public class RoleStore : AbpRoleStore<Role, User>
     {

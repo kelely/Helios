@@ -2,7 +2,7 @@
 using Abp.Extensions;
 using System.Linq;
 
-namespace Helios.Zero.Auditing
+namespace Helios.Auditing
 {
     public class NamespaceStripper : INamespaceStripper, ITransientDependency
     {

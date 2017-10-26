@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
-using Helios.Zero.Notifications;
+using Helios.Notifications;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Notifications
+namespace Helios.Application.Tests.Notifications
 {
     public class NotificationAppService_Tests : AppTestBase
     {

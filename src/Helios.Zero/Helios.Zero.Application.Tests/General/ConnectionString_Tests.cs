@@ -2,7 +2,7 @@
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.General
+namespace Helios.Application.Tests.General
 {
     public class ConnectionString_Tests
     {

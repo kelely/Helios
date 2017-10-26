@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Net.Mail;
-using Helios.Zero.Configuration.Host.Dto;
+using Helios.Configuration.Host.Dto;
 
-namespace Helios.Zero.Configuration
+namespace Helios.Configuration
 {
     public abstract class SettingsAppServiceBase : HeliosZeroAppServiceBase
     {

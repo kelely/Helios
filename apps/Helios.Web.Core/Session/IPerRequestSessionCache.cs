@@ -1,5 +1,5 @@
 ﻿using System.Threading.Tasks;
-using Helios.Zero.Sessions.Dto;
+using Helios.Sessions.Dto;
 
 namespace Helios.Web.Session
 {

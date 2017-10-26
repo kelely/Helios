@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Dto
+﻿namespace Helios.Dto
 {
     public class PagedSortedAndFilteredInputDto : PagedAndSortedInputDto
     {

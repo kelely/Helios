@@ -1,6 +1,6 @@
 using System;
 
-namespace Helios.Zero.Authorization.Users.Profile.Cache
+namespace Helios.Authorization.Users.Profile.Cache
 {
     [Serializable]
     public class SmsVerificationCodeCacheItem

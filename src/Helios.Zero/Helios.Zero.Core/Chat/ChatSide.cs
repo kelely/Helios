@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Chat
+﻿namespace Helios.Chat
 {
     public enum ChatSide
     {

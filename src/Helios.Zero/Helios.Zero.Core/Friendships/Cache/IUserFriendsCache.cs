@@ -1,6 +1,6 @@
 ﻿using Abp;
 
-namespace Helios.Zero.Friendships.Cache
+namespace Helios.Friendships.Cache
 {
     public interface IUserFriendsCache
     {

@@ -1,4 +1,4 @@
-namespace Helios.Zero.Configuration
+namespace Helios.Configuration
 {
     /// <summary>
     /// Defines string constants for setting names in the application.

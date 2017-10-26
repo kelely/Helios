@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Helios.Zero.Tenants.Dashboard.Dto;
+using Helios.Tenants.Dashboard.Dto;
 
-namespace Helios.Zero.Tenants.Dashboard
+namespace Helios.Tenants.Dashboard
 {
     public static class DashboardRandomDataGenerator
     {

@@ -20,8 +20,8 @@ using Helios.Web.Authentication.JwtBearer;
 using PaulMiami.AspNetCore.Mvc.Recaptcha;
 using Swashbuckle.AspNetCore.Swagger;
 using Helios.Web.IdentityServer;
-using Helios.Zero.Configuration;
-using Helios.Zero.Identity;
+using Helios.Configuration;
+using Helios.Identity;
 
 #if FEATURE_SIGNALR
 using Helios.Web.Owin;

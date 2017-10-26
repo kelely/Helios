@@ -1,7 +1,7 @@
 ﻿using System.Text.RegularExpressions;
 using Abp.Extensions;
 
-namespace Helios.Zero.Validation
+namespace Helios.Validation
 {
     public static class ValidationHelper
     {

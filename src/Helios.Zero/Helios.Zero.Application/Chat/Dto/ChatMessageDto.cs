@@ -2,7 +2,7 @@ using System;
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.Chat.Dto
+namespace Helios.Chat.Dto
 {
     [AutoMapFrom(typeof(ChatMessage))]
     public class ChatMessageDto : EntityDto

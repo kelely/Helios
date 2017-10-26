@@ -1,6 +1,6 @@
 ﻿using System.ComponentModel.DataAnnotations;
 
-namespace Helios.Zero.Organizations.Dto
+namespace Helios.Organizations.Dto
 {
     public class UsersToOrganizationUnitInput
     {

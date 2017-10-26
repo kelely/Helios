@@ -1,7 +1,7 @@
 using Abp.Auditing;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Auditing
+namespace Helios.Auditing
 {
     /// <summary>
     /// A helper class to store an <see cref="AuditLog"/> and a <see cref="User"/> object.

@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.IO;
 using Abp.Collections.Extensions;
 using Abp.Dependency;
-using Helios.Zero.Dto;
-using Helios.Zero.Net.MimeTypes;
+using Helios.Dto;
+using Helios.Net.MimeTypes;
 using OfficeOpenXml;
 
-namespace Helios.Zero.DataExporting.Excel.EpPlus
+namespace Helios.DataExporting.Excel.EpPlus
 {
     public abstract class EpPlusExcelExporterBase : HeliosZeroServiceBase, ITransientDependency
     {

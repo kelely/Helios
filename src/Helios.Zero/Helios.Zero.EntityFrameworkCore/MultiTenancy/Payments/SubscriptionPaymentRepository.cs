@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Abp.EntityFrameworkCore;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.EntityFrameworkCore.Repositories;
+using Helios.EntityFrameworkCore;
+using Helios.EntityFrameworkCore.Repositories;
 
-namespace Helios.Zero.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public class SubscriptionPaymentRepository : HeliosZeroRepositoryBase<SubscriptionPayment, long>, ISubscriptionPaymentRepository
     {

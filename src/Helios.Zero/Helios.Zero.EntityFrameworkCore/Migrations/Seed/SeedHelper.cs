@@ -5,11 +5,11 @@ using Abp.Domain.Uow;
 using Abp.EntityFrameworkCore.Uow;
 using Abp.MultiTenancy;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.Migrations.Seed.Host;
-using Helios.Zero.Migrations.Seed.Tenants;
+using Helios.EntityFrameworkCore;
+using Helios.Migrations.Seed.Host;
+using Helios.Migrations.Seed.Tenants;
 
-namespace Helios.Zero.Migrations.Seed
+namespace Helios.Migrations.Seed
 {
     public static class SeedHelper
     {

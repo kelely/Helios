@@ -4,7 +4,7 @@ using System.ComponentModel.DataAnnotations.Schema;
 using Abp;
 using Abp.Domain.Entities;
 
-namespace Helios.Zero.Storage
+namespace Helios.Storage
 {
     [Table("AppBinaryObjects")]
     public class BinaryObject : Entity<Guid>, IMayHaveTenant

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.ComponentModel.DataAnnotations;
 
-namespace Helios.Zero.Dto
+namespace Helios.Dto
 {
     public class FileDto
     {

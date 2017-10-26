@@ -2,7 +2,7 @@
 using System.IO;
 using Abp.Reflection.Extensions;
 
-namespace Helios.Zero
+namespace Helios
 {
     /// <summary>
     /// Central point for application version.

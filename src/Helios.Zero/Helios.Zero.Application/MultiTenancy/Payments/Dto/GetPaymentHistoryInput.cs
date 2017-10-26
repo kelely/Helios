@@ -1,7 +1,7 @@
 ﻿using Abp.Runtime.Validation;
-using Helios.Zero.Dto;
+using Helios.Dto;
 
-namespace Helios.Zero.MultiTenancy.Payments.Dto
+namespace Helios.MultiTenancy.Payments.Dto
 {
     public class GetPaymentHistoryInput : PagedAndSortedInputDto, IShouldNormalize
     {

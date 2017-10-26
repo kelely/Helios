@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Sessions.Dto
+﻿namespace Helios.Sessions.Dto
 {
     public class GetCurrentLoginInformationsOutput
     {

@@ -2,9 +2,9 @@ using System.Collections.Generic;
 using Abp;
 using Abp.Dependency;
 using Microsoft.AspNetCore.Identity;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.MultiTenancy.Demo
+namespace Helios.MultiTenancy.Demo
 {
     public class RandomUserGenerator : ITransientDependency
     {

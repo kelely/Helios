@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Authorization.Accounts.Dto
+﻿namespace Helios.Authorization.Accounts.Dto
 {
     public class IsTenantAvailableOutput
     {

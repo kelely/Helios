@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 using System;
 using System.Collections.Generic;
 
-namespace Helios.Zero.Migrations
+namespace Helios.Migrations
 {
     public partial class Helios_Zero_Init : Migration
     {

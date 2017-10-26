@@ -5,10 +5,10 @@ using System.Linq;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.MultiTenancy.HostDashboard.Dto;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.MultiTenancy.HostDashboard.Dto;
+using Helios.MultiTenancy.Payments;
 
-namespace Helios.Zero.MultiTenancy.HostDashboard
+namespace Helios.MultiTenancy.HostDashboard
 {
     public class IncomeStatisticsService : HeliosZeroDomainServiceBase, IIncomeStatisticsService
     {

@@ -1,8 +1,8 @@
 using Abp.Application.Services.Dto;
 using Abp.AutoMapper;
-using Helios.Zero.Editions;
+using Helios.Editions;
 
-namespace Helios.Zero.Sessions.Dto
+namespace Helios.Sessions.Dto
 {
     [AutoMapFrom(typeof(SubscribableEdition))]
     public class EditionInfoDto : EntityDto

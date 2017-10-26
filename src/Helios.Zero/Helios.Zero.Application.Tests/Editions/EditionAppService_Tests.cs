@@ -2,12 +2,12 @@
 using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Editions;
-using Helios.Zero.Editions.Dto;
-using Helios.Zero.Features;
+using Helios.Editions;
+using Helios.Editions.Dto;
+using Helios.Features;
 using Shouldly;
 
-namespace Helios.Zero.Application.Tests.Editions
+namespace Helios.Application.Tests.Editions
 {
     public class EditionAppService_Tests : AppTestBase
     {

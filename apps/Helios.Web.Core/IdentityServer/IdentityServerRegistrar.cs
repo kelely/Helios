@@ -1,8 +1,8 @@
 ﻿using Abp.IdentityServer4;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.EntityFrameworkCore;
+using Helios.Authorization.Users;
+using Helios.EntityFrameworkCore;
 
 namespace Helios.Web.IdentityServer
 {

@@ -3,10 +3,10 @@ using Abp.Domain.Repositories;
 using Abp.Domain.Uow;
 using Abp.MultiTenancy;
 using Abp.Runtime.Caching;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.MultiTenancy;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 
-namespace Helios.Zero.Editions
+namespace Helios.Editions
 {
     public class FeatureValueStore : AbpFeatureValueStore<Tenant, User>
     {

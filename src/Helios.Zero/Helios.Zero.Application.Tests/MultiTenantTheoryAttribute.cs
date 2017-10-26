@@ -1,6 +1,6 @@
 ﻿using Xunit;
 
-namespace Helios.Zero.Application.Tests
+namespace Helios.Application.Tests
 {
     public sealed class MultiTenantTheoryAttribute : TheoryAttribute
     {

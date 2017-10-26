@@ -3,10 +3,10 @@ using System.Threading.Tasks;
 using Abp.Application.Services.Dto;
 using Abp.Authorization;
 using Abp.Runtime.Caching;
-using Helios.Zero.Authorization;
-using Helios.Zero.Caching.Dto;
+using Helios.Authorization;
+using Helios.Caching.Dto;
 
-namespace Helios.Zero.Caching
+namespace Helios.Caching
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Host_Maintenance)]
     public class CachingAppService : HeliosZeroAppServiceBase, ICachingAppService

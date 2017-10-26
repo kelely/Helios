@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Caching.Dto;
+using Helios.Caching.Dto;
 
-namespace Helios.Zero.Caching
+namespace Helios.Caching
 {
     public interface ICachingAppService : IApplicationService
     {

@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace Helios.Zero.Localization
+namespace Helios.Localization
 {
     public static class FamFamFamFlagsHelper
     {

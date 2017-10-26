@@ -1,7 +1,7 @@
 ﻿using Abp.Notifications;
-using Helios.Zero.Dto;
+using Helios.Dto;
 
-namespace Helios.Zero.Notifications.Dto
+namespace Helios.Notifications.Dto
 {
     public class GetUserNotificationsInput : PagedInputDto
     {

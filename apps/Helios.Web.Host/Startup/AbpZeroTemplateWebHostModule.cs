@@ -8,8 +8,8 @@ using Helios.Web.Authentication.External;
 using Helios.Web.Authentication.External.Facebook;
 using Helios.Web.Authentication.External.Google;
 using Helios.Web.Authentication.External.Microsoft;
-using Helios.Zero.Configuration;
-using Helios.Zero.MultiTenancy;
+using Helios.Configuration;
+using Helios.MultiTenancy;
 
 namespace Helios.Web.Startup
 {

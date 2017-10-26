@@ -1,6 +1,6 @@
-﻿using Helios.Zero.EntityFrameworkCore;
+﻿using Helios.EntityFrameworkCore;
 
-namespace Helios.Zero.Application.Tests.TestDatas
+namespace Helios.Application.Tests.TestDatas
 {
     public class TestDataBuilder
     {

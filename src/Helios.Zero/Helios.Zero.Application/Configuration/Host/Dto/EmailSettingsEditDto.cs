@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Configuration.Host.Dto
+﻿namespace Helios.Configuration.Host.Dto
 {
     public class EmailSettingsEditDto
     {

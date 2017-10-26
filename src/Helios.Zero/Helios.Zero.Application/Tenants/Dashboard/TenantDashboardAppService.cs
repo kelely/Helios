@@ -1,9 +1,9 @@
 ﻿using Abp.Auditing;
 using Abp.Authorization;
-using Helios.Zero.Authorization;
-using Helios.Zero.Tenants.Dashboard.Dto;
+using Helios.Authorization;
+using Helios.Tenants.Dashboard.Dto;
 
-namespace Helios.Zero.Tenants.Dashboard
+namespace Helios.Tenants.Dashboard
 {
     [DisableAuditing]
     [AbpAuthorize(AppPermissions.Pages_Tenant_Dashboard)]

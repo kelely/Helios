@@ -14,17 +14,17 @@ using Abp.Runtime.Session;
 using Abp.Timing;
 using Abp.UI;
 using Abp.Zero.Configuration;
-using Helios.Zero.Authentication.TwoFactor.Google;
-using Helios.Zero.Authorization.Users.Dto;
-using Helios.Zero.Authorization.Users.Profile.Cache;
-using Helios.Zero.Authorization.Users.Profile.Dto;
-using Helios.Zero.Friendships;
-using Helios.Zero.Identity;
-using Helios.Zero.Security;
-using Helios.Zero.Storage;
-using Helios.Zero.Timing;
+using Helios.Authentication.TwoFactor.Google;
+using Helios.Authorization.Users.Dto;
+using Helios.Authorization.Users.Profile.Cache;
+using Helios.Authorization.Users.Profile.Dto;
+using Helios.Friendships;
+using Helios.Identity;
+using Helios.Security;
+using Helios.Storage;
+using Helios.Timing;
 
-namespace Helios.Zero.Authorization.Users.Profile
+namespace Helios.Authorization.Users.Profile
 {
     [AbpAuthorize]
     public class ProfileAppService : HeliosZeroAppServiceBase, IProfileAppService
@@ -62,7 +62,7 @@ namespace Helios.Zero.Authorization.Users.Profile
             var userProfileEditDto = ObjectMapper.Map<CurrentUserProfileEditDto>(user);
 
             userProfileEditDto.QrCodeSetupImageUrl = user.GoogleAuthenticatorKey != null
-                ? _googleTwoFactorAuthenticateService.GenerateSetupCode("Helios.Zero",
+                ? _googleTwoFactorAuthenticateService.GenerateSetupCode("Helios",
                     user.EmailAddress, user.GoogleAuthenticatorKey, 300, 300).QrCodeSetupImageUrl
                 : "";
             userProfileEditDto.IsGoogleAuthenticatorEnabled = user.GoogleAuthenticatorKey != null;
@@ -89,7 +89,7 @@ namespace Helios.Zero.Authorization.Users.Profile
 
             return new UpdateGoogleAuthenticatorKeyOutput
             {
-                QrCodeSetupImageUrl = _googleTwoFactorAuthenticateService.GenerateSetupCode("Helios.Zero",
+                QrCodeSetupImageUrl = _googleTwoFactorAuthenticateService.GenerateSetupCode("Helios",
                     user.EmailAddress, user.GoogleAuthenticatorKey, 300, 300).QrCodeSetupImageUrl
             };
         }

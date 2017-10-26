@@ -1,8 +1,8 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
-using Helios.Zero.Friendships.Dto;
+using Helios.Friendships.Dto;
 
-namespace Helios.Zero.Friendships
+namespace Helios.Friendships
 {
     public interface IFriendshipAppService : IApplicationService
     {

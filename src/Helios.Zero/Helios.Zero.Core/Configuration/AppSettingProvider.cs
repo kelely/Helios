@@ -5,7 +5,7 @@ using Abp.Configuration;
 using Abp.Zero.Configuration;
 using Microsoft.Extensions.Configuration;
 
-namespace Helios.Zero.Configuration
+namespace Helios.Configuration
 {
     /// <summary>
     /// Defines settings for the application.

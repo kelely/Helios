@@ -2,7 +2,7 @@
 using Abp;
 using Abp.Domain.Services;
 
-namespace Helios.Zero.Friendships
+namespace Helios.Friendships
 {
     public interface IFriendshipManager : IDomainService
     {

@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Debugging
+﻿namespace Helios.Debugging
 {
     public static class DebugHelper
     {

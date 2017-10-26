@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.Localization;
 
-namespace Helios.Zero.Localization.Dto
+namespace Helios.Localization.Dto
 {
     public class UpdateLanguageTextInput
     {

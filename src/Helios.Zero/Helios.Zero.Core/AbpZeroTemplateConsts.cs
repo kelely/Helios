@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero
+﻿namespace Helios
 {
     public class HeliosZeroConsts
     {

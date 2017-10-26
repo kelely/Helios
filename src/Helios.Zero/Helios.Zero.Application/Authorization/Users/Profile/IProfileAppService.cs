@@ -1,10 +1,10 @@
 ﻿using System;
 using System.Threading.Tasks;
 using Abp.Application.Services;
-using Helios.Zero.Authorization.Users.Dto;
-using Helios.Zero.Authorization.Users.Profile.Dto;
+using Helios.Authorization.Users.Dto;
+using Helios.Authorization.Users.Profile.Dto;
 
-namespace Helios.Zero.Authorization.Users.Profile
+namespace Helios.Authorization.Users.Profile
 {
     public interface IProfileAppService : IApplicationService
     {

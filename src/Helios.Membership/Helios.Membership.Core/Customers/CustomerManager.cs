@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
 using Abp.Domain.Repositories;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
 namespace Helios.Membership.Customers
 {

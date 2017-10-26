@@ -1,7 +1,7 @@
 ﻿using Abp.Application.Services.Dto;
 using Abp.Runtime.Validation;
 
-namespace Helios.Zero.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
     public class GetLinkedUsersInput : IPagedResultRequest, ISortedResultRequest, IShouldNormalize
     {

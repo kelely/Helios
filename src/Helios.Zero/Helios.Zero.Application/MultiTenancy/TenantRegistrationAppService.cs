@@ -12,21 +12,21 @@ using Abp.Runtime.Session;
 using Abp.Timing;
 using Abp.UI;
 using Abp.Zero.Configuration;
-using Helios.Zero.Configuration;
-using Helios.Zero.Debugging;
-using Helios.Zero.Editions;
-using Helios.Zero.Editions.Dto;
-using Helios.Zero.Features;
-using Helios.Zero.MultiTenancy.Dto;
-using Helios.Zero.MultiTenancy.Payments;
-using Helios.Zero.MultiTenancy.Payments.Cache;
-using Helios.Zero.Notifications;
-using Helios.Zero.Security.Recaptcha;
-using Helios.Zero.Url;
+using Helios.Configuration;
+using Helios.Debugging;
+using Helios.Editions;
+using Helios.Editions.Dto;
+using Helios.Features;
+using Helios.MultiTenancy.Dto;
+using Helios.MultiTenancy.Payments;
+using Helios.MultiTenancy.Payments.Cache;
+using Helios.Notifications;
+using Helios.Security.Recaptcha;
+using Helios.Url;
 using Abp.Extensions;
-using Helios.Zero.MultiTenancy.Payments.Dto;
+using Helios.MultiTenancy.Payments.Dto;
 
-namespace Helios.Zero.MultiTenancy
+namespace Helios.MultiTenancy
 {
     public class TenantRegistrationAppService : HeliosZeroAppServiceBase, ITenantRegistrationAppService
     {

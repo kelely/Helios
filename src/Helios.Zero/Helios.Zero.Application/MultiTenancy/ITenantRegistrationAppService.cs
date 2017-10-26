@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
 using Abp.Application.Services;
-using Helios.Zero.Editions.Dto;
-using Helios.Zero.MultiTenancy.Dto;
+using Helios.Editions.Dto;
+using Helios.MultiTenancy.Dto;
 
-namespace Helios.Zero.MultiTenancy
+namespace Helios.MultiTenancy
 {
     public interface ITenantRegistrationAppService: IApplicationService
     {

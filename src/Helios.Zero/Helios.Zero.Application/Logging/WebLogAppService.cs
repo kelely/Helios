@@ -5,13 +5,13 @@ using System.IO.Compression;
 using System.Linq;
 using Abp.Authorization;
 using Abp.IO;
-using Helios.Zero.Authorization;
-using Helios.Zero.Dto;
-using Helios.Zero.IO;
-using Helios.Zero.Logging.Dto;
-using Helios.Zero.Net.MimeTypes;
+using Helios.Authorization;
+using Helios.Dto;
+using Helios.IO;
+using Helios.Logging.Dto;
+using Helios.Net.MimeTypes;
 
-namespace Helios.Zero.Logging
+namespace Helios.Logging
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Host_Maintenance)]
     public class WebLogAppService : HeliosZeroAppServiceBase, IWebLogAppService

@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Authorization
+﻿namespace Helios.Authorization
 {
     /// <summary>
     /// Defines string constants for application's permission names.

@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Organizations.Dto;
+using Helios.Organizations.Dto;
 
-namespace Helios.Zero.Organizations
+namespace Helios.Organizations
 {
     public interface IOrganizationUnitAppService : IApplicationService
     {

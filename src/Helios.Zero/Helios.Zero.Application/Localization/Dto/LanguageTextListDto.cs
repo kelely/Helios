@@ -1,4 +1,4 @@
-namespace Helios.Zero.Localization.Dto
+namespace Helios.Localization.Dto
 {
     public class LanguageTextListDto
     {

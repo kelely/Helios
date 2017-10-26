@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Url
+﻿namespace Helios.Url
 {
     public interface IAppUrlService
     {

@@ -8,13 +8,13 @@ using Abp.Net.Mail;
 using Abp.Runtime.Security;
 using Abp.Timing;
 using Abp.Zero.Configuration;
-using Helios.Zero.Authorization;
-using Helios.Zero.Configuration.Host.Dto;
-using Helios.Zero.Editions;
-using Helios.Zero.Security;
-using Helios.Zero.Timing;
+using Helios.Authorization;
+using Helios.Configuration.Host.Dto;
+using Helios.Editions;
+using Helios.Security;
+using Helios.Timing;
 
-namespace Helios.Zero.Configuration.Host
+namespace Helios.Configuration.Host
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_Host_Settings)]
     public class HostSettingsAppService : SettingsAppServiceBase, IHostSettingsAppService

@@ -1,4 +1,4 @@
-namespace Helios.Zero.Configuration.Tenants.Dto
+namespace Helios.Configuration.Tenants.Dto
 {
     public class TenantBillingSettingsEditDto
     {

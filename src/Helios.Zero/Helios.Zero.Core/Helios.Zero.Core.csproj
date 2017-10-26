@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>netcoreapp2.0</TargetFramework>
-    <RootNamespace>Helios.Zero</RootNamespace>
+    <RootNamespace>Helios</RootNamespace>
     <UserSecretsId>Helios-Zero-894FDFC1-6482-4A56-926A-3C46C9FE0329</UserSecretsId>
   </PropertyGroup>
 

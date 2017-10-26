@@ -4,13 +4,13 @@ using System.Threading.Tasks;
 using Abp;
 using Abp.Application.Services.Dto;
 using Abp.Localization;
-using Helios.Zero.Localization;
-using Helios.Zero.Localization.Dto;
-using Helios.Zero.Migrations.Seed.Host;
+using Helios.Localization;
+using Helios.Localization.Dto;
+using Helios.Migrations.Seed.Host;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Localization
+namespace Helios.Application.Tests.Localization
 {
     public class LanguageAppService_Tests : AppTestBase
     {

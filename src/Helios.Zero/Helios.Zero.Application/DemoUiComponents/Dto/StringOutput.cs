@@ -1,4 +1,4 @@
-namespace Helios.Zero.DemoUiComponents.Dto
+namespace Helios.DemoUiComponents.Dto
 {
     public class StringOutput
     {

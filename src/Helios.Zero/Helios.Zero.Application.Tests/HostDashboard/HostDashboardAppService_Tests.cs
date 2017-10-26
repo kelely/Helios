@@ -1,16 +1,16 @@
 ﻿using System;
 using System.Linq;
 using System.Threading.Tasks;
-using Helios.Zero.Editions;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.MultiTenancy.HostDashboard;
-using Helios.Zero.MultiTenancy.HostDashboard.Dto;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.Editions;
+using Helios.MultiTenancy;
+using Helios.MultiTenancy.HostDashboard;
+using Helios.MultiTenancy.HostDashboard.Dto;
+using Helios.MultiTenancy.Payments;
 using Shouldly;
 using Xunit;
 using System.Globalization;
 
-namespace Helios.Zero.Application.Tests.HostDashboard
+namespace Helios.Application.Tests.HostDashboard
 {
     public class HostDashboardAppService_Tests : AppTestBase
     {

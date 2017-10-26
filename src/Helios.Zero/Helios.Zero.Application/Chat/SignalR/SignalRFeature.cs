@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Chat.SignalR
+﻿namespace Helios.Chat.SignalR
 {
     public static class SignalRFeature
     {

@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Localization.Dto;
+using Helios.Localization.Dto;
 
-namespace Helios.Zero.Localization
+namespace Helios.Localization
 {
     public interface ILanguageAppService : IApplicationService
     {

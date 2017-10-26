@@ -17,9 +17,9 @@ using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Logging;
 using Microsoft.Extensions.Options;
-using Helios.Zero.Authorization.Roles;
+using Helios.Authorization.Roles;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     /// <summary>
     /// User manager.

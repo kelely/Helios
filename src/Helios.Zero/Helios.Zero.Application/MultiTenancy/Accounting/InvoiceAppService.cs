@@ -8,12 +8,12 @@ using Abp.Domain.Uow;
 using Abp.Runtime.Session;
 using Abp.Timing;
 using Abp.UI;
-using Helios.Zero.Configuration;
-using Helios.Zero.Editions;
-using Helios.Zero.MultiTenancy.Accounting.Dto;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.Configuration;
+using Helios.Editions;
+using Helios.MultiTenancy.Accounting.Dto;
+using Helios.MultiTenancy.Payments;
 
-namespace Helios.Zero.MultiTenancy.Accounting
+namespace Helios.MultiTenancy.Accounting
 {
     public class InvoiceAppService : HeliosZeroAppServiceBase, IInvoiceAppService
     {

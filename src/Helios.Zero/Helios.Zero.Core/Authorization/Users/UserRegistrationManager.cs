@@ -10,13 +10,13 @@ using Abp.Runtime.Session;
 using Abp.UI;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Configuration;
-using Helios.Zero.Debugging;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.Notifications;
+using Helios.Authorization.Roles;
+using Helios.Configuration;
+using Helios.Debugging;
+using Helios.MultiTenancy;
+using Helios.Notifications;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public class UserRegistrationManager : HeliosZeroDomainServiceBase
     {

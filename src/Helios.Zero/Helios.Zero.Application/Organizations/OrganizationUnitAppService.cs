@@ -6,13 +6,13 @@ using Abp.Authorization.Users;
 using Abp.Domain.Repositories;
 using Abp.Linq.Extensions;
 using Abp.Organizations;
-using Helios.Zero.Authorization;
-using Helios.Zero.Organizations.Dto;
+using Helios.Authorization;
+using Helios.Organizations.Dto;
 using System.Linq.Dynamic.Core;
 using Abp.Extensions;
 using Microsoft.EntityFrameworkCore;
 
-namespace Helios.Zero.Organizations
+namespace Helios.Organizations
 {
     [AbpAuthorize(AppPermissions.Pages_Administration_OrganizationUnits)]
     public class OrganizationUnitAppService : HeliosZeroAppServiceBase, IOrganizationUnitAppService

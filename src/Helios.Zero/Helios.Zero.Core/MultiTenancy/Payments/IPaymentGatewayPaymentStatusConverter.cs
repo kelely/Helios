@@ -1,4 +1,4 @@
-namespace Helios.Zero.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public interface IPaymentGatewayPaymentStatusConverter
     {

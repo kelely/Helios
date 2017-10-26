@@ -2,9 +2,9 @@
 using System.Linq;
 using Abp.Localization;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.EntityFrameworkCore;
+using Helios.EntityFrameworkCore;
 
-namespace Helios.Zero.Migrations.Seed.Host
+namespace Helios.Migrations.Seed.Host
 {
     public class DefaultLanguagesCreator
     {

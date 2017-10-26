@@ -1,6 +1,6 @@
-﻿using Helios.Zero.Editions;
+﻿using Helios.Editions;
 
-namespace Helios.Zero.MultiTenancy.Payments.Dto
+namespace Helios.MultiTenancy.Payments.Dto
 {
     public class CreatePaymentDto
     {

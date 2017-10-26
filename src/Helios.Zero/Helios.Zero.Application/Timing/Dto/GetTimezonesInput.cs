@@ -1,6 +1,6 @@
 ﻿using Abp.Configuration;
 
-namespace Helios.Zero.Timing.Dto
+namespace Helios.Timing.Dto
 {
     public class GetTimezonesInput
     {

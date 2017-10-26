@@ -1,9 +1,9 @@
 using System.Threading.Tasks;
 using Abp;
 using Abp.Authorization.Users;
-using Helios.Zero.Authorization.Impersonation;
+using Helios.Authorization.Impersonation;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public interface IUserLinkManager
     {

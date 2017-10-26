@@ -3,9 +3,9 @@ using Abp.IdentityServer4;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
 using Abp.Zero.EntityFrameworkCore;
-using Helios.Zero.Migrations.Seed;
+using Helios.Migrations.Seed;
 
-namespace Helios.Zero.EntityFrameworkCore
+namespace Helios.EntityFrameworkCore
 {
     [DependsOn(
         typeof(AbpZeroCoreEntityFrameworkCoreModule),

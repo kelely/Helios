@@ -7,11 +7,11 @@ using Abp.Authorization;
 using Abp.Domain.Repositories;
 using Abp.Timing;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization;
-using Helios.Zero.MultiTenancy.HostDashboard.Dto;
-using Helios.Zero.MultiTenancy.Payments;
+using Helios.Authorization;
+using Helios.MultiTenancy.HostDashboard.Dto;
+using Helios.MultiTenancy.Payments;
 
-namespace Helios.Zero.MultiTenancy.HostDashboard
+namespace Helios.MultiTenancy.HostDashboard
 {
     [DisableAuditing]
     [AbpAuthorize(AppPermissions.Pages_Administration_Host_Dashboard)]

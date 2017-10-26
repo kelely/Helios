@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Features
+﻿namespace Helios.Features
 {
     public static class AppFeatures
     {

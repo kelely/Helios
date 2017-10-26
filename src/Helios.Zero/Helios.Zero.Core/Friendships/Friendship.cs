@@ -8,7 +8,7 @@ using Abp.Domain.Entities;
 using Abp.Domain.Entities.Auditing;
 using Abp.Timing;
 
-namespace Helios.Zero.Friendships
+namespace Helios.Friendships
 {
     [Table("AppFriendships")]
     public class Friendship : Entity<long>, IHasCreationTime, IMayHaveTenant

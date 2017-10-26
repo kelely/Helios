@@ -1,6 +1,6 @@
-﻿using Helios.Zero.Editions.Dto;
+﻿using Helios.Editions.Dto;
 
-namespace Helios.Zero.MultiTenancy.Payments.Dto
+namespace Helios.MultiTenancy.Payments.Dto
 {
     public class PaymentInfoDto
     {

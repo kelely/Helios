@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace Helios.Zero.Authorization.Users.Profile.Dto
+namespace Helios.Authorization.Users.Profile.Dto
 {
     public class UpdateProfilePictureInput
     {

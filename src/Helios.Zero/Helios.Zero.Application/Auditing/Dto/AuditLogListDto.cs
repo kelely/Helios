@@ -3,7 +3,7 @@ using Abp.Application.Services.Dto;
 using Abp.Auditing;
 using Abp.AutoMapper;
 
-namespace Helios.Zero.Auditing.Dto
+namespace Helios.Auditing.Dto
 {
     [AutoMapFrom(typeof(AuditLog))]
     public class AuditLogListDto : EntityDto<long>

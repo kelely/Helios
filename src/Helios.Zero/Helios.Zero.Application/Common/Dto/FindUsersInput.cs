@@ -1,6 +1,6 @@
-﻿using Helios.Zero.Dto;
+﻿using Helios.Dto;
 
-namespace Helios.Zero.Common.Dto
+namespace Helios.Common.Dto
 {
     public class FindUsersInput : PagedAndFilteredInputDto
     {

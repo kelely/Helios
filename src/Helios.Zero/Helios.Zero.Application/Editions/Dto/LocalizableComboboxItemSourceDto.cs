@@ -1,6 +1,6 @@
 using System.Collections.ObjectModel;
 
-namespace Helios.Zero.Editions.Dto
+namespace Helios.Editions.Dto
 {
 	//Mapped in CustomDtoMapper
 	public class LocalizableComboboxItemSourceDto

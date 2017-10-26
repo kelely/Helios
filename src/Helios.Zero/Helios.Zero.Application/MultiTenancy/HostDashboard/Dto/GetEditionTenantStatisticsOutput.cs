@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace Helios.Zero.MultiTenancy.HostDashboard.Dto
+namespace Helios.MultiTenancy.HostDashboard.Dto
 {
     public class GetEditionTenantStatisticsOutput
     {

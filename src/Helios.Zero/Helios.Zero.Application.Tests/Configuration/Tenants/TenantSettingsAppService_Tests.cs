@@ -1,11 +1,11 @@
 ﻿using System.Threading.Tasks;
 using Abp.Configuration;
-using Helios.Zero.Configuration;
-using Helios.Zero.Configuration.Tenants;
+using Helios.Configuration;
+using Helios.Configuration.Tenants;
 using Shouldly;
 using Xunit;
 
-namespace Helios.Zero.Application.Tests.Configuration.Tenants
+namespace Helios.Application.Tests.Configuration.Tenants
 {
     public class TenantSettingsAppService_Tests : AppTestBase
     {

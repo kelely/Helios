@@ -1,7 +1,7 @@
 using Abp.Dependency;
 using Abp.Runtime.Caching;
 
-namespace Helios.Zero.MultiTenancy.Payments.Cache
+namespace Helios.MultiTenancy.Payments.Cache
 {
     /// <summary>
     /// This cache is used to temporarily store "paid" information while tenant registration form is being filled.

@@ -1,7 +1,7 @@
 ﻿using Abp.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Authorization.Roles
+namespace Helios.Authorization.Roles
 {
     /// <summary>
     /// Represents a role in the system.

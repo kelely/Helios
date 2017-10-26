@@ -2,9 +2,9 @@
 using System.Collections.Generic;
 using Abp;
 using Abp.Application.Services;
-using Helios.Zero.DemoUiComponents.Dto;
+using Helios.DemoUiComponents.Dto;
 
-namespace Helios.Zero.DemoUiComponents
+namespace Helios.DemoUiComponents
 {
     public interface IDemoUiComponentsAppService: IApplicationService
     {

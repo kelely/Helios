@@ -8,11 +8,11 @@ using Abp.Domain.Uow;
 using Abp.MultiTenancy;
 using Abp.RealTime;
 using Abp.UI;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Friendships;
-using Helios.Zero.Friendships.Cache;
+using Helios.Authorization.Users;
+using Helios.Friendships;
+using Helios.Friendships.Cache;
 
-namespace Helios.Zero.Chat
+namespace Helios.Chat
 {
     [AbpAuthorize]
     public class ChatMessageManager : HeliosZeroDomainServiceBase, IChatMessageManager

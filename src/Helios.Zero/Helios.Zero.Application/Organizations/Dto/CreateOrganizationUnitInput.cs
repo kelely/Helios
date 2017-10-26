@@ -1,7 +1,7 @@
 ﻿using System.ComponentModel.DataAnnotations;
 using Abp.Organizations;
 
-namespace Helios.Zero.Organizations.Dto
+namespace Helios.Organizations.Dto
 {
     public class CreateOrganizationUnitInput
     {

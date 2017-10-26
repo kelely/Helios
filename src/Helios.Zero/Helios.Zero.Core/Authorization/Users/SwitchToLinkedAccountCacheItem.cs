@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     [Serializable]
     public class SwitchToLinkedAccountCacheItem

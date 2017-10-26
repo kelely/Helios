@@ -1,12 +1,12 @@
 using Abp.Localization;
 using Abp.UI.Inputs;
 using AutoMapper;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Authorization.Users.Dto;
-using Helios.Zero.Editions.Dto;
-using Helios.Zero.Localization.Dto;
+using Helios.Authorization.Users;
+using Helios.Authorization.Users.Dto;
+using Helios.Editions.Dto;
+using Helios.Localization.Dto;
 
-namespace Helios.Zero
+namespace Helios
 {
     internal static class CustomDtoMapper
     {

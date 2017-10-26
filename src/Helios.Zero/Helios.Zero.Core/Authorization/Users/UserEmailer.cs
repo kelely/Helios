@@ -10,13 +10,13 @@ using Abp.Domain.Uow;
 using Abp.Extensions;
 using Abp.Localization;
 using Abp.Net.Mail;
-using Helios.Zero.Chat;
-using Helios.Zero.Editions;
-using Helios.Zero.Emailing;
-using Helios.Zero.Localization;
-using Helios.Zero.MultiTenancy;
+using Helios.Chat;
+using Helios.Editions;
+using Helios.Emailing;
+using Helios.Localization;
+using Helios.MultiTenancy;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     /// <summary>
     /// Used to send email to users.

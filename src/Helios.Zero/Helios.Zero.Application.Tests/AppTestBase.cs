@@ -8,13 +8,13 @@ using Abp.Events.Bus.Entities;
 using Abp.Runtime.Session;
 using Abp.TestBase;
 using Microsoft.EntityFrameworkCore;
-using Helios.Zero.Authorization.Roles;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.EntityFrameworkCore;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.Application.Tests.TestDatas;
+using Helios.Authorization.Roles;
+using Helios.Authorization.Users;
+using Helios.EntityFrameworkCore;
+using Helios.MultiTenancy;
+using Helios.Application.Tests.TestDatas;
 
-namespace Helios.Zero.Application.Tests
+namespace Helios.Application.Tests
 {
     /// <summary>
     /// This is base class for all our test classes.

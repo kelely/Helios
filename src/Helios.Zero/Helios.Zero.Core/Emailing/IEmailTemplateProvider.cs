@@ -1,4 +1,4 @@
-﻿namespace Helios.Zero.Emailing
+﻿namespace Helios.Emailing
 {
     public interface IEmailTemplateProvider
     {

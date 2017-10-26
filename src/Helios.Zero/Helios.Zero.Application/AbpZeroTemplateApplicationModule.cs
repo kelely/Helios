@@ -2,9 +2,9 @@
 using Abp.AutoMapper;
 using Abp.Modules;
 using Abp.Reflection.Extensions;
-using Helios.Zero.Authorization;
+using Helios.Authorization;
 
-namespace Helios.Zero
+namespace Helios
 {
     /// <summary>
     /// Application layer module of the application.

@@ -17,9 +17,9 @@ using Microsoft.IdentityModel.Tokens;
 using Helios.Web.Authentication.JwtBearer;
 using Helios.Web.Authentication.TwoFactor;
 using Helios.Web.Configuration;
-using Helios.Zero;
-using Helios.Zero.Configuration;
-using Helios.Zero.EntityFrameworkCore;
+using Helios;
+using Helios.Configuration;
+using Helios.EntityFrameworkCore;
 
 #if FEATURE_SIGNALR
 using Abp.Web.SignalR;

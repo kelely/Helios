@@ -3,7 +3,7 @@ using Abp.Authorization.Users;
 using Abp.Extensions;
 using Abp.Timing;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     /// <summary>
     /// Represents a user in the system.

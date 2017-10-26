@@ -1,6 +1,6 @@
 using System.Threading.Tasks;
 
-namespace Helios.Zero.Security.Recaptcha
+namespace Helios.Security.Recaptcha
 {
     public interface IRecaptchaValidator
     {

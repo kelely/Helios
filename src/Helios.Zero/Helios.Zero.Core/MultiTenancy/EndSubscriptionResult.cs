@@ -1,4 +1,4 @@
-namespace Helios.Zero.MultiTenancy
+namespace Helios.MultiTenancy
 {
     public enum EndSubscriptionResult
     {

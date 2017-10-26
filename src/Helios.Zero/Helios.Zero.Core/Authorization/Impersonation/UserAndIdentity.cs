@@ -1,7 +1,7 @@
 ﻿using System.Security.Claims;
-using Helios.Zero.Authorization.Users;
+using Helios.Authorization.Users;
 
-namespace Helios.Zero.Authorization.Impersonation
+namespace Helios.Authorization.Impersonation
 {
     public class UserAndIdentity
     {

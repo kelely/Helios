@@ -6,10 +6,10 @@ using Abp.MultiTenancy;
 using Abp.Runtime.Session;
 using Abp.Threading;
 using Microsoft.AspNetCore.Identity;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.MultiTenancy;
+using Helios.Authorization.Users;
+using Helios.MultiTenancy;
 
-namespace Helios.Zero
+namespace Helios
 {
     /// <summary>
     /// Derive your application services from this class.

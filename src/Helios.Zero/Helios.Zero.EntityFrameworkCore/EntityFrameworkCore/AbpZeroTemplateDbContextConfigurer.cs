@@ -1,7 +1,7 @@
 using System.Data.Common;
 using Microsoft.EntityFrameworkCore;
 
-namespace Helios.Zero.EntityFrameworkCore
+namespace Helios.EntityFrameworkCore
 {
     public static class HeliosZeroDbContextConfigurer
     {

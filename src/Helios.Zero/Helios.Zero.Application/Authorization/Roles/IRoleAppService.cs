@@ -1,9 +1,9 @@
 ﻿using System.Threading.Tasks;
 using Abp.Application.Services;
 using Abp.Application.Services.Dto;
-using Helios.Zero.Authorization.Roles.Dto;
+using Helios.Authorization.Roles.Dto;
 
-namespace Helios.Zero.Authorization.Roles
+namespace Helios.Authorization.Roles
 {
     /// <summary>
     /// Application service that is used by 'role management' page.

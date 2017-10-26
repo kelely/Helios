@@ -1,9 +1,9 @@
 ﻿using Abp.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
-using Helios.Zero.Authorization.Roles;
+using Helios.Authorization.Roles;
 
-namespace Helios.Zero.Authorization.Users
+namespace Helios.Authorization.Users
 {
     public class UserClaimsPrincipalFactory : AbpUserClaimsPrincipalFactory<User, Role>
     {

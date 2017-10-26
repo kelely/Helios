@@ -11,9 +11,9 @@ using Abp.Web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Helios.Web.Helpers;
-using Helios.Zero.MultiTenancy;
-using Helios.Zero.Net.MimeTypes;
-using Helios.Zero.Storage;
+using Helios.MultiTenancy;
+using Helios.Net.MimeTypes;
+using Helios.Storage;
 
 namespace Helios.Web.Controllers
 {

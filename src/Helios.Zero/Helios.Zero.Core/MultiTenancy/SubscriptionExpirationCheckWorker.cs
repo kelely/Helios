@@ -8,10 +8,10 @@ using Abp.Threading;
 using Abp.Threading.BackgroundWorkers;
 using Abp.Threading.Timers;
 using Abp.Timing;
-using Helios.Zero.Authorization.Users;
-using Helios.Zero.Editions;
+using Helios.Authorization.Users;
+using Helios.Editions;
 
-namespace Helios.Zero.MultiTenancy
+namespace Helios.MultiTenancy
 {
     public class SubscriptionExpirationCheckWorker : PeriodicBackgroundWorkerBase, ISingletonDependency
     {

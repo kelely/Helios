@@ -1,7 +1,7 @@
 using System;
-using Helios.Zero.MultiTenancy.Payments.Paypal;
+using Helios.MultiTenancy.Payments.Paypal;
 
-namespace Helios.Zero.MultiTenancy.Payments
+namespace Helios.MultiTenancy.Payments
 {
     public static class SubscriptionPaymentGatewayTypeExtensions
     {

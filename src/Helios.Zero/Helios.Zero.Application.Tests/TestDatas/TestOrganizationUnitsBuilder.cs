@@ -1,7 +1,7 @@
 ﻿using Abp.Organizations;
-using Helios.Zero.EntityFrameworkCore;
+using Helios.EntityFrameworkCore;
 
-namespace Helios.Zero.Application.Tests.TestDatas
+namespace Helios.Application.Tests.TestDatas
 {
     /* Creates OU tree for default tenant as shown below:
      * 

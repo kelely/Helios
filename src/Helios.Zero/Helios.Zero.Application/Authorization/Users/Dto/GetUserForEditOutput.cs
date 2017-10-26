@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Collections.Generic;
-using Helios.Zero.Organizations.Dto;
+using Helios.Organizations.Dto;
 
-namespace Helios.Zero.Authorization.Users.Dto
+namespace Helios.Authorization.Users.Dto
 {
     public class GetUserForEditOutput
     {
